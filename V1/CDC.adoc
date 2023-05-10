@@ -1,6 +1,6 @@
 = CAHIER DES CHARGES V1
 
-== Introduction
+== Présentation du sujet
 
 La banque DailyBank souhaite développer une application JAVA-Oracle de gestion des comptes clients pour remplacer plusieurs outils obsolètes. Ce développement s’inscrit dans le cadre de la restructuration de ses services bancaires et l’application sera déployée dans les 100 agences que compte son réseau. Vous travaillerez à partir d’une application existante « Daily Bank » qu’il faudra adapter aux nouveaux besoins de la banque.
 
@@ -37,8 +37,13 @@ L’application doit permettre de gérer des comptes bancaires de dépôt pour d
 
 * Techniques :
 ** Ressources : 
+*** Outils de développement : 
+**** Java avec IHM (FX) IDE Eclipse, 
+**** BD : Oracle Sql Developer – BD fournie intégralement
+*** Outil pour le Gantt : GanttProject
+*** Outil pour les documentations : ASCIIDOC
 ** Objectif : 
-** Délais : 
+** Délais : Vendredi 12 mai 12h : version 1 du gantt et du cahier des charges
 
 * Organisationnelles :
-** Communication : 
+** Outils de communication : Discord
