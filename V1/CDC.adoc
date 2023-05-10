@@ -1,8 +1,9 @@
 = CAHIER DES CHARGES V1
-Version 1
-10 mai 2023
-Equipe : BERNARD Julien, ESTRADE Prescilla, MALIQUE Manon
-Projet : DailyBank
+
+Version 1 +
+10 mai 2023 +
+Equipe : BERNARD Julien, ESTRADE Prescilla, MALIQUE Manon +
+Projet : DailyBank +
 SAES 2.01 et 2.05
 
 == Sommaire
@@ -43,6 +44,11 @@ L’application doit permettre de gérer des comptes bancaires de dépôt pour d
 == Identification des utilisateurs :
 
 == Les tests à effectuer :
+
+== Documents à réaliser :
+* Document technique
+* Cahier de tests
+* Document utilisateur
 
 == Analyse des contraintes:
 
