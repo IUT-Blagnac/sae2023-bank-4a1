@@ -1,5 +1,4 @@
-CAHIER DES CHARGES VERSION 1
-
+= CAHIER DES CHARGES VERSION 1
 
 Présentation du sujet
 
