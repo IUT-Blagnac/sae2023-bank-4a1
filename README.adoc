@@ -3,9 +3,9 @@
 ==== Présentation de l'équipe et rôles respectifs
 Chef de projet : BERNARD Julien
 
-* BERNARD Julien :
-* ESTRADE Prescilla
-* MALIQUE Manon
+* BERNARD Julien    :  Réalisation du Gantt
+* ESTRADE Prescilla :  Réalisation du cahier des charges
+* MALIQUE Manon     :  Réalisation du cahier des charges
 
 ==== Répartition des tâches et état d'avancement
 [options="header,footer"]
