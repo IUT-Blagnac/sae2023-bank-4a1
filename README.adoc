@@ -1,4 +1,4 @@
-=== Exemple readme étudiant
+=== README du groupe 4A1
 
 ==== Présentation de l'équipe et rôles respectifs
 
