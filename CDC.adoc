@@ -53,8 +53,16 @@ Les tests à effectuer :
 
 La banque DailyBank souhaite développer une application JAVA-Oracle de gestion des comptes clients pour remplacer plusieurs outils obsolètes. Ce développement s’inscrit dans le cadre de la restructuration de ses services bancaires et l’application sera déployée dans les 100 agences que compte son réseau. Vous travaillerez à partir d’une application existante « Daily Bank » qu’il faudra adapter aux nouveaux besoins de la banque.
 
-== Analyse du besoin :
+== Analyse de l’existant :
+Dans la version existante (V0), un guichetier peut :
+* Modifier informations client (adresse, téléphone, …)
+* Créer un nouveau client
+* Consulter un compte
+* Débiter un compte (BD)
+* Dans la version existante (V0), un chef d’agence peut :
+* Rendre inactif un client
 
+== Analyse du besoin :
 L’application doit permettre de gérer des comptes bancaires de dépôt pour des clients préalablement créés. Elle devra permettre de débiter, créditer un compte soit par virement c’est à dire un échange d’argent entre deux comptes distincts mais domiciliés dans le réseau bancaire, soit par une personne physique se présentant devant un guichet.
 
 == Description des fonctionnalités :
