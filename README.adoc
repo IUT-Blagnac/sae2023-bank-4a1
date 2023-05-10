@@ -5,7 +5,7 @@ Chef de projet : BERNARD Julien
 
 * BERNARD Julien    :  Réalisation du Gantt
 * ESTRADE Prescilla :  Réalisation du cahier des charges
-* MALIQUE Manon     :  Réalisation du cahier des charges
+* MALIQUE Manon     :  Réalisation du README, aide au cahier des charges
 
 ==== Répartition des tâches et état d'avancement
 [options="header,footer"]
