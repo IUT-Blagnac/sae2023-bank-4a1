@@ -33,4 +33,12 @@ L’application doit permettre de gérer des comptes bancaires de dépôt pour d
 == Les tests à effectuer :
 
 
-== Analyse des contraintes techniques et organisationnelles :
+== Analyse des contraintes:
+
+* Techniques :
+** Ressources : 
+** Objectif : 
+** Délais : 
+
+* Organisationnelles :
+** Communication : 
