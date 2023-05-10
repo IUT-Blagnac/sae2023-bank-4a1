@@ -7,24 +7,24 @@
 [options="header,footer"]
 |=======================
 |version|rôle     |use case   |cas...                 |   BERNARD Julien | ESTRADE Prescilla  |   MALIQUE Manon
-|1    |Chef d’Agence    |CRUD employé  |C| | | |
-|1    |Chef d’Agence    |CRUD employé  |R| | | |
-|1    |Chef d’Agence |CRUD employé  |U| | | |
-|1    |Chef d’Agence   |CRUD employé  |D| | | |
-|1    |Guichetier     | Compte | Créer|| | | 
-|1    |Guichetier     | Compte | Créditer/Débiter|| | | 
-|1    |Guichetier     | Compte | Effectuer un virement|| | | 
-|1    |Guichetier     | Compte | Clôturer|| | | 
-|2    |Chef d’Agence     | Compte | Débit exceptionnel|| | | 
-|2    |Chef d’Agence     | Emprunt | Simuler emprunt|| | | 
-|2    |Chef d’Agence     | Emprunt | Simuler assurance|| | | 
-|2    |Guichetier     | Compte | Relevé PDF|| | | 
-|2    |Guichetier     | CRUD Prélèvement | C|| | | 
-|2    |Guichetier     | CRUD Prélèvement | R|| | | 
-|2    |Guichetier     | CRUD Prélèvement | U|| | | 
-|2    |Guichetier     | CRUD Prélèvement | D|| | | 
-|2    |Batch     | Prélèvements automatiques | || | | 
-|2    |Batch     | Reléves mensuels | || | | 
+|1    |Chef d’Agence    |CRUD employé  |C| | | 
+|1    |Chef d’Agence    |CRUD employé  |R| | | 
+|1    |Chef d’Agence |CRUD employé  |U| | | 
+|1    |Chef d’Agence   |CRUD employé  |D| | | 
+|1    |Guichetier     | Compte | Créer|| | 
+|1    |Guichetier     | Compte | Créditer/Débiter|| | 
+|1    |Guichetier     | Compte | Effectuer un virement|| | 
+|1    |Guichetier     | Compte | Clôturer|| | 
+|2    |Chef d’Agence     | Compte | Débit exceptionnel|| | 
+|2    |Chef d’Agence     | Emprunt | Simuler emprunt|| | 
+|2    |Chef d’Agence     | Emprunt | Simuler assurance|| | 
+|2    |Guichetier     | Compte | Relevé PDF|| | 
+|2    |Guichetier     | CRUD Prélèvement | C|| | 
+|2    |Guichetier     | CRUD Prélèvement | R|| | 
+|2    |Guichetier     | CRUD Prélèvement | U|| | 
+|2    |Guichetier     | CRUD Prélèvement | D|| | 
+|2    |Batch     | Prélèvements automatiques | || | 
+|2    |Batch     | Reléves mensuels | || | 
 
 |=======================
 
