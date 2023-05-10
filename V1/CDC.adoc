@@ -28,10 +28,7 @@ L’application doit permettre de gérer des comptes bancaires de dépôt pour d
 
 == Identification des utilisateurs :
 
-
-
 == Les tests à effectuer :
-
 
 == Analyse des contraintes:
 
@@ -39,10 +36,10 @@ L’application doit permettre de gérer des comptes bancaires de dépôt pour d
 ** Ressources : 
 *** Outils de développement : 
 **** Java avec IHM (FX) IDE Eclipse, 
-**** BD : Oracle Sql Developer – BD fournie intégralement
+**** BD : Oracle Sql Developer – BD
 *** Outil pour le Gantt : GanttProject
 *** Outil pour les documentations : ASCIIDOC
-** Objectif : 
+** Objectif : Application bancaire permettant de gérer des comptes bancaires de dépôt. Elle devra permettre de créer un compte, le débiter, le créditer un compte, d'effectuer un virement de compte à compte, de clôturer un compte et de gérer les employés (CRUD).
 ** Délais : Vendredi 12 mai 12h : version 1 du gantt et du cahier des charges
 
 * Organisationnelles :
