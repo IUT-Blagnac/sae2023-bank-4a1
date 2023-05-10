@@ -1,5 +1,19 @@
 = CAHIER DES CHARGES V1
+Version 1
+10 mai 2023
+Equipe : BERNARD Julien, ESTRADE Prescilla, MALIQUE Manon
+Projet : DailyBank
+SAES 2.01 et 2.05
 
+== Sommaire
+ * Présentation du sujet
+ ** contexte, objectifs
+ * Analyse de l’existant
+ * Analyse des besoins incluant V0 et V1
+ * Analyse des contraintes
+ ** Techniques 
+ ** Organisationnelles
+ 
 == Présentation du sujet
 
 La banque DailyBank souhaite développer une application JAVA-Oracle de gestion des comptes clients pour remplacer plusieurs outils obsolètes. Ce développement s’inscrit dans le cadre de la restructuration de ses services bancaires et l’application sera déployée dans les 100 agences que compte son réseau. Vous travaillerez à partir d’une application existante « Daily Bank » qu’il faudra adapter aux nouveaux besoins de la banque.
@@ -35,8 +49,9 @@ L’application doit permettre de gérer des comptes bancaires de dépôt pour d
 * Techniques :
 ** Ressources : 
 *** Outils de développement : 
+**** Github
 **** Java avec IHM (FX) IDE Eclipse, 
-**** BD : Oracle Sql Developer – BD
+**** BD : Oracle Sql Developer
 *** Outil pour le Gantt : GanttProject
 *** Outil pour les documentations : ASCIIDOC
 ** Objectif : Application bancaire permettant de gérer des comptes bancaires de dépôt. Elle devra permettre de créer un compte, le débiter, le créditer un compte, d'effectuer un virement de compte à compte, de clôturer un compte et de gérer les employés (CRUD).
