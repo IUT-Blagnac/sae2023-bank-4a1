@@ -1,7 +1,11 @@
 === README du groupe 4A1
 
 ==== Présentation de l'équipe et rôles respectifs
+Chef de projet : BERNARD Julien
 
+* BERNARD Julien :
+* ESTRADE Prescilla
+* MALIQUE Manon
 
 ==== Répartition des tâches et état d'avancement
 [options="header,footer"]
