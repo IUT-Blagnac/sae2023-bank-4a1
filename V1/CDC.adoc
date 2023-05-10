@@ -1,4 +1,4 @@
-= [red]#CAHIER DES CHARGES V1#
+= CAHIER DES CHARGES V1
 
 == Introduction
 
