@@ -17,6 +17,7 @@ Projet : DailyBank - SAES 2.01 et 2.05
 ** <<identification_utilisateurs>>
 * <<analyse_existant>> 
 * <<analyse_besoins>> 
+* <<livrables>> 
 * <<analyse_contraintes>> 
 ** <<techniques>>
 ** <<organisationnelles>>
@@ -29,7 +30,6 @@ Projet : DailyBank - SAES 2.01 et 2.05
 Le contexte bancaire est marqué par la nécessité pour les banques de répondre aux exigences des clients en termes de rapidité et de digitalisation. 
 
 La banque DailyBank souhaite développer une application JAVA-Oracle de gestion des comptes clients pour remplacer plusieurs outils obsolètes. Ce développement s’inscrit dans le cadre de la restructuration de ses services bancaires et l’application sera déployée dans les 100 agences que compte son réseau. 
-
 [[objectif]]
 === 1.2 Objectif
 Nous travaillerons à partir d’une application existante « Daily Bank » qu’il faudra adapter aux nouveaux besoins de la banque. La banque, à travers cette application veut moderniser ses outils et services bancaires. 
@@ -63,16 +63,19 @@ L’application doit permettre de gérer des comptes bancaires de dépôt pour d
 
 _CRUD: Create Read Update Delete_
 
-=== Documents à réaliser :
-* Document technique
+[[livrables]]
+== 4. Livrables
+* Cahier des charges
+* Gantt
+* Documentation utilisateur
+* Documentation technique
 * Cahier de tests
-* Document utilisateur
 
 [[analyse_contraintes]]
-== 4. Analyse des contraintes
+== 5. Analyse des contraintes
 
 [[techniques]]
-=== 4.1 Techniques
+=== 5.1 Techniques
 * Ressources : 
 ** Outils de développement : 
 *** Java avec IHM (FX) IDE Eclipse
@@ -83,10 +86,10 @@ _CRUD: Create Read Update Delete_
 * Délais : +
 ** Vendredi 12 mai 12h : 
 *** V1 du gantt en pdf
-*** V2 du cahier des charges en asciidoc
+*** V1 du cahier des charges en asciidoc
 
 [[organisationnelles]]
-=== 4.2 Organisationnelles
+=== 5.2 Organisationnelles
 * Outils de travail collaboratifs : 
-** Github pour la gestion du projet (codes,documentations)
-** Discord pour la communication 
+** Github pour la gestion du projet (codes, documentations)
+** Discord pour la communication
