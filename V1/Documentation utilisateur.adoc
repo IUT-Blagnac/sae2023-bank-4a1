@@ -1,0 +1,29 @@
+= DOCUMENTATION UTILISATEUR V1
+
+Version 1 +
+
+Date : 16 mai 2023 +
+
+Equipe : BERNARD Julien, ESTRADE Prescilla, MALIQUE Manon +
+
+Groupe 4A1
+
+Projet : DailyBank - SAÉ 2.01 et 2.05
+
+== Sommaire
+* <<presentation>>
+* <<installation_utilisation>>
+* <<fonctionnement>>
+* <<resultats>> 
+
+[[presentation]]
+== 1. Presentation générale, rôle de l'application
+
+[[installation_utilisation]]
+== 2. Installation utilisation
+
+[[fonctionnement]]
+== 3. Fonctionnement
+
+[[resultats]]
+== 4. Résultats produits avec jeux d'essai
