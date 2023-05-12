@@ -45,7 +45,7 @@ Dans sa colonne il doit remplir la ligne correspondant à chaque partie qu'il a 
 |===
 | Date    | Nom         |  Lien                             | Retour
 | Sem.19  | CDC V1      |         https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/CDC.adoc                          |           
-| 12/05   |Gantt V1 Prévu|          https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Gantt_Gestion_et_dvpt_app.pdf                         |
+| 12/05   |Gantt V1 Prévu|   Gantt sur 1 page :     https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Gantt_Gestion_et_dvpt_app.pdf  Dossier complet : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Gestion_et_dvpt_app.pdf |
 | 16/05  | CdC V2final|                                     |  
 |         | Gantt V1 Réalisé |                               |     
 |         | Gantt V2 Prevu|         |     
