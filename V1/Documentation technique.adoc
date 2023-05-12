@@ -1,0 +1,66 @@
+= DOCUMENTATION TECHNIQUE V1
+
+Version 1 +
+
+Date : 17 mai 2023 +
+
+Equipe : BERNARD Julien, ESTRADE Prescilla, MALIQUE Manon +
+
+Groupe 4A1
+
+Projet : DailyBank - SAÉ 2.01 et 2.05
+
+== Sommaire
+* <<presentation_appli>>
+** <<use_case>>
+** <<diagramme_de_classe>>
+* <<architecture>>
+** <<architecture_generale>> 
+** <<ressources_externes>> 
+** <<structuration>> 
+** <<elements_essentiels>> 
+* <<presentation_des_diagrammes>>
+** <<use_case>>
+** <<diagramme_de_classes>>
+** <<classes>>
+** <<elements_essentiels>>
+* <<elements_code>>
+
+[[presentation_appli]]
+== 1. Presentation de l'application
+
+[[use_case]]
+=== 1.1 Use Case global
+
+[[diagramme_de_classe]]
+=== 1.2 Diagramme de classe des données global
+
+[[architecture]]
+== 2. Architecture
+
+[[architecture_generale]]
+=== 2.1 Architecture générale
+
+[[ressources_externes]]
+=== 2.2 Ressources externes utilisées et rôles
+
+[[structuration]] 
+=== 2.3 Structuration en packages de l'application
+
+[[elements_essentiels]]
+=== 2.4 Elements essentiels
+
+[[presentation_des_diagrammes]]
+== 3. Présentation et explication des diagrammes demandés
+
+[[use_case]]
+=== 3.1 Use Case
+
+[[diagramme_de_classes]]
+=== 3.2 Diagrammes de classes
+
+[[classes]]
+=== 3.3 Classes impliquées dans chaque package
+
+[[elements_code]]
+== 4. Eléments de code significatifs commentés
