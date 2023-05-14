@@ -44,18 +44,18 @@ Dans sa colonne il doit remplir la ligne correspondant à chaque partie qu'il a 
 [cols="1,2,2,5",options=header]
 |===
 | Date    | Nom         |  Lien                             | Retour
-| Sem.19  | CDC V1      |         https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/CDC.adoc                          |    affinez les objectifs (communication inter agences)
-affinez l'analyse de l'existant par rapport à ce qui vous a été fourni en entrant (documentation, executable ...)
-analyse du besoin: détaillez les UC V0, utilisateurs logiques, idem pour la V1, en priorisant les devs planifiés
+| Sem.19  | CDC V1      |         https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/CDC.adoc                          |affinez les objectifs (communication inter agences).
+affinez l'analyse de l'existant par rapport à ce qui vous a été fourni en entrant (documentation, executable ...).
+analyse du besoin: détaillez les UC V0, utilisateurs logiques, idem pour la V1, en priorisant les devs planifiés.
 les delais doivent partir dans la partie contraintes orga.
-Affinez les contraintes orga (qui doit faire quoi, mode de fonctionnement de l'équipe)       
-| 12/05   |Gantt V1 Prévu|   Gantt sur 1 page :     https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Gantt_Gestion_et_dvpt_app.pdf  Dossier complet : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Gestion_et_dvpt_app.pdf |pas de ressource assignée(s) aux taches
-les jalons de livraison ne sont pas indiqués,
-la charge de travail (temps/homme) n’est pas indiqué
-prédeceseurs à ajouter
-affinez le GANTT V1 pour l'instant, pas besoin du reste
-reprendre le découpage des taches pour V1
-affichage du graphe pas optimal, à reprendre
+Affinez les contraintes orga (qui doit faire quoi, mode de fonctionnement de l'équipe).      
+| 12/05   |Gantt V1 Prévu|   Gantt sur 1 page :     https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Gantt_Gestion_et_dvpt_app.pdf  Dossier complet : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Gestion_et_dvpt_app.pdf |pas de ressource assignée(s) aux taches.
+les jalons de livraison ne sont pas indiqués.
+la charge de travail (temps/homme) n’est pas indiqué.
+prédeceseurs à ajouter.
+affinez le GANTT V1 pour l'instant, pas besoin du reste.
+reprendre le découpage des taches pour V1.
+affichage du graphe pas optimal, à reprendre.
 | 16/05  | CdC V2final|                                     |  
 |         | Gantt V1 Réalisé |                               |     
 |         | Gantt V2 Prevu|         |     
