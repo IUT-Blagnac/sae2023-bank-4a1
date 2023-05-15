@@ -17,6 +17,8 @@ Projet : DailyBank - SAÉ 2.01 et 2.05
 ** <<identification_utilisateurs>>
 * <<analyse_existant>> 
 * <<analyse_besoins>> 
+** <<version1>>
+** <<version2>>
 * <<livrables>> 
 * <<analyse_contraintes>> 
 ** <<techniques>>
@@ -54,7 +56,8 @@ image::UseCaseV0.png[]
 == 3. Analyse des besoins
 L’application doit permettre de gérer des comptes bancaires de dépôt pour des clients préalablement créés. Elle devra permettre de débiter, créditer un compte soit par virement c’est à dire un échange d’argent entre deux comptes distincts mais domiciliés dans le réseau bancaire, soit par une personne physique se présentant devant un guichet.
 
-=== Description des fonctionnalités à réaliser :
+[[version1]]
+==== Version 1
 * Ce que doit pouvoir faire un Guichetier :
 ** Créditer/débiter un compte (java et BD avec procédure stockée)
 ** Créer un compte
@@ -63,8 +66,25 @@ L’application doit permettre de gérer des comptes bancaires de dépôt pour d
 * Ce que doit pouvoir faire un Chef d’Agence :
 ** Gérer (faire le « CRUD ») les employés (guichetier et chef d’agence)
 
-_CRUD : Create Read Update Delete_
+_CRUD : Create Read Update Delete_ 
 
+image::UseCaseV1.png[] 
+_Figure 2. Diagramme des Cas d’Utilisation (V.1)_ 
+
+[[version2]]
+=== Version 2
+* Ce que doit pouvoir faire un Guichetier :
+** Générer un relevé mensuel d’un compte en PDF 
+** Gérer (faire le « CRUD[2] ») les prélèvements automatiques 
+** Effectuer un virement de compte à compte
+** Clôturer un compte
+* Ce que doit pouvoir faire un Chef d’Agence : uniquement les spécifications
+** Effectuer un Débit exceptionnel
+** Simuler un emprunt 
+** Simuler une assurance d'emprunt 
+
+image::UseCaseV2.png[]
+_Figure 3. Diagramme des Cas d’Utilisation (V.2)_
 
 [[livrables]]
 == 4. Livrables
@@ -85,9 +105,9 @@ _CRUD : Create Read Update Delete_
 *** Java avec IHM (FX) IDE Eclipse
 *** BD : Oracle Sql Developer
 ** Outil pour le Gantt : GanttProject
+** Outil pour les diagrammes UML : PlantUML
 ** Outil pour les documentations : AsciiDoc
 * Objectif : Application bancaire permettant de gérer des comptes bancaires de dépôt. Elle devra permettre de créer un compte, le débiter, le créditer un compte, d'effectuer un virement de compte à compte, de clôturer un compte et de gérer les employés (CRUD).
-
 
 [[organisationnelles]]
 === 5.2 Organisationnelles
@@ -115,7 +135,10 @@ _CRUD : Create Read Update Delete_
 ** Semaines 22-23 :
 *** Soutenance orale
 *** Évaluation individuelle
-* Mode de fonctionnement de l’équipe :
+* Mode de fonctionnement de l’équipe : +
+Nous réalisons des réunions régulièrement pour suivre l'avancement du projet. +
+Nous nous sommes répartis les tâches à réaliser de la façon suivante :
+
 [options="header,footer"]
 |=======================
 |Tâche|BERNARD Julien | ESTRADE Prescilla | MALIQUE Manon
@@ -130,21 +153,16 @@ _CRUD : Create Read Update Delete_
                   - Effectuer un virement de compte à compte + 
                   V2 : + 
                   - Gérer (faire le «CRUD[2]») les prélèvements automatiques +
-                  V3 : 
                 | V1 : +
                   - Créditer/débiter un compte (java et BD avec procédure stockée) +
                   - Gérer (faire le « CRUD ») les employés (guichetier et chef d’agence) : UPDATE +
                   V2 : +
                   - Effectuer un Débit exceptionnel +
                   - Simuler une assurance d’emprunt +
-                  V3 : +
-                  - Générer les relevés mensuels en PDF +
                 | V1 : +
                   - Clôturer un compte +
                   - Gérer (faire le « CRUD ») les employés (guichetier et chef d’agence) : CREATE et READ +
                   V2 : +
 			            - Simuler un emprunt +
                   - Générer un relevé mensuel d’un compte en PDF +
-                  V3 : +
-                  - Exécuter les prélèvements automatiques
 |=======================
