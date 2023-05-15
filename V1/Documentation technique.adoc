@@ -89,13 +89,13 @@ _Figure 4. Diagramme de Classes (V.1)_
 
 * Application : 
 ** application : DailyBank : main() de départ
-** application.control : 
-** application.tools : 
-** application.view : 
-* Model : 
-** model.data : 
-** model.orm : 
-** model.orm.exception : 
+** application.control : Ce package est responsable de la gestion de la logique de contrôle de l'application. Il contient des classes ou des fonctions qui gèrent les interactions avec l'utilisateur, la validation des entrées et coordonnent la circulation des données au sein de l'application.
+** application.tools : Le package application.tools fournit des fonctions utilitaires ou des classes couramment utilisées dans l'application. Ces outils aident à simplifier le développement et à améliorer l'organisation du code en fournissant des fonctionnalités réutilisables.
+** application.view : Le package application.view se concentre sur les aspects de l'interface utilisateur (IU) de l'application.
+* Model :
+** model.data : Le package model.data sert à décrire les différents objets utilisés (AgenceBancaire, Client ,ect...). 
+** model.orm : Le package model.orm est chargé de la gestion des données dans l'application. Ce package inclut des fonctions pour récupérer des données à partir d'une base de données, les sauvegarder ou effectuer des transformations de données.
+** model.orm.exception : Le package model.orm.exception regroupe des exceptions qui sont utilisées pour gérer les erreurs liées aux opérations de base de données ou à la manipulation des données.
 
 [[elements_essentiels]]
 === 2.4 Elements essentiels
