@@ -169,4 +169,34 @@ public class Access_BD_CompteCourant {
 			throw new DataAccessException(Table.CompteCourant, Order.UPDATE, "Erreur accès", e);
 		}
 	}
+	
+	public void creerCompteCourant(CompteCourant cc) throws DataAccessException, DatabaseConnexionException {
+		try {
+			Connection con = LogToDatabase.getConnexion();
+
+			String query = "INSERT INTO CompteCourant (idNumCompte, debitAutorise, solde, estCloture, idNumCli)"
+					+ " VALUES (?, ?, ?, ?, ?)";
+
+			PreparedStatement pst = con.prepareStatement(query);
+			pst.setInt(1, cc.idNumCompte);
+			pst.setInt(2, cc.debitAutorise);
+			pst.setDouble(3, cc.solde);
+			pst.setString(4, cc.estCloture);
+			pst.setInt(5, cc.idNumCli);
+
+			System.err.println(query);
+
+			int result = pst.executeUpdate();
+			pst.close();
+			if (result != 1) {
+				con.rollback();
+				throw new DataAccessException(Table.CompteCourant, Order.INSERT, "Insertion anormale (insert de moins ou plus d'une ligne)", null);
+			}
+			con.commit();
+		} catch (SQLException e) {
+			throw new DataAccessException(Table.CompteCourant, Order.INSERT, "Erreur accès", e);
+		}
+	}
+
+	
 }
