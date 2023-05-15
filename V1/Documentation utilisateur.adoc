@@ -55,6 +55,13 @@ Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut égal
 
 [[creer_compte]]
 ==== 3.1.3 Créer un compte - Julien
+Pour créer un compte, il est nécessaire de se connecté en tant que Guichetier, il est aussi possible de le faire en étant chef d'agence.
+Après s'être connecté, nous devons cliquer sur Gestion/Clients afin de rechercher le client que nous voulons créer de compte.
+
+En cliquant sur nouveau compte, cela fait apparaître une nouvelle fenêtre où nous pouvons renseigner toutes les informations nécessaires à la création du compte, le montant maximum du découvert (argent négatif sur le compte), si nous voulons ajouté un montant d'argent dès la création du compte, l'ID du Client, de l'agence et son numéro de compte sont ajouté automatiquement.
+
+Une fois validé, le compte bancaire du client est ajouté avec succès et est prêt à être utiliser pour divers opérations.
+
 
 [[virement_compte]]
 ==== 3.1.4 Effectuer un virement de compte à compte - Julien
