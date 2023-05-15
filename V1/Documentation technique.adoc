@@ -43,7 +43,7 @@ L’application DailyBank permet de gérer des comptes bancaires de dépôt pour
 image::UseCaseV0.png[]
 
 image::UseCaseV1.png[]
-_Figure 2. Diagramme des Cas d’Utilisation (V.2)_ 
+_Figure 2. Diagramme des Cas d’Utilisation (V.1)_ 
 
 Nous identifions deux types d’utilisateurs de l’application : le guichetier et le chef d’agence.
 
