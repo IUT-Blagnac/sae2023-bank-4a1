@@ -37,6 +37,7 @@ Projet : DailyBank - SAÉ 2.01 et 2.05
 == 1. Presentation de l'application
 L’application DailyBank permet de gérer des comptes bancaires de dépôt pour des clients préalablement créés. Elle dispose de plusieurs fonctionnalités : débiter, créditer un compte, effectuer des virements, consulter un compte, le clôturer, simuler un emprunt ou encore générer un relevé mensuel.
 
+
 [[use_case]]
 === 1.1 Use Case global
 image::UseCaseV2.png[]
@@ -114,9 +115,18 @@ Le diagramme de classes des données global de la base de données dispose de pl
 
 [[creer_compte]]
 ==== 3.1.3 Créer un compte - Julien
+Afin de créer un compte, la méthode nécessaire est manquante dans la V0, il est donc à ajouter dans la classe Access_BD_CompteCourant.java.
+La méthode demande les informations nécessaire à la création du compte et retourne en arrière (rollback) si des informations sont manquante.
+Uns fois cela fait, il faut modifié la méthode CreerNouveauCompte situé dans ComptesManagement.java afin d'appeler la méthode que l'on vient de créer.
+Dans le try catch, un appel de la méthode suffit.
 
 [[virement_compte]]
 ==== 3.1.4 Effectuer un virement de compte à compte - Julien
+L'action du virement n'est visible nulle part dans l'interface du programme, on s'en doute qu'il doit se trouver sur la fenêtre d'opération comme pour effectuer un débit et crédit,
+si l'on s'en tient à cette pensée, le troisième bouton sans texte et grisé en dessous de celui du débit et crédit doit être celui qui mène à l'opération de virement.
+
+On doit donc ajouté une nouvelle fenêtre en créant un nouveau fichier FXML ainsi qu'un controller afin de la gérer, puis enfin une méthode permettant de choisir l'ID du compte ciblé, choisir le montant d'argent.
+Bien sûr, une exception est lancé si le montant est supérieur à la solde du premier compte faisant le virement.
 
 [[cloturer_compte]]
 ==== 3.1.5 Clôturer compte - Manon
