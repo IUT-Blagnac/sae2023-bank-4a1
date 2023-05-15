@@ -39,8 +39,11 @@ L’application DailyBank permet de gérer des comptes bancaires de dépôt pour
 
 [[use_case]]
 === 1.1 Use Case global
-image::UseCaseV2.png[]
-_Figure 1. Diagramme des Cas d’Utilisation (V.2)_ 
+
+image::UseCaseV0.png[]
+
+image::UseCaseV1.png[]
+_Figure 2. Diagramme des Cas d’Utilisation (V.2)_ 
 
 Nous identifions deux types d’utilisateurs de l’application : le guichetier et le chef d’agence.
 
@@ -50,28 +53,11 @@ Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut égal
 [[diagramme_de_classe]]
 === 1.2 Diagramme de classe des données global
 
-image::DiagrammeClassesV2.png[]
-_Figure 2. Diagramme de Classes (V.2)_
+image::DiagrammeClassesV0.png[]
+_Figure 3. Diagramme de Classes (V.0)_
 
-Le diagramme de classes des données global de la base de données dispose de plusieurs tables : +
-
-* Client : a un nom, un prénom, une adresse postale, un email, un numéro de téléphone et un statut estInactif (si un client est inactif ou non) +
-
-* Emprunt : possède un taux d’emprunt, un capital d’emprunt, une durée d’emprunt et une date de début d’emprunt + 
-
-* AssuranceEmprunt : possède un taux d’assurance et un taux de couverture +
-
-* CompteCourant : possède un identifiant numéro compte, un débit autorisé, un solde et son statut estCloture (si un compte est clôturé ou non) +
-
-* Operation : dispose d’un montant, d’une date de début d’opération et d’une date de valeur +
-
-* TypeOperation : représente un chèque, un retrait par carte bancaire, un paiement par carte bancaire ou encore un virement +
-
-* PrelevementAutomatique : possède un montant, une date récurrente et un bénéficiaire +
-
-* AgenceBancaire : dispose d’un nom et d’une adresse postale +
-
-* Employe : a un nom, un prénom, un droit d’accès, un login et un mot de passe +
+image::DiagrammeClassesV1.png[]
+_Figure 4. Diagramme de Classes (V.1)_
 
 [[architecture]]
 == 2. Architecture
