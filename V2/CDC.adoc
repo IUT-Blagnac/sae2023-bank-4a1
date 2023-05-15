@@ -18,6 +18,7 @@ Projet : DailyBank - SAÉ 2.01 et 2.05
 * <<analyse_existant>> 
 * <<analyse_besoins>> 
 ** <<version1>>
+** <<version2>>
 * <<livrables>> 
 * <<analyse_contraintes>> 
 ** <<techniques>>
@@ -67,8 +68,23 @@ L’application doit permettre de gérer des comptes bancaires de dépôt pour d
 
 _CRUD : Create Read Update Delete_ 
 
-image::UseCaseV1.png[] 
+image::uc-initialv1.svg[] 
 _Figure 2. Diagramme des Cas d’Utilisation (V.1)_ 
+
+[[version2]]
+==== Version 2
+* Ce que doit pouvoir faire un Guichetier :
+** Générer un relevé mensuel d’un compte en PDF 
+** Gérer (faire le « CRUD[2] ») les prélèvements automatiques 
+** Effectuer un virement de compte à compte
+** Clôturer un compte
+* Ce que doit pouvoir faire un Chef d’Agence : uniquement les spécifications
+** Effectuer un Débit exceptionnel
+** Simuler un emprunt 
+** Simuler une assurance d'emprunt 
+
+image::uc-initialv2.svg[] 
+_Figure 3. Diagramme des Cas d’Utilisation (V.)_ 
 
 [[livrables]]
 == 4. Livrables
