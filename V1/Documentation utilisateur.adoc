@@ -65,6 +65,8 @@ Une fois validé, le compte bancaire du client est ajouté avec succès et est p
 
 [[virement_compte]]
 ==== 3.1.4 Effectuer un virement de compte à compte - Julien
+Le bouton du virement se situe en dessous pour effectuer le débit et crédit, une fois cliquer dessus il ouvre une toute nouvelle fenêtre permettant de faire un virement d'un même client entre deux de ses comptes.
+Le montant choisis sera versé sur son second compte et retiré de son premier, bien sûr une exception est effectué si le montant est plus grand que le solde actuel. 
 
 [[cloturer_compte]]
 ==== 3.1.5 Clôturer compte - Manon
@@ -86,6 +88,7 @@ Une fois validé, le compte bancaire du client est ajouté avec succès et est p
 
 [[delete]]
 ===== 3.2.1.4 Delete - Julien
+La possiblité de supprimer un compte bancaire d'un client en appuyant sur le bouton nécessaire, cela affichera un avertissement afin de confirmer l'action.
 
 [[resultats]]
 == 4. Résultats produits avec jeux d'essai
