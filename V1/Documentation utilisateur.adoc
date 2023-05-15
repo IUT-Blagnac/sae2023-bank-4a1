@@ -1,0 +1,84 @@
+= DOCUMENTATION UTILISATEUR V1
+
+Version 1 +
+
+Date : 16 mai 2023 +
+
+Equipe : BERNARD Julien, ESTRADE Prescilla, MALIQUE Manon +
+
+Groupe 4A1
+
+Projet : DailyBank - SAÉ 2.01 et 2.05
+
+== Sommaire
+* <<presentation>>
+* <<installation_utilisation>>
+* <<fonctionnement>>
+** <<guichetier>>
+*** <<crediter_compte>>
+*** <<debiter_compte>>
+*** <<creer_compte>>
+*** <<virement_compte>>
+*** <<cloturer_compte>>
+** <<chef_agence>>
+*** <<CRUD>>
+**** <<create>>
+**** <<read>>
+**** <<update>>
+**** <<delete>>
+* <<resultats>> 
+
+[[presentation]]
+== 1. Presentation générale, rôle de l'application
+L’application DailyBank permet de gérer des comptes bancaires de dépôt pour des clients préalablement créés. Elle dispose de plusieurs fonctionnalités : débiter, créditer un compte, effectuer des virements, consulter un compte, le clôturer, simuler un emprunt ou encore générer un relevé mensuel.
+
+L’application dispose de deux types d’utilisateurs : le guichetier et le chef d’agence.
+
+Le guichetier peut créer un nouveau client, modifier ses informations, créer un compte, le consulter, le débiter, le créditer ou encore le clôturer. De plus, il peut effectuer un virement de compte à compte, générer un relevé mensuel d’un compte en PDF et gérer les prélèvements automatiques.
+
+Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut également rendre inactif un client, gérer les employés, effectuer un débit exceptionnel, simuler un emprunt et simuler une assurance d’emprunt.
+
+[[installation_utilisation]]
+== 2. Installation utilisation
+
+[[fonctionnement]]
+== 3. Fonctionnement
+
+[[guichetier]]
+=== 3.1 Guichetier
+
+[[crediter_compte]]
+==== 3.1.1 Créditer un compte - Prescilla
+
+[[debiter_compte]]
+==== 3.1.2 Débiter un compte - Prescilla
+
+[[creer_compte]]
+==== 3.1.3 Créer un compte - Julien
+
+[[virement_compte]]
+==== 3.1.4 Effectuer un virement de compte à compte - Julien
+
+[[cloturer_compte]]
+==== 3.1.5 Clôturer compte - Manon
+
+[[chef_agence]]
+=== 3.2 Chef d'agence
+
+[[CRUD]]
+==== 3.2.1 Gérer (faire le “CRUD”) les employés (guichetier et chef d’agence)
+
+[[create]]
+===== 3.2.1.1 Create - Manon
+
+[[read]]
+===== 3.2.1.2 Read - Manon
+
+[[update]]
+===== 3.2.1.3 Update - Prescilla
+
+[[delete]]
+===== 3.2.1.4 Delete - Julien
+
+[[resultats]]
+== 4. Résultats produits avec jeux d'essai
