@@ -56,12 +56,12 @@ prédeceseurs à ajouter.
 affinez le GANTT V1 pour l'instant, pas besoin du reste.
 reprendre le découpage des taches pour V1.
 affichage du graphe pas optimal, à reprendre.
-| 16/05  | CdC V2final|                                     |  
+| 16/05  | CdC V2final| https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/CDC.adoc (En cours de réalisation)                                     |  
 |         | Gantt V1 Réalisé |                               |     
 |         | Gantt V2 Prevu|         |     
-|         | Doc. Tec. V1 |        |    
-|         | Doc User V1    |        |
-|         | Recette V1  |                      | 
+|         | Doc. Tec. V1 | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Documentation%20technique.adoc (En cours de réalisation)       |    
+|         | Doc User V1    | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Documentation%20utilisateur.adoc (En cours de réalisation)       |
+|         | Recette V1  | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/cahier%20de%20recette.adoc (En cours de réalisation)                     | 
 |         | Suivi projet V1|   | 
 | 26/05   | Gantt V2  réalisé    |       | 
 |         | Doc. Util. V2 |         |         
