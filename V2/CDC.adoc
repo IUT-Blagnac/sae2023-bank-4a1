@@ -47,6 +47,9 @@ L’application s’adresse a deux types d’utilisateurs : le guichetier et le
 
 [[analyse_existant]]
 == 2. Analyse de l’existant
+
+La banque DailyBank dispose d'une application existante dont voici les fonctionnalités.
+
 === Un guichetier peut :
 * Modifier informations client (adresse, téléphone, …)
 * Créer un nouveau client
@@ -56,6 +59,7 @@ L’application s’adresse a deux types d’utilisateurs : le guichetier et le
 === Un chef d’agence peut :
 * Rendre inactif un client
 
+L'application est assez limité car elle ne permet de créer un nouveau compte, de le modifier, de créditer un compte ou encore d'effectuer un virement.
 image::UseCaseV0.png[]
 
 L'on remarque deux utilisateurs : le guichetier et le chef d'agence. Le guichetier peut créer un nouveau client, modifier ses informations, consulter un compte et le débiter. 
@@ -112,6 +116,8 @@ Le chef d'agence, a la possibilité d'effectuer un débit exceptionnel, simuler 
     ** «Batch» :
         *** Générer les relevés mensuels en PDF
         *** Exécuter les prélèvements automatiques
+
+_BATCH : écart entre le virement et le moment d'apparition sur le compte_ 
 
 [[regles_gestion]]
 === Règles de gestion
