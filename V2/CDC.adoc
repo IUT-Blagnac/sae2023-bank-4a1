@@ -83,7 +83,7 @@ _Figure 2. Diagramme des Cas d’Utilisation (V.1)_
 ** Simuler un emprunt 
 ** Simuler une assurance d'emprunt 
 
-image::UseCaseV2.png[]
+image::Images/UseCaseV2.png[]
 _Figure 3. Diagramme des Cas d’Utilisation (V.2)_
 
 [[livrables]]
