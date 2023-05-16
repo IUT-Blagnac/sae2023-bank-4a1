@@ -78,7 +78,13 @@ Une fois cliqué sur Ajouter, le compte client est enregistré dans la base de d
 [[Consulter_un_compte]]
 ==== 3.1.2 Consulter un compte
 
+Afin de consulter un compte, il faut se connecter à l'application en tant que guichetier. Puis cliquer sur Gestion et sélectionner Clients. Après, il faut cliquer sur Rechercher puis choisir un client. Par la suite, l'on sélectionne Comptes client qui ouvre une fenêtre affichant les comptes du client.
 
+image::Images/consulter_compte1.png[]
+
+On sélectionne ensuite le compte voulu et en appuyant sur le bouton Voir opérations toutes les opérations effectuées sur le compte s'affichent.
+
+image::Images/consulter_compte2.png[]
 
 [[Débiter_un_compte]]
 ==== 3.1.2 Débiter un compte (BD)
