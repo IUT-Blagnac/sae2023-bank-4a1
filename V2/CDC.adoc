@@ -50,7 +50,7 @@ L’application s’adresse a deux types d’utilisateurs : le guichetier et le
 === Un chef d’agence peut :
 * Rendre inactif un client
 
-image::UseCaseV0.png[]
+image::Images/UseCaseV0.png[]
 
 [[analyse_besoins]]
 == 3. Analyse des besoins
@@ -68,7 +68,7 @@ L’application doit permettre de gérer des comptes bancaires de dépôt pour d
 
 _CRUD : Create Read Update Delete_ 
 
-image::UseCaseV1.png[] 
+image::Images/UseCaseV1.png[] 
 _Figure 2. Diagramme des Cas d’Utilisation (V.1)_ 
 
 [[version2]]
@@ -83,7 +83,7 @@ _Figure 2. Diagramme des Cas d’Utilisation (V.1)_
 ** Simuler un emprunt 
 ** Simuler une assurance d'emprunt 
 
-image::UseCaseV2.png[]
+image::Images/UseCaseV2.png[]
 _Figure 3. Diagramme des Cas d’Utilisation (V.2)_
 
 [[livrables]]
