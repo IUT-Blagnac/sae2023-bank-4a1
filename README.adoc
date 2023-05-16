@@ -59,13 +59,13 @@ affichage du graphe pas optimal, à reprendre.
 | 16/05  | CdC V2final| https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/CDC.adoc                                 |  
 |         | Gantt V1 Réalisé |    Gantt PDF : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Gestion%20et%20dvpt%20appV1%20Réalisé.pdf
                                   Gantt PNG : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Gestion%20et%20dvpt%20appV1%20Réalisé.png    |     
-|         | Gantt V2 Prevu|         |     
+|         | Gantt V2 Prevu|   Gantt PDF : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Gestion%20et%20dvpt%20appV2.pdf
+                                    Gantt PNG : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Gestion%20et%20dvpt%20appV2.png       |     
 |         | Doc. Tec. V1 | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Documentation%20technique.adoc |    
 |         | Doc User V1    | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Documentation%20utilisateur.adoc |
 |         | Recette V1  | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/cahier%20de%20recette.adoc                  | 
 |         | Suivi projet V1|   | 
-| 26/05   | Gantt V2  réalisé    |   Gantt PDF : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Gestion%20et%20dvpt%20appV2.pdf
-                                    Gantt PNG : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Gestion%20et%20dvpt%20appV2.png      | 
+| 26/05   | Gantt V2  réalisé    |      | 
 |         | Doc. Util. V2 |         |         
 |         | Doc. Tec. V2 |                |     
 |         | Code V2    |                     | 
