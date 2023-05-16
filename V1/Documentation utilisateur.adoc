@@ -58,6 +58,10 @@ Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut égal
 [[Modifier_les_informations_des_clients]]
 ==== 3.1.1 Modifier informations clients
 
+Pour modifier les informations d'un client, le guichetier doit se connecter à l'application. Puis cliquer sur Gestion et sélectionner Clients. Ensuite, il faut cliquer sur Rechercher puis choisir le client dont l'on souhaite modifier ses informations. Par la suite, l'on sélectionne Modifier client, l'on modifie les informations et valide en cliquant sur le bouton Modifier.
+
+image::Images/Modifier_clients.png[]
+
 [[Créer_nouveau_client]]
 ==== 3.1.2 Créer nouveau client
 Le guichetier a la possibilité de créer un compte d'informations d'un client afin qu'il puisse être reconnu par la banque et avoir un compte bancaire.
@@ -74,8 +78,15 @@ Une fois cliqué sur Ajouter, le compte client est enregistré dans la base de d
 [[Consulter_un_compte]]
 ==== 3.1.2 Consulter un compte
 
+
+
 [[Débiter_un_compte]]
 ==== 3.1.2 Débiter un compte (BD)
+Pour débiter un compte, il faut se connecter à l’application en tant que guichetier. Dans une nouvelle fenêtre, il faut cliquer sur Gestion puis sur Clients. On accéde ainsi aux comptes clients à l’aide du bouton Comptes client. Dans cette nouvelle fênetre, on clique sur le bouton Voir opérations qui affiche l’historique des opérations. Par la suite, l’on clique sur Enregistrer Crédit, une fenêtre s'affiche et il faut entrer le montant à déposer et choisir le type d’opération : dépôt espèces ou dépôt chèque. 
+
+Pour valider le crédit ou l’annuler, il faut choisir soit le bouton EffectuerDébit ou le bouton Annuler débit.
+
+image::Images/debiter_compte.png[]
 
 [[chef_agencev0]]
 === 3.2 Chef_agence
@@ -131,8 +142,12 @@ Une fois validé, le compte bancaire du client est ajouté avec succès et est p
 Le bouton du virement se situe en dessous pour effectuer le débit et crédit, une fois cliquer dessus il ouvre une toute nouvelle fenêtre permettant de faire un virement d'un même client entre deux de ses comptes.
 Le montant choisis sera versé sur son second compte et retiré de son premier, bien sûr une exception est effectué si le montant est plus grand que le solde actuel. 
 
+_En cours de réalisation_
+
 [[cloturer_compte]]
 ==== 4.1.5 Clôturer compte - Manon
+
+_En cours de réalisation_
 
 [[chef_agencev1]]
 === 4.2 Chef d'agence
@@ -143,17 +158,25 @@ Le montant choisis sera versé sur son second compte et retiré de son premier, 
 [[create]]
 ===== 4.2.1.1 Create - Manon
 
+_En cours de réalisation_
+
 [[read]]
 ===== 4.2.1.2 Read - Manon
+
+_En cours de réalisation_
 
 [[update]]
 ===== 4.2.1.3 Update - Prescilla
 Cette fonctionnalité permet de modifier les employés : guichetier et chef d'agence. Pour cela, il faut se connecter en tant que chef d'agence puis cliquer sur le bouton Gestion et choisir Employés. Une nouvelle fenêtre s'ouvre et affiche les employés. 
 Ensuite, il faut sélectionner un employé puis cliquer sur le bouton Modifier employés. Dès lors, l'on peut modifier les informations de l'employé (nom, prénom, adresse, téléphone, e-mail). Pour valider ces modifications, l'on doit cliquer sur Modifier. 
 
+_En cours de réalisation_
+
 [[delete]]
 ===== 4.2.1.4 Delete - Julien
 La possiblité de supprimer un compte bancaire d'un client en appuyant sur le bouton nécessaire, cela affichera un avertissement afin de confirmer l'action.
+
+_En cours de réalisation_
 
 [[resultats]]
 == 5. Résultats produits avec jeux d'essai
