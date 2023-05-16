@@ -13,7 +13,7 @@ Projet : DailyBank - SAÉ 2.01 et 2.05
 == Sommaire
 * <<presentation>>
 * <<installation_utilisation>>
-* <<fonctionnementV0>>
+* <<fonctionnementv0>>
 ** <<guichetier>>
 *** <<Modifier les informations des clients>>
 *** <<Créer nouveau client>>
@@ -21,7 +21,7 @@ Projet : DailyBank - SAÉ 2.01 et 2.05
 *** <<Débiter un compte>>
 ** <<chef_agence>>
 *** <<Rendre inactif un client>>
-* <<fonctionnementV1>>
+* <<fonctionnementv1>>
 ** <<guichetier>>
 *** <<crediter_compte>>
 *** <<debiter_compte>>
@@ -49,7 +49,7 @@ Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut égal
 [[installation_utilisation]]
 == 2. Installation utilisation
 
-[[fonctionnement]]
+[[fonctionnementv0]]
 == 3. Fonctionnement de la V0
 
 [[guichetier]]
@@ -74,7 +74,7 @@ Le guichetier a la possibilité de créer un compte d'informations d'un client a
 [[Rendre inactif un client]]
 ==== 3.2.1 Rendre inactif un client
 
-[[fonctionnement]]
+[[fonctionnementv1]]
 == 4. Fonctionnement de la V1
 
 [[guichetier]]
