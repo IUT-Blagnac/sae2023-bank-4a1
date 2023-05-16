@@ -95,6 +95,8 @@ image::Images/Connexion.png[]
 
 En cliquant sur nouveau compte, cela fait apparaître une nouvelle fenêtre où nous pouvons renseigner toutes les informations nécessaires à la création du compte, le montant maximum du découvert (argent négatif sur le compte), si nous voulons ajouté un montant d'argent dès la création du compte, l'ID du Client, de l'agence et son numéro de compte sont ajouté automatiquement.
 
+image::Images/creer_compte.png[]
+
 Une fois validé, le compte bancaire du client est ajouté avec succès et est prêt à être utiliser pour divers opérations.
 
 
