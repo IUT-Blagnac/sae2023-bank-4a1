@@ -39,7 +39,7 @@ Le client est la banque DailyBank. Elle souhaite développer une application JAV
 === 1.2 Objectif
 Nous travaillerons à partir d’une application existante « Daily Bank » qu’il faudra adapter aux nouveaux besoins de la banque. Nous réaliserons une première version puis une deuxième version de l’application. La banque, à travers cette application veut moderniser ses outils et services bancaires. 
 
-L’objectif de l'application est de gérer des comptes bancaires de dépôt de clients. Elle doit permettre de créer un compte, le consulter, le débiter, le créditer, effectuer un virement et le clôturer. De plus, elle dispose de fonctionnalités telles que effectuer un virement, générer un relevé mensuel d’un compte en PDF, gérer les employés, les prélèvements automatiques, simuler un emprunt et une assurance d’emprunt
+L’objectif de l'application est de gérer des comptes bancaires de dépôt de clients. Elle doit permettre de créer un compte, le consulter, le débiter, le créditer, effectuer un virement et le clôturer. De plus, elle dispose de fonctionnalités telles que effectuer un virement, générer un relevé mensuel d’un compte en PDF, gérer les employés, les prélèvements automatiques, simuler un emprunt et une assurance d’emprunt.
 
 [[identification_utilisateurs]]
 === 1.3 Identification des utilisateurs
