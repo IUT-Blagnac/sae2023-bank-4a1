@@ -53,7 +53,7 @@ Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut égal
 == 3. Fonctionnement de la V0
 
 [[guichetier]]
-=== 3.1 Guichetier
+Guichetier
 
 [[Modifier les informations des clients]]
 === 3.1.1 Modifier informations clients
