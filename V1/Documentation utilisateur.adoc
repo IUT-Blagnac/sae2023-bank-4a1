@@ -54,6 +54,7 @@ Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut égal
 
 [[guichetierv0]]
 === 3.1 Guichetier
+Le guichetier a accès à plusieurs fonctionnalités : modifier les informations des clients, créer un nouveau client, consulter un compte et débiter un compte. 
 
 [[Modifier_les_informations_des_clients]]
 ==== 3.1.1 Modifier informations clients
@@ -97,6 +98,8 @@ image::Images/debiter_compte.png[]
 [[chef_agencev0]]
 === 3.2 Chef_agence
 
+Le chef d'agence a la possibilité de rendre inactif un client.
+
 [[Rendre_inactif_un_client]]
 ==== 3.2.1 Rendre inactif un client
 
@@ -105,6 +108,8 @@ image::Images/debiter_compte.png[]
 
 [[guichetierv1]]
 === 4.1 Guichetier
+
+Le guichetier a accès à plusieurs fonctionnalités : créditer un compte, débiter un compte, créer un compte, effectuer un virement et clôturer un compte. 
 
 [[crediter_compte]]
 ==== 4.1.1 Créditer un compte - Prescilla
@@ -157,6 +162,8 @@ _En cours de réalisation_
 
 [[chef_agencev1]]
 === 4.2 Chef d'agence
+
+Le chef d'agence a pour fonctionnalités : gérer les employés qui sont le guichetier et le chef d'agence. C'est-à-dire gérer le CRUD : Créer un employé, Consulter un employé, Modifier les informations d'un employé et Supprimer un employé.
 
 [[CRUD]]
 ==== 4.2.1 Gérer (faire le “CRUD”) les employés (guichetier et chef d’agence)
