@@ -61,6 +61,15 @@ Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut égal
 [[Créer_nouveau_client]]
 ==== 3.1.2 Créer nouveau client
 Le guichetier a la possibilité de créer un compte d'informations d'un client afin qu'il puisse être reconnu par la banque et avoir un compte bancaire.
+Pour créer un compte client, il est nécessaire de se connecté en tant que Guichetier.
+
+image::Images/Connexion.png[]
+
+Après s'être connecté, nous devons cliquer sur Gestion/Clients, cela ouvre une nouvelle fenêtre dont recherche de clients, en bas à droite se trouve le bouton nous permettant de créer un compte client, on renseigne toutes  les informations nécessaires.
+
+image::Images/creer_compte.png[]
+
+Une fois cliqué sur Ajouter, le compte client est enregistré dans la base de données est peut désormais posséder un compte bancaire en demandant à un guichetier.
 
 [[Consulter_un_compte]]
 ==== 3.1.2 Consulter un compte
@@ -91,9 +100,15 @@ Le guichetier a la possibilité de créer un compte d'informations d'un client a
 Pour créer un compte, il est nécessaire de se connecté en tant que Guichetier, il est aussi possible de le faire en étant chef d'agence.
 Après s'être connecté, nous devons cliquer sur Gestion/Clients afin de rechercher le client que nous voulons créer de compte.
 
-image::Images/Connexion.png[]
+image::Images/recherche_client.png[]
 
-En cliquant sur nouveau compte, cela fait apparaître une nouvelle fenêtre où nous pouvons renseigner toutes les informations nécessaires à la création du compte, le montant maximum du découvert (argent négatif sur le compte), si nous voulons ajouté un montant d'argent dès la création du compte, l'ID du Client, de l'agence et son numéro de compte sont ajouté automatiquement.
+Une nouvelle fenêtre affiche les comptes bancaires du client.
+
+image::Images/voir_compte_bancaires.png[]
+
+En cliquant sur nouveau compte, cela fait apparaître une nouvelle fenêtre où nous pouvons renseigner toutes les informations nécessaires à la création du compte, le montant maximum du découvert (argent négatif sur le compte), si nous voulons ajouté un montant d'argent dès la création du compte, l'ID du Client, de l'agence et son numéro de compte est ajouté automatiquement.
+
+image::Images/creer_compte_bancaire.png[]
 
 Une fois validé, le compte bancaire du client est ajouté avec succès et est prêt à être utiliser pour divers opérations.
 
