@@ -61,6 +61,15 @@ Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut égal
 [[Créer_nouveau_client]]
 ==== 3.1.2 Créer nouveau client
 Le guichetier a la possibilité de créer un compte d'informations d'un client afin qu'il puisse être reconnu par la banque et avoir un compte bancaire.
+Pour créer un compte client, il est nécessaire de se connecter en tant que Guichetier.
+
+image::Images/Connexion.png[]
+
+Après s'être connecté, nous devons cliquer sur Gestion/Clients, cela ouvre une nouvelle fenêtre dont recherche de clients, en bas à droite se trouve le bouton nous permettant de créer un compte client, on renseigne toutes  les informations nécessaires.
+
+image::Images/creer_compte.png[]
+
+Une fois cliqué sur Ajouter, le compte client est enregistré dans la base de données est peut désormais posséder un compte bancaire en demandant à un guichetier.
 
 [[Consulter_un_compte]]
 ==== 3.1.2 Consulter un compte
@@ -89,7 +98,7 @@ En cliquant sur le bouton Enregistrer Crédit il faut entrer le montant à dépo
 
 Enfin, à l’aide du bouton EffectuerDébit l’on peut valider le crédit et en cliquant sur Annuler débit cela annule le débit.
 
-image::crediter_compte.png[]
+image::Images/crediter_compte.png[]
 
 [[debiter_compte]]
 ==== 4.1.2 Débiter un compte - Prescilla
@@ -98,7 +107,7 @@ Afin de débiter un compte, il faut se connecter à l’application en tant que 
 
 L’on peut valider le crédit ou l’annuler, en choisissant soit le bouton EffectuerDébit ou Annuler débit.
 
-image::debiter_compte.png[]
+image::Images/debiter_compte.png[]
 
 [[creer_compte]]
 ==== 4.1.3 Créer un compte - Julien
@@ -108,7 +117,6 @@ Après s'être connecté, nous devons cliquer sur Gestion/Clients afin de recher
 En cliquant sur nouveau compte, cela fait apparaître une nouvelle fenêtre où nous pouvons renseigner toutes les informations nécessaires à la création du compte, le montant maximum du découvert (argent négatif sur le compte), si nous voulons ajouté un montant d'argent dès la création du compte, l'ID du Client, de l'agence et son numéro de compte sont ajouté automatiquement.
 
 Une fois validé, le compte bancaire du client est ajouté avec succès et est prêt à être utiliser pour divers opérations.
-
 
 [[virement_compte]]
 ==== 4.1.4 Effectuer un virement de compte à compte - Julien
@@ -132,6 +140,8 @@ Le montant choisis sera versé sur son second compte et retiré de son premier, 
 
 [[update]]
 ===== 4.2.1.3 Update - Prescilla
+Cette fonctionnalité permet de modifier les employés : guichetier et chef d'agence. Pour cela, il faut se connecter en tant que chef d'agence puis cliquer sur le bouton Gestion et choisir Employés. Une nouvelle fenêtre s'ouvre et affiche les employés. 
+Ensuite, il faut sélectionner un employé puis cliquer sur le bouton Modifier employés. Dès lors, l'on peut modifier les informations de l'employé (nom, prénom, adresse, téléphone, e-mail). Pour valider ces modifications, l'on doit cliquer sur Modifier. 
 
 [[delete]]
 ===== 4.2.1.4 Delete - Julien
