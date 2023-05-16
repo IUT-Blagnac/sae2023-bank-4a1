@@ -60,6 +60,7 @@ Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut égal
 
 [[Créer nouveau client]]
 ==== 3.1.2 Créer nouveau client
+Le guichetier a la possibilité de créer un compte d'informations d'un client afin qu'il puisse être reconnu par la banque et avoir un compte bancaire.
 
 [[Consulter un compte]]
 ==== 3.1.2 Consulter un compte
