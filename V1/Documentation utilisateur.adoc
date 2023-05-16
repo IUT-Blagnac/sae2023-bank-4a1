@@ -14,21 +14,21 @@ Projet : DailyBank - SAÉ 2.01 et 2.05
 * <<presentation>>
 * <<installation_utilisation>>
 * <<fonctionnementv0>>
-** <<guichetier>>
-*** <<Modifier les informations des clients>>
-*** <<Créer nouveau client>>
-*** <<Consulter un compte>>
-*** <<Débiter un compte>>
-** <<chef_agence>>
-*** <<Rendre inactif un client>>
+** <<guichetierv0>>
+*** <<Modifier_les_informations_des_clients>>
+*** <<Créer_nouveau_client>>
+*** <<Consulter_un_compte>>
+*** <<Débiter_un_compte>>
+** <<chef_agencev0>>
+*** <<Rendre_inactif_un_client>>
 * <<fonctionnementv1>>
-** <<guichetier>>
+** <<guichetierv1>>
 *** <<crediter_compte>>
 *** <<debiter_compte>>
 *** <<creer_compte>>
 *** <<virement_compte>>
 *** <<cloturer_compte>>
-** <<chef_agence>>
+** <<chef_agencev1>>
 *** <<CRUD>>
 **** <<create>>
 **** <<read>>
@@ -52,32 +52,32 @@ Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut égal
 [[fonctionnementv0]]
 == 3. Fonctionnement de la V0
 
-[[guichetier]]
+[[guichetierv0]]
 === 3.1 Guichetier
 
-[[Modifier les informations des clients]]
+[[Modifier_les_informations_des_clients]]
 ==== 3.1.1 Modifier informations clients
 
-[[Créer nouveau client]]
+[[Créer_nouveau_client]]
 ==== 3.1.2 Créer nouveau client
 Le guichetier a la possibilité de créer un compte d'informations d'un client afin qu'il puisse être reconnu par la banque et avoir un compte bancaire.
 
-[[Consulter un compte]]
+[[Consulter_un_compte]]
 ==== 3.1.2 Consulter un compte
 
-[[Débiter un compte]]
+[[Débiter_un_compte]]
 ==== 3.1.2 Débiter un compte (BD)
 
-[[chef_agence]]
+[[chef_agencev0]]
 === 3.2 Chef_agence
 
-[[Rendre inactif un client]]
+[[Rendre_inactif_un_client]]
 ==== 3.2.1 Rendre inactif un client
 
 [[fonctionnementv1]]
 == 4. Fonctionnement de la V1
 
-[[guichetier]]
+[[guichetierv1]]
 === 4.1 Guichetier
 
 [[crediter_compte]]
@@ -104,7 +104,7 @@ Le montant choisis sera versé sur son second compte et retiré de son premier, 
 [[cloturer_compte]]
 ==== 4.1.5 Clôturer compte - Manon
 
-[[chef_agence]]
+[[chef_agencev1]]
 === 4.2 Chef d'agence
 
 [[CRUD]]
