@@ -91,6 +91,9 @@ image::debiter_compte.png[]
 [[update]]
 ===== 3.2.1.3 Update - Prescilla
 
+Cette fonctionnalité permet de modifier les employés : guichetier et chef d'agence. Pour cela, il faut se connecter en tant que chef d'agence puis cliquer sur le bouton Gestion et choisir Employés. Une nouvelle fenêtre s'ouvre et affiche les employés. 
+Ensuite, il faut sélectionner un employé puis cliquer sur le bouton Modifier employés. Dès lors, l'on peut modifier les informations de l'employé (nom, prénom, adresse, téléphone, e-mail). Pour valider ces modifications, l'on doit cliquer sur Modifier. 
+
 [[delete]]
 ===== 3.2.1.4 Delete - Julien
 
