@@ -13,7 +13,15 @@ Projet : DailyBank - SAÉ 2.01 et 2.05
 == Sommaire
 * <<presentation>>
 * <<installation_utilisation>>
-* <<fonctionnement>>
+* <<fonctionnementV0>>
+** <<guichetier>>
+*** <<Modifier les informations des clients>>
+*** <<Créer nouveau client>>
+*** <<Consulter un compte>>
+*** <<Débiter un compte>>
+** <<chef_agence>>
+*** <<Rendre inactif un client>>
+* <<fonctionnementV1>>
 ** <<guichetier>>
 *** <<crediter_compte>>
 *** <<debiter_compte>>
@@ -115,4 +123,4 @@ Le montant choisis sera versé sur son second compte et retiré de son premier, 
 La possiblité de supprimer un compte bancaire d'un client en appuyant sur le bouton nécessaire, cela affichera un avertissement afin de confirmer l'action.
 
 [[resultats]]
-== 4. Résultats produits avec jeux d'essai
+== 5. Résultats produits avec jeux d'essai
