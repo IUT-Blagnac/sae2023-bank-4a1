@@ -53,25 +53,25 @@ Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut égal
 == 3. Fonctionnement de la V0
 
 [[guichetier]]
-=== 3.0 Guichetier
+=== 3.1 Guichetier
 
 [[Modifier les informations des clients]]
-=== 3.1.1 Modifier informations clients
+==== 3.1.1 Modifier informations clients
 
 [[Créer nouveau client]]
-=== 3.1.2 Créer nouveau client
+==== 3.1.2 Créer nouveau client
 
 [[Consulter un compte]]
-=== 3.1.2 Consulter un compte
+==== 3.1.2 Consulter un compte
 
 [[Débiter un compte]]
-=== 3.1.2 Débiter un compte (BD)
+==== 3.1.2 Débiter un compte (BD)
 
 [[chef_agence]]
 === 3.2 Chef_agence
 
 [[Rendre inactif un client]]
-=== 3.2.1Rendre inactif un client
+==== 3.2.1 Rendre inactif un client
 
 [[fonctionnement]]
 == 4. Fonctionnement de la V1
