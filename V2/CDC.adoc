@@ -68,7 +68,7 @@ L’application doit permettre de gérer des comptes bancaires de dépôt pour d
 
 _CRUD : Create Read Update Delete_ 
 
-image::V2/Images/UseCaseV1.png[] 
+image::Images/UseCaseV1.png[] 
 _Figure 2. Diagramme des Cas d’Utilisation (V.1)_ 
 
 [[version2]]
