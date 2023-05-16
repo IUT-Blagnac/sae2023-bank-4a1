@@ -42,19 +42,43 @@ Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut égal
 == 2. Installation utilisation
 
 [[fonctionnement]]
-== 3. Fonctionnement
+== 3. Fonctionnement de la V0
 
 [[guichetier]]
 === 3.1 Guichetier
 
+[[Modifier les informations des clients]]
+=== 3.1.1 Modifier informations clients
+
+[[Créer nouveau client]]
+=== 3.1.2 Créer nouveau client
+
+[[Consulter un compte]]
+=== 3.1.2 Consulter un compte
+
+[[Débiter un compte]]
+=== 3.1.2 Débiter un compte (BD)
+
+[[chef_agence]]
+=== 3.2 Chef_agence
+
+[[Rendre inactif un client]]
+=== 3.2.1Rendre inactif un client
+
+[[fonctionnement]]
+== 4. Fonctionnement de la V1
+
+[[guichetier]]
+=== 4.1 Guichetier
+
 [[crediter_compte]]
-==== 3.1.1 Créditer un compte - Prescilla
+==== 4.1.1 Créditer un compte - Prescilla
 
 [[debiter_compte]]
-==== 3.1.2 Débiter un compte - Prescilla
+==== 4.1.2 Débiter un compte - Prescilla
 
 [[creer_compte]]
-==== 3.1.3 Créer un compte - Julien
+==== 4.1.3 Créer un compte - Julien
 Pour créer un compte, il est nécessaire de se connecté en tant que Guichetier, il est aussi possible de le faire en étant chef d'agence.
 Après s'être connecté, nous devons cliquer sur Gestion/Clients afin de rechercher le client que nous voulons créer de compte.
 
@@ -64,30 +88,30 @@ Une fois validé, le compte bancaire du client est ajouté avec succès et est p
 
 
 [[virement_compte]]
-==== 3.1.4 Effectuer un virement de compte à compte - Julien
+==== 4.1.4 Effectuer un virement de compte à compte - Julien
 Le bouton du virement se situe en dessous pour effectuer le débit et crédit, une fois cliquer dessus il ouvre une toute nouvelle fenêtre permettant de faire un virement d'un même client entre deux de ses comptes.
 Le montant choisis sera versé sur son second compte et retiré de son premier, bien sûr une exception est effectué si le montant est plus grand que le solde actuel. 
 
 [[cloturer_compte]]
-==== 3.1.5 Clôturer compte - Manon
+==== 4.1.5 Clôturer compte - Manon
 
 [[chef_agence]]
-=== 3.2 Chef d'agence
+=== 4.2 Chef d'agence
 
 [[CRUD]]
-==== 3.2.1 Gérer (faire le “CRUD”) les employés (guichetier et chef d’agence)
+==== 4.2.1 Gérer (faire le “CRUD”) les employés (guichetier et chef d’agence)
 
 [[create]]
-===== 3.2.1.1 Create - Manon
+===== 4.2.1.1 Create - Manon
 
 [[read]]
-===== 3.2.1.2 Read - Manon
+===== 4.2.1.2 Read - Manon
 
 [[update]]
-===== 3.2.1.3 Update - Prescilla
+===== 4.2.1.3 Update - Prescilla
 
 [[delete]]
-===== 3.2.1.4 Delete - Julien
+===== 4.2.1.4 Delete - Julien
 La possiblité de supprimer un compte bancaire d'un client en appuyant sur le bouton nécessaire, cela affichera un avertissement afin de confirmer l'action.
 
 [[resultats]]
