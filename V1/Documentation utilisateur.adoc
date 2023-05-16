@@ -53,7 +53,7 @@ Afin d’utiliser le programme de la banque, il est téléchargable et exécutab
 
 Un jar file sera trouvable pour les utilisateurs et l’exécuter ouvrira une fenêtre d’accueil dont une connexion est demandée systématiquement avant de continuer.
 
-Image::Images/Accueil.png[]
+image::Images/Accueil.png[]
 
 Les utilisateurs peuvent désormais utiliser l’application et chacune des opérations et possibilités sont expliquées dans le document utilisateur ci-dessous.
 
