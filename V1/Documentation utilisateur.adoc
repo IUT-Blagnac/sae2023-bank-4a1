@@ -14,18 +14,27 @@ Projet : DailyBank - SAÉ 2.01 et 2.05
 * <<presentation>>
 * <<installation_utilisation>>
 * <<fonctionnement>>
-** <<guichetier>>
-*** <<crediter_compte>>
-*** <<debiter_compte>>
-*** <<creer_compte>>
-*** <<virement_compte>>
-*** <<cloturer_compte>>
-** <<chef_agence>>
-*** <<CRUD>>
-**** <<create>>
-**** <<read>>
-**** <<update>>
-**** <<delete>>
+** <<fonctionnementv0>>
+*** <<guichetierv0>>
+**** <<Modifier_les_informations_des_clients>>
+**** <<Créer_nouveau_client>>
+**** <<Consulter_un_compte>>
+**** <<Débiter_un_compte>>
+*** <<chef_agencev0>>
+**** <<Rendre_inactif_un_client>>
+** <<fonctionnementv1>>
+*** <<guichetierv1>>
+**** <<crediter_compte>>
+**** <<debiter_compte>>
+**** <<creer_compte>>
+**** <<virement_compte>>
+**** <<cloturer_compte>>
+*** <<chef_agencev1>>
+**** <<CRUD>>
+***** <<create>>
+***** <<read>>
+***** <<update>>
+***** <<delete>>
 * <<resultats>> 
 
 [[presentation]]
@@ -41,14 +50,48 @@ Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut égal
 [[installation_utilisation]]
 == 2. Installation utilisation
 
-[[fonctionnement]]
-== 3. Fonctionnement
+[[fonctionnementv0]]
+== 3. Fonctionnement de la V0
 
-[[guichetier]]
+[[guichetierv0]]
 === 3.1 Guichetier
 
+[[Modifier_les_informations_des_clients]]
+==== 3.1.1 Modifier informations clients
+
+[[Créer_nouveau_client]]
+==== 3.1.2 Créer nouveau client
+Le guichetier a la possibilité de créer un compte d'informations d'un client afin qu'il puisse être reconnu par la banque et avoir un compte bancaire.
+Pour créer un compte client, il est nécessaire de se connecter en tant que Guichetier.
+
+image::Images/Connexion.png[]
+
+Après s'être connecté, nous devons cliquer sur Gestion/Clients, cela ouvre une nouvelle fenêtre dont recherche de clients, en bas à droite se trouve le bouton nous permettant de créer un compte client, on renseigne toutes  les informations nécessaires.
+
+image::Images/creer_compte.png[]
+
+Une fois cliqué sur Ajouter, le compte client est enregistré dans la base de données est peut désormais posséder un compte bancaire en demandant à un guichetier.
+
+[[Consulter_un_compte]]
+==== 3.1.2 Consulter un compte
+
+[[Débiter_un_compte]]
+==== 3.1.2 Débiter un compte (BD)
+
+[[chef_agencev0]]
+=== 3.2 Chef_agence
+
+[[Rendre_inactif_un_client]]
+==== 3.2.1 Rendre inactif un client
+
+[[fonctionnementv1]]
+== 4. Fonctionnement de la V1
+
+[[guichetierv1]]
+=== 4.1 Guichetier
+
 [[crediter_compte]]
-==== 3.1.1 Créditer un compte - Prescilla
+==== 4.1.1 Créditer un compte - Prescilla
 
 Pour créditer un compte, il faut se connecter en tant que guichetier. Ensuite, il faut cliquer sur Gestion et choisir Clients. Une fenêtre s’affiche et l’on peut accéder aux comptes clients à l’aide du bouton Comptes client. Dans cette nouvelle fênetre, en cliquant sur le bouton Voir opérations cela affiche l’historique des opérations et il faut cliquer sur Enregistrer Crédit. 
 
@@ -59,43 +102,60 @@ Enfin, à l’aide du bouton EffectuerDébit l’on peut valider le crédit et e
 image::crediter_compte.png[]
 
 [[debiter_compte]]
-==== 3.1.2 Débiter un compte - Prescilla
+==== 4.1.2 Débiter un compte - Prescilla
 
 Afin de débiter un compte, il faut se connecter à l’application en tant que guichetier. Une nouvelle fenêtre s’affiche à l’écran, il faut cliquer sur Gestion puis sur Clients. Dès lors, l’on peut accéder aux comptes clients à l’aide du bouton Comptes client. Dans cette nouvelle fênetre, en cliquant sur le bouton Voir opérations, l’historique des opérations est affiché. L’on clique ensuite sur Enregistrer Crédit, une fenêtre s’affiche où il faut entrer le montant à déposer et choisir le type d’opération : dépôt espèces ou dépôt chèque. 
 
 L’on peut valider le crédit ou l’annuler, en choisissant soit le bouton EffectuerDébit ou Annuler débit.
 
-image::debiter_compte.png[]
+image::Images/debiter_compte.png[]
 
 [[creer_compte]]
-==== 3.1.3 Créer un compte - Julien
+==== 4.1.3 Créer un compte - Julien
+Pour créer un compte, il est nécessaire de se connecté en tant que Guichetier, il est aussi possible de le faire en étant chef d'agence.
+Après s'être connecté, nous devons cliquer sur Gestion/Clients afin de rechercher le client que nous voulons créer de compte.
+
+image::Images/recherche_client.png[]
+
+Une nouvelle fenêtre affiche les comptes bancaires du client.
+
+image::Images/voir_compte_bancaires.png[]
+
+En cliquant sur nouveau compte, cela fait apparaître une nouvelle fenêtre où nous pouvons renseigner toutes les informations nécessaires à la création du compte, le montant maximum du découvert (argent négatif sur le compte), si nous voulons ajouté un montant d'argent dès la création du compte, l'ID du Client, de l'agence et son numéro de compte est ajouté automatiquement.
+
+image::Images/creer_compte_bancaire.png[]
+
+Une fois validé, le compte bancaire du client est ajouté avec succès et est prêt à être utiliser pour divers opérations.
 
 [[virement_compte]]
-==== 3.1.4 Effectuer un virement de compte à compte - Julien
+==== 4.1.4 Effectuer un virement de compte à compte - Julien
+Le bouton du virement se situe en dessous pour effectuer le débit et crédit, une fois cliquer dessus il ouvre une toute nouvelle fenêtre permettant de faire un virement d'un même client entre deux de ses comptes.
+Le montant choisis sera versé sur son second compte et retiré de son premier, bien sûr une exception est effectué si le montant est plus grand que le solde actuel.
 
 [[cloturer_compte]]
-==== 3.1.5 Clôturer compte - Manon
+==== 4.1.5 Clôturer compte - Manon
 
 [[chef_agence]]
-=== 3.2 Chef d'agence
+=== 4.2 Chef d'agence
 
 [[CRUD]]
-==== 3.2.1 Gérer (faire le “CRUD”) les employés (guichetier et chef d’agence)
+==== 4.2.1 Gérer (faire le “CRUD”) les employés (guichetier et chef d’agence)
 
 [[create]]
-===== 3.2.1.1 Create - Manon
+===== 4.2.1.1 Create - Manon
 
 [[read]]
-===== 3.2.1.2 Read - Manon
+===== 4.2.1.2 Read - Manon
 
 [[update]]
-===== 3.2.1.3 Update - Prescilla
+===== 4.2.1.3 Update - Prescilla
 
 Cette fonctionnalité permet de modifier les employés : guichetier et chef d'agence. Pour cela, il faut se connecter en tant que chef d'agence puis cliquer sur le bouton Gestion et choisir Employés. Une nouvelle fenêtre s'ouvre et affiche les employés. 
 Ensuite, il faut sélectionner un employé puis cliquer sur le bouton Modifier employés. Dès lors, l'on peut modifier les informations de l'employé (nom, prénom, adresse, téléphone, e-mail). Pour valider ces modifications, l'on doit cliquer sur Modifier. 
 
 [[delete]]
-===== 3.2.1.4 Delete - Julien
+===== 4.2.1.4 Delete - Julien
+La possiblité de supprimer un compte bancaire d'un client en appuyant sur le bouton nécessaire, cela affichera un avertissement afin de confirmer l'action.
 
 [[resultats]]
-== 4. Résultats produits avec jeux d'essai
+== 5. Résultats produits avec jeux d'essai
