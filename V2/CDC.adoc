@@ -50,7 +50,7 @@ L’application s’adresse a deux types d’utilisateurs : le guichetier et le
 === Un chef d’agence peut :
 * Rendre inactif un client
 
-image::V2/Images/UseCaseV0.png
+image::V2/Images/UseCaseV0.png[]
 
 [[analyse_besoins]]
 == 3. Analyse des besoins
