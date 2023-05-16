@@ -56,6 +56,9 @@ L’application s’adresse a deux types d’utilisateurs : le guichetier et le
 
 image::UseCaseV0.png[]
 
+L'on remarque deux utilisateurs : le guichetier et le chef d'agence. Le guichetier peut créer un nouveau client, modifier ses informations, consulter un compte et le débiter. 
+Le chef d'agence a accès aux fonctionnalités du guichetier et peut également rendre inactif un client.
+
 [[analyse_besoins]]
 == 3. Analyse des besoins
 L’application doit permettre de gérer des comptes bancaires de dépôt pour des clients préalablement créés. Elle devra permettre de débiter, créditer un compte soit par virement c’est à dire un échange d’argent entre deux comptes distincts mais domiciliés dans le réseau bancaire, soit par une personne physique se présentant devant un guichet.
@@ -75,6 +78,9 @@ _CRUD : Create Read Update Delete_
 image::uc-initialv1.svg[] 
 _Figure 2. Diagramme des Cas d’Utilisation (V.1)_ 
 
+Dans cette nouvelle version de l'application, le guichetier peut créer un nouveau compte, le créditer, effectuer un virement et clôturer le compte.
+Quant au chef d'agence, il dispose d'une fonctionnalité : gérer les employés.
+
 [[version2]]
 ==== Version 2
 * Ce que doit pouvoir faire un Guichetier :
@@ -89,6 +95,9 @@ _Figure 2. Diagramme des Cas d’Utilisation (V.1)_
 
 image::uc-initialv2.svg[] 
 _Figure 3. Diagramme des Cas d’Utilisation (V.2)_ 
+
+En plus des fonctionnalités précédentes, le guichetier peut générer un relevé mensuel en PDF et gérer les prélévements automatiques (CRUD).
+Le chef d'agence, a la possibilité d'effectuer un débit exceptionnel, simuler un emprunt et une assurance d'emprunt.
 
 [[version3]]
 ==== Version 3
