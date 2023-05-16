@@ -20,6 +20,8 @@ Projet : DailyBank - SAÉ 2.01 et 2.05
 ** <<version1>>
 ** <<version2>>
 ** <<version3>>
+** <<regles_gestion>>
+** <<priorisation_devs>>
 * <<livrables>> 
 * <<analyse_contraintes>> 
 ** <<techniques>>
@@ -111,11 +113,15 @@ Le chef d'agence, a la possibilité d'effectuer un débit exceptionnel, simuler 
         *** Générer les relevés mensuels en PDF
         *** Exécuter les prélèvements automatiques
 
+[[regles_gestion]]
 === Règles de gestion
 
 Un débit est exceptionnel si son montant met le compte à découvert. Pour que le débit exceptionnel puisse s'effectuer, il faut vérifier que le compte dispose d'un découvert autorisé.
 
+[[priorisation_devs]]
 === Priorisation des devs planifiés
+
+Nous avons priorisé les développements selon trois catégories : Must, Could et Should.
 
 * Must
 
