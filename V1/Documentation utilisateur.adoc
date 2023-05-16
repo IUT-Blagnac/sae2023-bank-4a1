@@ -49,6 +49,8 @@ Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut égal
 [[installation_utilisation]]
 == 2. Installation utilisation
 
+Il est nécessaire d'avoir Java 1.8 installé.
+
 Afin d’utiliser le programme de la banque, il est téléchargable et exécutable pour les employés de la banques ainsi que les chefs d’agence afin de gérer toutes les données, comptes et informations de la banque.
 
 Un jar file sera trouvable pour les utilisateurs et l’exécuter ouvrira une fenêtre d’accueil dont une connexion est demandée systématiquement avant de continuer.
