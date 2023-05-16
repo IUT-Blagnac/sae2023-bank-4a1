@@ -102,6 +102,11 @@ Le chef d'agence a la possibilité de rendre inactif un client.
 
 [[Rendre_inactif_un_client]]
 ==== 3.2.1 Rendre inactif un client
+Afin de désactiver un compte client, il est nécessaire de se connecter en tant que Chef d’Agence, une fois fait, il faut se rendre sur la gestion des clients et de cliquer sur le bouton « modifier client »
+
+image::Images/desactiver_client.png[]
+
+On coche « inactif », ce qui permet de désactiver toute opération sur le compte par un Guichetier, un chef d’agence pour retourner à tout moment sur son choix pour remettre le compte client actif
 
 [[fonctionnementv1]]
 == 4. Fonctionnement de la V1
