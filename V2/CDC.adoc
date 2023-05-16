@@ -31,10 +31,13 @@ Projet : DailyBank - SAÉ 2.01 et 2.05
 === 1.1 Contexte
 Le contexte bancaire est marqué par la nécessité pour les banques de répondre aux exigences des clients en termes de rapidité et de digitalisation. 
 
-La banque DailyBank souhaite développer une application JAVA-Oracle de gestion des comptes clients pour remplacer plusieurs outils obsolètes. Ce développement s’inscrit dans le cadre de la restructuration de ses services bancaires et l’application sera déployée dans les 100 agences que compte son réseau. 
+Le client est la banque DailyBank. Elle souhaite développer une application JAVA-Oracle de gestion des comptes clients pour remplacer plusieurs outils obsolètes. Ce développement s’inscrit dans le cadre de la restructuration de ses services bancaires. De plus, elle veut développer une communication inter-agences, en effet l’application sera déployée dans les 100 agences que compte son réseau. 
 [[objectif]]
 === 1.2 Objectif
 Nous travaillerons à partir d’une application existante « Daily Bank » qu’il faudra adapter aux nouveaux besoins de la banque. Nous réaliserons une première version puis une deuxième version de l’application. La banque, à travers cette application veut moderniser ses outils et services bancaires. 
+
+L’objectif de l'application est de gérer des comptes bancaires de dépôt de clients. Elle doit permettre de créer un compte, le consulter, le débiter, le créditer, effectuer un virement et le clôturer. De plus, elle dispose de fonctionnalités telles que effectuer un virement, générer un relevé mensuel d’un compte en PDF, gérer les employés, les prélèvements automatiques, simuler un emprunt et une assurance d’emprunt
+
 [[identification_utilisateurs]]
 === 1.3 Identification des utilisateurs
 L’application s’adresse a deux types d’utilisateurs : le guichetier et le chef d’agence. Le rôle du guichetier est de pouvoir créer un compte, le clôturer, le créditer, le débiter et effectuer un virement d’un compte à un autre. Quant au chef d’agence, il a pour rôle de gérer les employés.
@@ -85,6 +88,10 @@ _Figure 2. Diagramme des Cas d’Utilisation (V.1)_
 
 image::uc-initialv2.svg[] 
 _Figure 3. Diagramme des Cas d’Utilisation (V.)_ 
+
+=== Règles de gestion
+
+Un débit est exceptionnel si son montant met le compte à découvert. Pour que le débit exceptionnel puisse s'effectuer, il faut vérifier que le compte dispose d'un découvert autorisé.
 
 [[livrables]]
 == 4. Livrables
