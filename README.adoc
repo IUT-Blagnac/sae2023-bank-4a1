@@ -70,6 +70,6 @@ affichage du graphe pas optimal, à reprendre.
 |         | Doc. Tec. V2 |                |     
 |         | Code V2    |                     | 
 |         | Recette V2 |                      | 
-|         | `jar` projet |    | 
+|         | `jar` projet | Jar V1 : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/Julien_V1/V1/target/DailyBank-1.0-shaded.jar   | 
 
 |===
