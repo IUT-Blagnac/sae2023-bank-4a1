@@ -28,7 +28,17 @@ public class OperationsManagement {
 	private OperationsManagementController omcViewController;
 	private Client clientDuCompte;
 	private CompteCourant compteConcerne;
-
+	
+	/**
+	 * Création des scenes javafx de la gestion d'opération
+	 * 
+	 * @param _parentStage : Le stage parent
+	 * @param _dbstate     : L'application DailyBankState
+	 * @param client       : Le client séléctionné
+	 * @param compte       : Le compte du client séléctionné
+	 *
+	 * @throws Exception e
+	 */
 	public OperationsManagement(Stage _parentStage, DailyBankState _dbstate, Client client, CompteCourant compte) {
 
 		this.clientDuCompte = client;
@@ -57,11 +67,23 @@ public class OperationsManagement {
 			e.printStackTrace();
 		}
 	}
-
+	
+	/**
+	 * Permet d'acceder au dialog de OperationManagementController
+	 *
+	 */
 	public void doOperationsManagementDialog() {
 		this.omcViewController.displayDialog();
 	}
-
+	
+	/**
+	 * Enregistre un débit
+	 *
+	 * @return résultat de l'opération demandée
+	 * @throws ApplicationException       Erreur d'accès aux données (requête mal
+	 *                                    formée ou autre)
+	 * @throws DatabaseConnexionException Erreur de connexion
+	 */
 	public Operation enregistrerDebit() {
 
 		OperationEditorPane oep = new OperationEditorPane(this.primaryStage, this.dailyBankState);
