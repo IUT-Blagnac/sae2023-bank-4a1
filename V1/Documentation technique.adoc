@@ -133,9 +133,26 @@ _Figure Interface debiter compte_
 
 [[creer_compte]]
 ==== 3.1.3 Créer un compte - Julien
+C'est une fonctionnalité permettant de créer un compte Bancaire pour un client existant, une nouvelle fenêtre s'ouvrira affichant toutes les informations nécessaires à l'ajout du compte, le gérant de la création du compte en particulier le guichetier doit ajouter un solde de base sur le compte, les ID sont disposés automatiquement par le programme.
+Une fois ajouté, le compte sera visible sur le gestionnaire des comptes du client.
+
+image::Images/use_case_cc.png[]
+
+**Classes et ressources utilisés :**
+
+* ComptesManagementController.java : Controlleur de la fenêtre "Gestion des comptes". Les boutons "btnVoirOpes", "btnModifierCompte", "btnSupprCompte" sont nécessaires.
+* ComptesManagement.java : Permet de gérer les comptes d’un client. Les méthodes suivantes sont utilisés, "getComptesDunClient", "creerNouveauCompte", "gererOperationsDUnCompte", "doComptesManagementDialog".
+* AccessCompteCourant.java : Permet de gérer l’accès aux comptes d’un client. Les méthodes "creerCompteCourant" et "updateCompteCourant".
+* CompteEditorPane.fxml : Page FXML qui correspond à la fenêtre "Gestion des comptes".
+* ComptesManagement.fxml : Page FXML qui correspond à la fenêtre "Gestion des clients".
 
 [[virement_compte]]
 ==== 3.1.4 Effectuer un virement de compte à compte - Julien
+L'opération de virement s'effectue en choisissant un compte bancaire client afin de faire un virement vers un autre compte du même client.
+
+image::Images/use_case_vc.png[]
+
+**Classes et ressources utilisés :**
 
 [[cloturer_compte]]
 ==== 3.1.5 Clôturer compte - Manon
