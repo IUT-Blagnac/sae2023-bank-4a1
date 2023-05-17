@@ -90,13 +90,13 @@ Le diagramme de classes des données global de la base de données dispose de pl
 
 * Application : 
 ** application : DailyBank : main() de départ
-** application.control : 
-** application.tools : 
-** application.view : 
+** application.control : Contrôleurs de dialogue et accès aux données : gestion des fonctions de l’application.
+** application.tools : Utilitaires pour application.view et application.control
+** application.view : Contrôleurs associés aux vues fxml. Ce sont les fenêtres intéractives pour les utilisateurs.
 * Model : 
-** model.data : 
-** model.orm : 
-** model.orm.exception : 
+** model.data : Classes java mappant les table de la BD. Une table ⇒ 1 classe.
+** model.orm : Classes permettant d'ajouter, d'accéder aux données dans la BD.
+** model.orm.exception : Les exceptions en cas d'erreur sur la BD.
 
 [[elements_essentiels]]
 === 2.4 Elements essentiels
@@ -115,18 +115,23 @@ Le diagramme de classes des données global de la base de données dispose de pl
 
 [[creer_compte]]
 ==== 3.1.3 Créer un compte - Julien
-Afin de créer un compte, la méthode nécessaire est manquante dans la V0, il est donc à ajouter dans la classe Access_BD_CompteCourant.java.
-La méthode demande les informations nécessaire à la création du compte et retourne en arrière (rollback) si des informations sont manquante.
-Uns fois cela fait, il faut modifié la méthode CreerNouveauCompte situé dans ComptesManagement.java afin d'appeler la méthode que l'on vient de créer.
-Dans le try catch, un appel de la méthode suffit.
+C'est une fonctionnalité permettant de créer un compte Bancaire pour un client existant, une nouvelle fenêtre s'ouvrira affichant toutes les informations nécessaires à l'ajout du compte, le gérant de la création du compte en particulier le guichetier doit ajouter un solde de base sur le compte, les ID sont disposés automatiquement par le programme.
+Une fois ajouté, le compte sera visible sur le gestionnaire des comptes du client.
+
+**Classes et ressources utilisés :**
+
+* ComptesManagementController.java : Controlleur de la fenêtre "Gestion des comptes". Les boutons "btnVoirOpes", "btnModifierCompte", "btnSupprCompte" sont nécessaires.
+* ComptesManagement.java : Permet de gérer les comptes d’un client. Les méthodes suivantes sont utilisés, "getComptesDunClient", "creerNouveauCompte", "gererOperationsDUnCompte", "doComptesManagementDialog".
+* AccessCompteCourant.java : Permet de gérer l’accès aux comptes d’un client. Les méthodes "creerCompteCourant" et "updateCompteCourant".
+* CompteEditorPane.fxml : Page FXML qui correspond à la fenêtre "Gestion des comptes".
+* ComptesManagement.fxml : Page FXML qui correspond à la fenêtre "Gestion des clients".
 
 [[virement_compte]]
 ==== 3.1.4 Effectuer un virement de compte à compte - Julien
-L'action du virement n'est visible nulle part dans l'interface du programme, on s'en doute qu'il doit se trouver sur la fenêtre d'opération comme pour effectuer un débit et crédit,
-si l'on s'en tient à cette pensée, le troisième bouton sans texte et grisé en dessous de celui du débit et crédit doit être celui qui mène à l'opération de virement.
+L'opération de virement s'effectue en choisissant un compte bancaire client afin de faire un virement vers un autre compte du même client.
 
-On doit donc ajouté une nouvelle fenêtre en créant un nouveau fichier FXML ainsi qu'un controller afin de la gérer, puis enfin une méthode permettant de choisir l'ID du compte ciblé, choisir le montant d'argent.
-Bien sûr, une exception est lancé si le montant est supérieur à la solde du premier compte faisant le virement.
+**Classes et ressources utilisés :**
+
 
 [[cloturer_compte]]
 ==== 3.1.5 Clôturer compte - Manon
