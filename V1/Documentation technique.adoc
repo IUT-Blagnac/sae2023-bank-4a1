@@ -120,6 +120,10 @@ Une fois ajouté, le compte sera visible sur le gestionnaire des comptes du clie
 
 *Classes et ressources utilisés :* 
 
+#ComptesManagementController.java#
+
+
+
 [[virement_compte]]
 ==== 3.1.4 Effectuer un virement de compte à compte - Julien
 L'action du virement n'est visible nulle part dans l'interface du programme, on s'en doute qu'il doit se trouver sur la fenêtre d'opération comme pour effectuer un débit et crédit,
