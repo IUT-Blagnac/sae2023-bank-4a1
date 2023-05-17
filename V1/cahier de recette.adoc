@@ -93,6 +93,36 @@ Compléter et si on ne valide pas, ...
 
 |====
 
+|====
+
+>|Cas de test 4+|Test-01-02-04
+>|Titre 4+|Créer un compte
+>|Objectif 4+| Ajouter la possibilité de créer un compte bancaire
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_COP.1 ^|Cliquer sur le bouton "Nouveau compte". ^|La fenêtre "gestion d'un compte" s'affiche. ^|Un client actif est sélectionné ^|OK
+^|All_G_COP.2 ^|Cliquer le bouton "Ajouter". ^|Le compte ajouté est visible sur la fenêtre "Gestion des comptes". ^|Un client actif est sélectionné ^|OK
+
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-01-02-05
+>|Titre 4+|Clôturer un compte
+>|Objectif 4+| Vérifier qu'il est possible de clôturer un compte
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_COP.1 ^|... ^|... ^| ... ^|...
+^|All_G_COP.2 ^|... ^|... ^| ... ^|...
+^|All_G_COP.3 ^|... ^|... ^| ... ^|...
+
+
+|====
 
 ==== 1.3 Gestion des opérations :
 
@@ -140,22 +170,6 @@ autorisé est de -100 euros.
  ^|...
   
  
-
-|====
-
-
-|====
-
->|Cas de test 4+|Test-01-03-03
->|Titre 4+|Créer un compte
->|Objectif 4+| Ajouter la possibilité de créer un compte bancaire
-
-5+|
-
-^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|All_G_COP.1 ^|Cliquer sur le bouton "Nouveau compte". ^|La fenêtre "gestion d'un compte" s'affiche. ^|Un client actif est sélectionné ^|OK
-^|All_G_COP.2 ^|Cliquer le bouton "Ajouter". ^|Le compte ajouté est visible sur la fenêtre "Gestion des comptes". ^|Un client actif est sélectionné ^|OK
-
 
 |====
 
@@ -210,6 +224,37 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 
 |====
 
+>|Cas de test 4+|Test-02-01-01
+>|Titre 4+|CREATE un employé
+>|Objectif 4+| Vérifier qu'il est possible de créer un employé
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_C.1    ^|... ^|...   ^|...  ^| ...
+^|C_G_C.2    ^|... ^|...   ^|...  ^| ...
+^|C_G_C.3    ^|... ^|...   ^|...  ^| ...
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-02-01-02
+>|Titre 4+|READ un employé
+>|Objectif 4+| Vérifier qu'il est possible de voir les informations d'un employé
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_C.1    ^|... ^|...   ^|...  ^| ...
+^|C_G_C.2    ^|... ^|...   ^|...  ^| ...
+^|C_G_C.3    ^|... ^|...   ^|...  ^| ...
+
+|====
+
+
+|====
+
 >|Cas de test 4+|Test-02-01-03
 >|Titre 4+|UPDATE un employé
 >|Objectif 4+| Vérifier qu'il est possible de modifier les informations d'un employé
@@ -221,3 +266,17 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 
 |====
 
+|====
+
+>|Cas de test 4+|Test-02-01-04
+>|Titre 4+|DELETE un employé
+>|Objectif 4+| Vérifier qu'il est possible de supprimer un employé
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_C.1    ^|... ^|...   ^|...  ^| ...
+^|C_G_C.2    ^|... ^|...   ^|...  ^| ...
+^|C_G_C.3    ^|... ^|...   ^|...  ^| ...
+
+|====
