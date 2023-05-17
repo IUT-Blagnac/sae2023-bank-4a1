@@ -73,6 +73,9 @@ Le diagramme de classes V0 dispose de plusieurs tables :
 image::DiagrammeClassesV1.png[]
 _Figure 4. Diagramme de Classes (V.1)_
 
+Le diagramme de classes V1 dispose des mêmes tables que dans la V0.
+Il n'y a presque aucun changement à part qu'un SoldeCourant peut-être cloturé ou non.
+
 [[architecture]]
 == 2. Architecture
 
