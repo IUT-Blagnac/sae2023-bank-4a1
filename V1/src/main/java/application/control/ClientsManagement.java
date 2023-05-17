@@ -17,6 +17,14 @@ import model.orm.Access_BD_Client;
 import model.orm.exception.ApplicationException;
 import model.orm.exception.DatabaseConnexionException;
 
+/**
+ * Constructeur de la classe ClientsManagement
+ * 
+ * @param _parentStage IN : Stage parent
+ * @param _dbstate     IN : Etat de l'application
+ * 
+ * @return void
+ */
 public class ClientsManagement {
 
 	private Stage primaryStage;
