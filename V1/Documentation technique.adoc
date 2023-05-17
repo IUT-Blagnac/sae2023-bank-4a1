@@ -42,13 +42,15 @@ L’application DailyBank permet de gérer des comptes bancaires de dépôt pour
 
 image::UseCaseV0.png[]
 
+Nous identifions deux types d’utilisateurs de l’application : le guichetier et le chef d’agence.
+
+Le guichetier peut créer un nouveau client, modifier ses informations, le consulter et le débiter. 
+Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut également rendre inactif un client.
+
 image::uc-initialv1.svg[]
 _Figure 2. Diagramme des Cas d’Utilisation (V.1)_ 
 
-Nous identifions deux types d’utilisateurs de l’application : le guichetier et le chef d’agence.
-
-Le guichetier peut créer un nouveau client, modifier ses informations, créer un compte, le consulter, le débiter, le créditer ou encore le clôturer. De plus, il peut effectuer un virement de compte à compte, générer un relevé mensuel d’un compte en PDF et gérer les prélèvements automatiques.
-Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut également rendre inactif un client, gérer les employés, effectuer un débit exceptionnel, simuler un emprunt et simuler une assurance d’emprunt.
+En plus de la version 0, le guichetier peut créer un compte, le clôturer, le créditer et effectuer un virement. Le chef d’agence peut gérer les employés.
 
 [[diagramme_de_classe]]
 === 1.2 Diagramme de classe des données global
@@ -119,8 +121,9 @@ Le guichetier a accès à plusieurs fonctionnalités : créditer un compte, déb
 image::Images/UseCase_crediter.png[]
 _Figure Diagramme des Cas d’Utilisation crediter compte(V.1)_ 
 
-**Classes et ressources utilisées :** +
-* OperationManagement.java
+**Classes et ressources utilisées :** 
+
+* OperationManagement.java 
 * OperationManagementController.java
 * OperationManagement.fxml
 * OperationEditorPaneController.java
@@ -138,7 +141,8 @@ _Figure Interface crediter compte_
 image::Images/UseCase_debiter.png[]
 _Figure Diagramme des Cas d’Utilisation debiter compte_ 
 
-**Classes et ressources utilisées :** +
+**Classes et ressources utilisées :** 
+
 * OperationManagement.java
 * OperationManagementController.java
 * OperationManagement.fxml
