@@ -128,12 +128,9 @@ Une fois ajouté, le compte sera visible sur le gestionnaire des comptes du clie
 
 [[virement_compte]]
 ==== 3.1.4 Effectuer un virement de compte à compte - Julien
-L'action du virement n'est visible nulle part dans l'interface du programme, on s'en doute qu'il doit se trouver sur la fenêtre d'opération comme pour effectuer un débit et crédit,
-si l'on s'en tient à cette pensée, le troisième bouton sans texte et grisé en dessous de celui du débit et crédit doit être celui qui mène à l'opération de virement.
+L'opération de virement s'effectue en choisissant un compte bancaire client afin de faire un virement vers un autre compte du même client.
 
-On doit donc ajouté une nouvelle fenêtre en créant un nouveau fichier FXML ainsi qu'un controller afin de la gérer, puis enfin une méthode permettant de choisir l'ID du compte ciblé, choisir le montant d'argent.
-Bien sûr, une exception est lancé si le montant est supérieur à la solde du premier compte faisant le virement.
-
+**Classes et ressources utilisés :**
 
 
 [[cloturer_compte]]
