@@ -118,6 +118,8 @@ Le diagramme de classes des données global de la base de données dispose de pl
 C'est une fonctionnalité permettant de créer un compte Bancaire pour un client existant, une nouvelle fenêtre s'ouvrira affichant toutes les informations nécessaires à l'ajout du compte, le gérant de la création du compte en particulier le guichetier doit ajouter un solde de base sur le compte, les ID sont disposés automatiquement par le programme.
 Une fois ajouté, le compte sera visible sur le gestionnaire des comptes du client.
 
+*Classes et ressources utilisés :* 
+
 [[virement_compte]]
 ==== 3.1.4 Effectuer un virement de compte à compte - Julien
 L'action du virement n'est visible nulle part dans l'interface du programme, on s'en doute qu'il doit se trouver sur la fenêtre d'opération comme pour effectuer un débit et crédit,
