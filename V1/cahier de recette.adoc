@@ -96,7 +96,7 @@ Compléter et si on ne valide pas, ...
 |====
 
 >|Cas de test 4+|Test-01-02-04
->|Titre 4+|Créer un compte
+>|Titre 4+|Créer un compte - Julien
 >|Objectif 4+| Ajouter la possibilité de créer un compte bancaire
 
 5+|
@@ -111,7 +111,7 @@ Compléter et si on ne valide pas, ...
 |====
 
 >|Cas de test 4+|Test-01-02-05
->|Titre 4+|Clôturer un compte
+>|Titre 4+|Clôturer un compte - Manon
 >|Objectif 4+| Vérifier qu'il est possible de clôturer un compte
 
 5+|
@@ -129,7 +129,7 @@ Compléter et si on ne valide pas, ...
 |====
 
 >|Cas de test 4+|Test-01-03-01
->|Titre 4+|Débiter un compte
+>|Titre 4+|Débiter un compte - Prescilla
 >|Objectif 4+| Vérifier qu'il est possible de débiter un compte
 
 5+|
@@ -153,7 +153,7 @@ autorisé est de -100 euros.
 |====
 
 >|Cas de test 4+|Test-01-03-02
->|Titre 4+|Créditer un compte
+>|Titre 4+|Créditer un compte - Prescilla
 >|Objectif 4+| Vérifier qu'il est possible de créditer un compte
 
 5+|
@@ -176,7 +176,7 @@ autorisé est de -100 euros.
 |====
 
 >|Cas de test 4+|Test-01-03-04
->|Titre 4+|Virement sur un compte
+>|Titre 4+|Virement sur un compte - Julien
 >|Objectif 4+| Vérifier qu'il est possible de faire un virement
 
 5+|
@@ -225,7 +225,7 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 |====
 
 >|Cas de test 4+|Test-02-01-01
->|Titre 4+|CREATE un employé
+>|Titre 4+|CREATE un employé - Manon
 >|Objectif 4+| Vérifier qu'il est possible de créer un employé
 
 5+|
@@ -240,7 +240,7 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 |====
 
 >|Cas de test 4+|Test-02-01-02
->|Titre 4+|READ un employé
+>|Titre 4+|READ un employé - Manon
 >|Objectif 4+| Vérifier qu'il est possible de voir les informations d'un employé
 
 5+|
@@ -256,7 +256,7 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 |====
 
 >|Cas de test 4+|Test-02-01-03
->|Titre 4+|UPDATE un employé
+>|Titre 4+|UPDATE un employé - Prescilla
 >|Objectif 4+| Vérifier qu'il est possible de modifier les informations d'un employé
 
 5+|
@@ -269,7 +269,7 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 |====
 
 >|Cas de test 4+|Test-02-01-04
->|Titre 4+|DELETE un employé
+>|Titre 4+|DELETE un employé - Julien
 >|Objectif 4+| Vérifier qu'il est possible de supprimer un employé
 
 5+|
