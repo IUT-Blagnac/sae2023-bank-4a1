@@ -80,8 +80,7 @@ public class OperationsManagement {
 	 * Enregistre un débit
 	 *
 	 * @return résultat de l'opération demandée
-	 * @throws ApplicationException       Erreur d'accès aux données (requête mal
-	 *                                    formée ou autre)
+	 * @throws ApplicationException       Erreur d'accès aux données (requête incorrecte,...)
 	 * @throws DatabaseConnexionException Erreur de connexion
 	 */
 	public Operation enregistrerDebit() {
