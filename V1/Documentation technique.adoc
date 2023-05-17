@@ -120,7 +120,7 @@ Une fois ajouté, le compte sera visible sur le gestionnaire des comptes du clie
 
 *Classes et ressources utilisés :* 
 
-#ComptesManagementController.java#
+kbd:[ComptesManagementController.java]
 
 
 
