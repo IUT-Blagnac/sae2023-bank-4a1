@@ -144,6 +144,20 @@ autorisé est de -100 euros.
 |====
 
 
+|====
+
+>|Cas de test 4+|Test-01-02-03
+>|Titre 4+|Créer un compte
+>|Objectif 4+| Ajouter la possibilité de créer un compte bancaire
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_CB.1 ^|Cliquer sur le bouton "Nouveau compte". ^|La fenêtre "gestion d'un compte" s'affiche. ^|Un client actif est sélectionné ^|OK
+^|All_G_CB.2 ^|Cliquer le bouton "Ajouter". ^|Le compte ajouté est visible sur la fênetre "Gestion des coptes". ^|Un compte actif est sélectionné ^|OK
+
+
+|====
 
 
 
