@@ -153,8 +153,8 @@ autorisé est de -100 euros.
 5+|
 
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|All_G_CB.1 ^|Cliquer sur le bouton "Nouveau compte". ^|La fenêtre "gestion d'un compte" s'affiche. ^|Un client actif est sélectionné ^|OK
-^|All_G_CB.2 ^|Cliquer le bouton "Ajouter". ^|Le compte ajouté est visible sur la fenêtre "Gestion des comptes". ^|Un client actif est sélectionné ^|OK
+^|All_G_COP.1 ^|Cliquer sur le bouton "Nouveau compte". ^|La fenêtre "gestion d'un compte" s'affiche. ^|Un client actif est sélectionné ^|OK
+^|All_G_COP.2 ^|Cliquer le bouton "Ajouter". ^|Le compte ajouté est visible sur la fenêtre "Gestion des comptes". ^|Un client actif est sélectionné ^|OK
 
 
 |====
