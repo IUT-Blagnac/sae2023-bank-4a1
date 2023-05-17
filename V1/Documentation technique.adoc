@@ -79,6 +79,10 @@ _Figure 4. Diagramme de Classes (V.1)_
 [[architecture_generale]]
 === 2.1 Architecture générale
 
+image::Images/architecture.png[]
+
+Deux types d'utilisateurs se connectent à l'application : le guichetier et le chef d'agence. L'application se connecte à une base de données (Oracle SQL Developper).
+
 [[ressources_externes]]
 === 2.2 Ressources externes utilisées et rôles
 
@@ -100,6 +104,8 @@ _Figure 4. Diagramme de Classes (V.1)_
 [[elements_essentiels]]
 === 2.4 Elements essentiels
 
+Pour utiliser l'application il est nécessaire d'avoir Java 1.8. On exécute l'application en lançant le fichier .jar. Pour la base de données on utilise Oracle SQL Developper.
+
 [[presentation_des_diagrammes]]
 == 3. Présentation et explication des diagrammes demandés
 
@@ -114,11 +120,11 @@ image::Images/UseCase_crediter.png[]
 _Figure Diagramme des Cas d’Utilisation crediter compte(V.1)_ 
 
 **Classes et ressources utilisées :** +
-* OperationManagement.java : +
-* OperationManagementController.java : +
-* OperationManagement.fxml : +
-* OperationEditorPaneController.java : +
-* AccessOperation.java : +
+* OperationManagement.java
+* OperationManagementController.java
+* OperationManagement.fxml
+* OperationEditorPaneController.java
+* AccessOperation.java
 
 image::Images/dc_crediter_debiter.png[]
 _Figure Diagramme de classes crediter compte_ 
@@ -131,6 +137,13 @@ _Figure Interface crediter compte_
 
 image::Images/UseCase_debiter.png[]
 _Figure Diagramme des Cas d’Utilisation debiter compte_ 
+
+**Classes et ressources utilisées :** +
+* OperationManagement.java
+* OperationManagementController.java
+* OperationManagement.fxml
+* OperationEditorPaneController.java
+* AccessOperation.java
 
 image::Images/dc_crediter_debiter.png[]
 _Figure Diagramme de classes debiter compte_ 
@@ -182,6 +195,8 @@ Le chef d'agence a pour fonctionnalités : gérer les employés qui sont le guic
 
 image::Images/UseCase_update_employe.png[]
 _Figure Diagramme des Cas d’Utilisation update employe_ 
+
+**Classes et ressources utilisés :**
 
 image::Images/dc_update_employe.png[]
 _Figure Diagramme de classes update employe_ 
