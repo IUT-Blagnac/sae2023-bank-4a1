@@ -113,6 +113,13 @@ Le guichetier a accès à plusieurs fonctionnalités : créditer un compte, déb
 image::Images/UseCase_crediter.png[]
 _Figure Diagramme des Cas d’Utilisation crediter compte(V.1)_ 
 
+**Classes et ressources utilisées :** +
+* OperationManagement.java : +
+* OperationManagementController.java : +
+* OperationManagement.fxml : +
+* OperationEditorPaneController.java : +
+* AccessOperation.java : +
+
 image::Images/dc_crediter_debiter.png[]
 _Figure Diagramme de classes crediter compte_ 
 
