@@ -109,9 +109,12 @@ Le guichetier a accès à plusieurs fonctionnalités : créditer un compte, déb
 
 [[crediter_compte]]
 ==== 3.1.1 Créditer un compte - Prescilla
+Cette fonctionnalité permet de créditer un compte.
 
 image::Images/UseCase_crediter.png[]
 _Figure Diagramme des Cas d’Utilisation crediter compte(V.1)_ 
+
+**Classes et ressources utilisées :**
 
 image::Images/dc_crediter_debiter.png[]
 _Figure Diagramme de classes crediter compte_ 
@@ -121,9 +124,12 @@ _Figure Interface crediter compte_
 
 [[debiter_compte]]
 ==== 3.1.2 Débiter un compte - Prescilla
+Cette fonctionnalité permet de débiter un compte.
 
 image::Images/UseCase_debiter.png[]
 _Figure Diagramme des Cas d’Utilisation debiter compte_ 
+
+**Classes et ressources utilisées :**
 
 image::Images/dc_crediter_debiter.png[]
 _Figure Diagramme de classes debiter compte_ 
@@ -155,9 +161,12 @@ Le chef d'agence a pour fonctionnalités : gérer les employés qui sont le guic
 
 [[update]]
 ===== 3.2.1.3 Update - Prescilla
+Cette fonctionnalité permet de modifier les informations d'un employé.
 
 image::Images/UseCase_update_employe.png[]
 _Figure Diagramme des Cas d’Utilisation update employe_ 
+
+**Classes et ressources utilisées :**
 
 image::Images/dc_update_employe.png[]
 _Figure Diagramme de classes update employe_ 
