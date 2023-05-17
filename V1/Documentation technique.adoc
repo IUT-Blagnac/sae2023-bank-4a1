@@ -120,9 +120,9 @@ Une fois ajouté, le compte sera visible sur le gestionnaire des comptes du clie
 
 **Classes et ressources utilisés :**
 
-* ComptesManagementController.java : Controlleur de la fenêtre "Gestion des comptes".
-* ComptesManagement.java : Permet de gérer les comptes d’un client
-* AccessCompteCourant.java : Permet de gérer l’accès aux comptes d’un client
+* ComptesManagementController.java : Controlleur de la fenêtre "Gestion des comptes". Les boutons "btnVoirOpes", "btnModifierCompte", "btnSupprCompte" sont nécessaires.
+* ComptesManagement.java : Permet de gérer les comptes d’un client. Les méthodes suivantes sont utilisés, "getComptesDunClient", "creerNouveauCompte", "gererOperationsDUnCompte", "doComptesManagementDialog".
+* AccessCompteCourant.java : Permet de gérer l’accès aux comptes d’un client. Les méthodes "creerCompteCourant" et "updateCompteCourant".
 * CompteEditorPane.fxml : Page FXML qui correspond à la fenêtre "Gestion des comptes".
 * ComptesManagement.fxml : Page FXML qui correspond à la fenêtre "Gestion des clients".
 
