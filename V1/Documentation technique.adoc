@@ -136,6 +136,15 @@ image::Images/use_case_vc.png[]
 
 **Classes et ressources utilisés :**
 
+* OperationManagement.java :
+* CategorieOperation.java :
+* OperationEditorPaneController.java :
+* OperationManagementController.java :
+* Operation.java :
+* TypeOperation.java :
+* Access_BD_Operation : 
+* OperationEditorPane.fxml :
+* OperationManagement.fxml :
 
 [[cloturer_compte]]
 ==== 3.1.5 Clôturer compte - Manon
