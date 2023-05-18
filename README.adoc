@@ -62,7 +62,7 @@ affichage du graphe pas optimal, à reprendre.
 |         | Gantt V2 Prevu|   Gantt PDF : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Gestion%20et%20dvpt%20appV2.pdf
                                     Gantt PNG : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Gestion%20et%20dvpt%20appV2.png       |   idem ci-dessus  
 |         | Doc. Tec. V1 | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Documentation%20technique.adoc |    
-|         | Doc User V1    | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Documentation%20utilisateur.adoc |
+|         | Doc User V1    | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Documentation%20utilisateur.adoc |document complet, avec fonctionnalités commentées. Mention du developeur, procédure d'installation convenable. doc OK, à compléter
 |         | Recette V1  | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/cahier%20de%20recette.adoc                  | 
 |         | Suivi projet V1|   | 
 | 26/05   | Gantt V2  réalisé    |      | 
