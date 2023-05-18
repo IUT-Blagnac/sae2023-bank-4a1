@@ -56,7 +56,7 @@ prédeceseurs à ajouter.
 affinez le GANTT V1 pour l'instant, pas besoin du reste.
 reprendre le découpage des taches pour V1.
 affichage du graphe pas optimal, à reprendre.
-| 16/05  | CdC V2final| https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/CDC.adoc                                 |  
+| 16/05  | CdC V2final| https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/CDC.adoc                                 |  16/20. manque problématique, description des fichiers V0. Très bonne analyse du besoin avec priorisation, et UCs complet. attention, dans les contraintes, la DB a utiliser est Oracle, et non SQL developer. Contraintes globalement complètes. bon travail.
 |         | Gantt V1 Réalisé |    Gantt PDF : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Gestion%20et%20dvpt%20appV1%20Réalisé.pdf
                                   Gantt PNG : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Gestion%20et%20dvpt%20appV1%20Réalisé.png    |     
 |         | Gantt V2 Prevu|   Gantt PDF : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Gestion%20et%20dvpt%20appV2.pdf
