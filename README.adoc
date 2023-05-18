@@ -58,9 +58,9 @@ reprendre le découpage des taches pour V1.
 affichage du graphe pas optimal, à reprendre.
 | 16/05  | CdC V2final| https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/CDC.adoc                                 |  16/20. manque problématique, description des fichiers V0. Très bonne analyse du besoin avec priorisation, et UCs complet. attention, dans les contraintes, la DB a utiliser est Oracle, et non SQL developer. Contraintes globalement complètes. bon travail.
 |         | Gantt V1 Réalisé |    Gantt PDF : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Gestion%20et%20dvpt%20appV1%20Réalisé.pdf
-                                  Gantt PNG : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Gestion%20et%20dvpt%20appV1%20Réalisé.png    |     
+                                  Gantt PNG : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Gestion%20et%20dvpt%20appV1%20Réalisé.png    |   remarques du GANTT V1 à la livraison du 12/05 n'ont pas été prise en compte. Donc meme remarques; GANTT pas exeploitable en l'état.  
 |         | Gantt V2 Prevu|   Gantt PDF : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Gestion%20et%20dvpt%20appV2.pdf
-                                    Gantt PNG : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Gestion%20et%20dvpt%20appV2.png       |     
+                                    Gantt PNG : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Gestion%20et%20dvpt%20appV2.png       |   idem ci-dessus  
 |         | Doc. Tec. V1 | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Documentation%20technique.adoc |    
 |         | Doc User V1    | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Documentation%20utilisateur.adoc |
 |         | Recette V1  | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/cahier%20de%20recette.adoc                  | 
