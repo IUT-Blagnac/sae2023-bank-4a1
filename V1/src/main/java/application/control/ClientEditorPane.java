@@ -13,6 +13,9 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.data.Client;
 
+/**
+ * Classe qui gère le contrôleur de la page de gestion des clients(ajout et modification)
+*/
 public class ClientEditorPane {
 
 	private Stage primaryStage;
@@ -44,6 +47,12 @@ public class ClientEditorPane {
 		}
 	}
 
+	/** 
+	 * Démarre la fonction de contrôleur de la page ajoutée ou modifiée des clients
+	 * @param client : Client qui est modifié
+	 * @param em : Indique le mode d'édition (ajouter, modifier, supprimer) 
+	 * @return Si le client a changé 
+	 */
 	public Client doClientEditorDialog(Client client, EditionMode em) {
 		return this.cepcViewController.displayDialog(client, em);
 	}
