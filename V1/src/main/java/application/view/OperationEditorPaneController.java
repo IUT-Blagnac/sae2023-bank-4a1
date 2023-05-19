@@ -191,7 +191,10 @@ public class OperationEditorPaneController {
 			this.operationResultat = new Operation(-1, montant, null, null, this.compteEdite.idNumCli, typeOp);
 			this.primaryStage.close();
 			break;
+
 		case CREDIT:
+			// règles de validation d'un crédit :
+			// - le montant doit être un nombre valide
 			double montant1;
 
 			this.txtMontant.getStyleClass().remove("borderred");
