@@ -117,7 +117,17 @@ public class OperationEditorPaneController {
 			this.cbTypeOpe.getSelectionModel().select(0);
 			break;
 		}
+		// Paramétrages spécifiques pour les chefs d'agences
+		if (ConstantesIHM.isAdmin(this.dailyBankState.getEmployeActuel())) {
+			// rien pour l'instant
+		}
 
+		this.operationResultat = null;
+		this.cbTypeOpe.requestFocus();
+
+		this.primaryStage.showAndWait();
+		return this.operationResultat;
+	}
 	// Gestion du stage
 	private Object closeWindow(WindowEvent e) {
 		this.doCancel();

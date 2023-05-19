@@ -7,12 +7,14 @@ import application.tools.StageManagement;
 import application.view.ClientEditorPaneController;
 import application.view.ClientsManagementController;
 import application.view.EmployeEditorPaneController;
+import application.view.EmployesManagementController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.data.Client;
+import model.data.Employe;
 
 /**
  * Classe qui gère le contrôleur de la page de gestion des clients(ajout et modification)
@@ -20,13 +22,13 @@ import model.data.Client;
 public class EmployeEditorPane {
 
 	private Stage primaryStage;
-	private EmployeEditorPaneController cepcViewController;
+	private EmployeEditorPaneController eepcViewController;
 	private DailyBankState dailyBankState;
 
 	public EmployeEditorPane(Stage _parentStage, DailyBankState _dbstate) {
 		this.dailyBankState = _dbstate;
 		try {
-			FXMLLoader loader = new FXMLLoader(ClientsManagementController.class.getResource("employeeditorpane.fxml"));
+			FXMLLoader loader = new FXMLLoader(EmployesManagementController.class.getResource("employeeditorpane.fxml"));
 			BorderPane root = loader.load();
 
 			Scene scene = new Scene(root, root.getPrefWidth() + 20, root.getPrefHeight() + 10);
@@ -37,11 +39,11 @@ public class EmployeEditorPane {
 			this.primaryStage.initOwner(_parentStage);
 			StageManagement.manageCenteringStage(_parentStage, this.primaryStage);
 			this.primaryStage.setScene(scene);
-			this.primaryStage.setTitle("Gestion d'un client");
+			this.primaryStage.setTitle("Gestion d'un employe");
 			this.primaryStage.setResizable(false);
 
-			this.cepcViewController = loader.getController();
-			this.cepcViewController.initContext(this.primaryStage, this.dailyBankState);
+			this.eepcViewController = loader.getController();
+			this.eepcViewController.initContext(this.primaryStage, this.dailyBankState);
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -54,7 +56,7 @@ public class EmployeEditorPane {
 	 * @param em : Indique le mode d'édition (ajouter, modifier, supprimer) 
 	 * @return Si le client a changé 
 	 */
-	public Client doClientEditorDialog(Client client, EditionMode em) {
-		return this.cepcViewController.displayDialog(client, em);
+	public Employe doClientEditorDialog(Employe employe, EditionMode em) {
+		return this.eepcViewController.displayDialog(employe, em);
 	}
 }
