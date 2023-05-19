@@ -1,7 +1,5 @@
 package application.view;
 
-import java.util.regex.Pattern;
-
 import application.DailyBankState;
 import application.control.ExceptionDialog;
 import application.tools.AlertUtilities;
@@ -16,7 +14,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
-import model.data.Client;
 import model.data.Employe;
 import model.orm.exception.ApplicationException;
 import model.orm.exception.Order;
@@ -34,7 +31,7 @@ public class EmployeEditorPaneController {
 
 	private Employe employeEdite;
 	private EditionMode editionMode;
-	private Client clientResultat;
+	private Employe employeResultat;
 
 	// Manipulation de la fenêtre
 
@@ -56,7 +53,7 @@ public class EmployeEditorPaneController {
 		} else {
 			this.employeEdite = new Employe(employe);
 		}
-		this.clientResultat = null;
+		this.employeResultat = null;
 		switch (mode) {
 		case CREATION:
 			this.txtIdEmp.setDisable(true);
@@ -83,25 +80,22 @@ public class EmployeEditorPaneController {
 			this.txtPrenom.setDisable(false);
 			this.txtLogin.setDisable(false);
 			this.txtMotDePasse.setDisable(false);
-			this.rbActif.setSelected(true);
-			this.rbInactif.setSelected(false);
+			this.rbChef.setSelected(true);
+			this.rbPasChef.setSelected(false);
 			if (ConstantesIHM.isAdmin(this.dailyBankState.getEmployeActuel())) {
-				this.rbActif.setDisable(false);
-				this.rbInactif.setDisable(false);
+				this.rbChef.setDisable(false);
+				this.rbPasChef.setDisable(false);
 			} else {
-				this.rbActif.setDisable(true);
-				this.rbInactif.setDisable(true);
+				this.rbChef.setDisable(true);
+				this.rbPasChef.setDisable(true);
 			}
-			this.lblMessage.setText("Informations client");
+			this.lblMessage.setText("Informations employé");
 			this.butOk.setText("Modifier");
 			this.butCancel.setText("Annuler");
 			break;
 		case SUPPRESSION:
-			// ce mode n'est pas utilisé pour les Clients :
-			// la suppression d'un client n'existe pas il faut que le chef d'agence
-			// bascule son état "Actif" à "Inactif"
-			ApplicationException ae = new ApplicationException(Table.NONE, Order.OTHER, "SUPPRESSION CLIENT NON PREVUE",
-					null);
+			// ce mode n'est pas encore AU POINT
+			ApplicationException ae = new ApplicationException(Table.NONE, Order.OTHER, "SUPPRESSION CLIENT NON PREVUE", null);
 			ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, ae);
 			ed.doExceptionDialog();
 
@@ -112,23 +106,22 @@ public class EmployeEditorPaneController {
 			// rien pour l'instant
 		}
 		// initialisation du contenu des champs
-		this.txtIdEmp.setText("" + this.clientEdite.idNumCli);
-		this.txtNom.setText(this.clientEdite.nom);
-		this.txtPrenom.setText(this.clientEdite.prenom);
-		this.txtAdr.setText(this.clientEdite.adressePostale);
-		this.txtMail.setText(this.clientEdite.email);
-		this.txtTel.setText(this.clientEdite.telephone);
+		this.txtIdEmp.setText("" + this.employeEdite.idEmploye);
+		this.txtNom.setText(this.employeEdite.nom);
+		this.txtPrenom.setText(this.employeEdite.prenom);
+		this.txtLogin.setText(this.employeEdite.login);
+		this.txtMotDePasse.setText(this.employeEdite.motPasse);
 
-		if (ConstantesIHM.estInactif(this.clientEdite)) {
-			this.rbInactif.setSelected(true);
+		if (ConstantesIHM.isAdmin(this.employeEdite)) {
+			this.rbPasChef.setSelected(true);
 		} else {
-			this.rbInactif.setSelected(false);
+			this.rbPasChef.setSelected(false);
 		}
 
-		this.clientResultat = null;
+		this.employeResultat = null;
 
 		this.primaryStage.showAndWait();
-		return this.clientResultat;
+		return this.employeResultat;
 	}
 
 	// Gestion du stage
@@ -165,7 +158,7 @@ public class EmployeEditorPaneController {
 
 	@FXML
 	private void doCancel() {
-		this.clientResultat = null;
+		this.employeResultat = null;
 		this.primaryStage.close();
 	}
 
@@ -174,18 +167,18 @@ public class EmployeEditorPaneController {
 		switch (this.editionMode) {
 		case CREATION:
 			if (this.isSaisieValide()) {
-				this.clientResultat = this.clientEdite;
+				this.employeResultat = this.employeEdite;
 				this.primaryStage.close();
 			}
 			break;
 		case MODIFICATION:
 			if (this.isSaisieValide()) {
-				this.clientResultat = this.clientEdite;
+				this.employeResultat = this.employeEdite;
 				this.primaryStage.close();
 			}
 			break;
 		case SUPPRESSION:
-			this.clientResultat = this.clientEdite;
+			this.employeResultat = this.employeEdite;
 			this.primaryStage.close();
 			break;
 		}
@@ -193,46 +186,28 @@ public class EmployeEditorPaneController {
 	}
 
 	private boolean isSaisieValide() {
-		this.clientEdite.nom = this.txtNom.getText().trim();
-		this.clientEdite.prenom = this.txtPrenom.getText().trim();
-		this.clientEdite.adressePostale = this.txtAdr.getText().trim();
-		this.clientEdite.telephone = this.txtTel.getText().trim();
-		this.clientEdite.email = this.txtMail.getText().trim();
-		if (this.rbActif.isSelected()) {
-			this.clientEdite.estInactif = ConstantesIHM.CLIENT_ACTIF;
+		this.employeEdite.nom = this.txtNom.getText().trim();
+		this.employeEdite.prenom = this.txtPrenom.getText().trim();
+		this.employeEdite.login = this.txtLogin.getText().trim();
+		this.employeEdite.motPasse = this.txtMotDePasse.getText().trim();
+		if (this.rbChef.isSelected()) {
+			this.employeEdite.droitsAccess = ConstantesIHM.CLIENT_ACTIF;
 		} else {
-			this.clientEdite.estInactif = ConstantesIHM.CLIENT_INACTIF;
+			this.employeEdite.droitsAccess = ConstantesIHM.CLIENT_INACTIF;
 		}
 
-		if (this.clientEdite.nom.isEmpty()) {
+		if (this.employeEdite.nom.isEmpty()) {
 			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null, "Le nom ne doit pas être vide",
 					AlertType.WARNING);
 			this.txtNom.requestFocus();
 			return false;
 		}
-		if (this.clientEdite.prenom.isEmpty()) {
+		if (this.employeEdite.prenom.isEmpty()) {
 			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null, "Le prénom ne doit pas être vide",
 					AlertType.WARNING);
 			this.txtPrenom.requestFocus();
 			return false;
 		}
-
-		String regex = "(0)[1-9][0-9]{8}";
-		if (!Pattern.matches(regex, this.clientEdite.telephone) || this.clientEdite.telephone.length() > 10) {
-			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null, "Le téléphone n'est pas valable",
-					AlertType.WARNING);
-			this.txtTel.requestFocus();
-			return false;
-		}
-		regex = "^(?=.{1,64}@)[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*@"
-				+ "[^-][A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})$";
-		if (!Pattern.matches(regex, this.clientEdite.email) || this.clientEdite.email.length() > 20) {
-			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null, "Le mail n'est pas valable",
-					AlertType.WARNING);
-			this.txtMail.requestFocus();
-			return false;
-		}
-
 		return true;
 	}
 }
