@@ -91,6 +91,11 @@ public class OperationsManagementController {
 		this.primaryStage.close();
 	}
 
+	/**
+ 	* Effectue une opération de débit sur le compte
+ 	* Fonction appelée lorsqu'on clique sur le bouton enregistrer débit
+ 	* Si l'opération est non nulle les informations du compte sont mises à jour
+ 	*/
 	@FXML
 	private void doDebit() {
 
@@ -101,6 +106,11 @@ public class OperationsManagementController {
 		}
 	}
 
+	/**
+ 	* Effectue une opération de crédit sur le compte
+ 	* Fonction appelée lorsqu'on clique sur le bouton enregistrer crédit
+ 	* Si l'opération est non nulle les informations du compte sont mises à jour
+ 	*/
 	@FXML
 	private void doCredit() {
 
