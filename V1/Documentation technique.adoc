@@ -42,13 +42,15 @@ L’application DailyBank permet de gérer des comptes bancaires de dépôt pour
 
 image::UseCaseV0.png[]
 
-image::UseCaseV1.png[]
-_Figure 2. Diagramme des Cas d’Utilisation (V.2)_ 
-
 Nous identifions deux types d’utilisateurs de l’application : le guichetier et le chef d’agence.
 
-Le guichetier peut créer un nouveau client, modifier ses informations, créer un compte, le consulter, le débiter, le créditer ou encore le clôturer. De plus, il peut effectuer un virement de compte à compte, générer un relevé mensuel d’un compte en PDF et gérer les prélèvements automatiques.
-Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut également rendre inactif un client, gérer les employés, effectuer un débit exceptionnel, simuler un emprunt et simuler une assurance d’emprunt.
+Le guichetier peut créer un nouveau client, modifier ses informations, le consulter et le débiter. 
+Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut également rendre inactif un client.
+
+image::uc-initialv1.svg[]
+_Figure 2. Diagramme des Cas d’Utilisation (V.1)_ 
+
+En plus de la version 0, le guichetier peut créer un compte, le clôturer, le créditer et effectuer un virement. Le chef d’agence peut gérer les employés.
 
 [[diagramme_de_classe]]
 === 1.2 Diagramme de classe des données global
@@ -56,14 +58,35 @@ Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut égal
 image::DiagrammeClassesV0.png[]
 _Figure 3. Diagramme de Classes (V.0)_
 
+Le diagramme de classes V0 dispose de plusieurs tables :
+
+* Client : a un nom, un prénom, une adresse postale, un email, un numéro de téléphone et un statut estInactif (si un client est inactif ou non) +
+
+* CompteCourant : possède un identifiant numéro compte, un débit autorisé et un solde
+
+* Operation : dispose d’un montant, d’une date de début d’opération et d’une date de valeur +
+
+* TypeOperation : représente un chèque, un retrait par carte bancaire, un paiement par carte bancaire ou encore un virement +
+
+* AgenceBancaire : dispose d’un nom et d’une adresse postale +
+
+* Employe : a un nom, un prénom, un droit d’accès, un login et un mot de passe +
+
 image::DiagrammeClassesV1.png[]
 _Figure 4. Diagramme de Classes (V.1)_
+
+Le diagramme de classes V1 dispose des mêmes tables que dans la V0.
+Il n'y a presque aucun changement à part qu'un SoldeCourant peut-être cloturé ou non.
 
 [[architecture]]
 == 2. Architecture
 
 [[architecture_generale]]
 === 2.1 Architecture générale
+
+image::Images/architecture.png[]
+
+Deux types d'utilisateurs se connectent à l'application : le guichetier et le chef d'agence. L'application se connecte à une base de données (Oracle SQL Developper).
 
 [[ressources_externes]]
 === 2.2 Ressources externes utilisées et rôles
@@ -86,29 +109,84 @@ _Figure 4. Diagramme de Classes (V.1)_
 [[elements_essentiels]]
 === 2.4 Elements essentiels
 
+Pour utiliser l'application il est nécessaire d'avoir Java 1.8. On exécute l'application en lançant le fichier .jar. Pour la base de données on utilise Oracle SQL Developper.
+
 [[presentation_des_diagrammes]]
 == 3. Présentation et explication des diagrammes demandés
 
 [[guichetier]]
 === 3.1 Guichetier
+Le guichetier a accès à plusieurs fonctionnalités : créditer un compte, débiter un compte, créer un compte, effectuer un virement et clôturer un compte. 
 
 [[crediter_compte]]
 ==== 3.1.1 Créditer un compte - Prescilla
 
+image::Images/UseCase_crediter.png[]
+_Figure Diagramme des Cas d’Utilisation crediter compte(V.1)_ 
+
+**Classes et ressources utilisées :** 
+
+* OperationManagement.java 
+* OperationManagementController.java
+* OperationManagement.fxml
+* OperationEditorPaneController.java
+* AccessOperation.java
+
+image::Images/dc_crediter_debiter.png[]
+_Figure Diagramme de classes crediter compte_ 
+
+image::Images/crediter_compte.png[]
+_Figure Interface crediter compte_ 
+
 [[debiter_compte]]
 ==== 3.1.2 Débiter un compte - Prescilla
 
+image::Images/UseCase_debiter.png[]
+_Figure Diagramme des Cas d’Utilisation debiter compte_ 
+
+**Classes et ressources utilisées :** 
+
+* OperationManagement.java
+* OperationManagementController.java
+* OperationManagement.fxml
+* OperationEditorPaneController.java
+* AccessOperation.java
+
+image::Images/dc_crediter_debiter.png[]
+_Figure Diagramme de classes debiter compte_ 
+
+image::Images/debiter_compte.png[]
+_Figure Interface debiter compte_ 
+
 [[creer_compte]]
 ==== 3.1.3 Créer un compte - Julien
+C'est une fonctionnalité permettant de créer un compte Bancaire pour un client existant, une nouvelle fenêtre s'ouvrira affichant toutes les informations nécessaires à l'ajout du compte, le gérant de la création du compte en particulier le guichetier doit ajouter un solde de base sur le compte, les ID sont disposés automatiquement par le programme.
+Une fois ajouté, le compte sera visible sur le gestionnaire des comptes du client.
+
+image::Images/use_case_cc.png[]
+
+**Classes et ressources utilisés :**
+
+* ComptesManagementController.java : Controlleur de la fenêtre "Gestion des comptes". Les boutons "btnVoirOpes", "btnModifierCompte", "btnSupprCompte" sont nécessaires.
+* ComptesManagement.java : Permet de gérer les comptes d’un client. Les méthodes suivantes sont utilisés, "getComptesDunClient", "creerNouveauCompte", "gererOperationsDUnCompte", "doComptesManagementDialog".
+* AccessCompteCourant.java : Permet de gérer l’accès aux comptes d’un client. Les méthodes "creerCompteCourant" et "updateCompteCourant".
+* CompteEditorPane.fxml : Page FXML qui correspond à la fenêtre "Gestion des comptes".
+* ComptesManagement.fxml : Page FXML qui correspond à la fenêtre "Gestion des clients".
 
 [[virement_compte]]
 ==== 3.1.4 Effectuer un virement de compte à compte - Julien
+L'opération de virement s'effectue en choisissant un compte bancaire client afin de faire un virement vers un autre compte du même client.
+
+image::Images/use_case_vc.png[]
+
+**Classes et ressources utilisés :**
 
 [[cloturer_compte]]
 ==== 3.1.5 Clôturer compte - Manon
 
 [[chef_agence]]
 === 3.2 Chef d'agence
+Le chef d'agence a pour fonctionnalités : gérer les employés qui sont le guichetier et le chef d'agence. C'est-à-dire gérer le CRUD : Créer un employé, Consulter un employé, Modifier les informations d'un employé et Supprimer un employé.
 
 [[CRUD]]
 ==== 3.2.1 Gérer (faire le “CRUD”) les employés (guichetier et chef d’agence)
@@ -121,6 +199,14 @@ _Figure 4. Diagramme de Classes (V.1)_
 
 [[update]]
 ===== 3.2.1.3 Update - Prescilla
+
+image::Images/UseCase_update_employe.png[]
+_Figure Diagramme des Cas d’Utilisation update employe_ 
+
+**Classes et ressources utilisés :**
+
+image::Images/dc_update_employe.png[]
+_Figure Diagramme de classes update employe_ 
 
 [[delete]]
 ===== 3.2.1.4 Delete - Julien

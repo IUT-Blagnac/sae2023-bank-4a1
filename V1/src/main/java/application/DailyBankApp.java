@@ -2,6 +2,8 @@ package application;
 
 import application.control.DailyBankMainFrame;
 
+//test
+
 /**
  * 
  * Classe principale de lancement.
