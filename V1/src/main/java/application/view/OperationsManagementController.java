@@ -10,9 +10,13 @@ import application.tools.PairsOfValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import model.data.Client;
@@ -79,6 +83,8 @@ public class OperationsManagementController {
 	private Button btnDebit;
 	@FXML
 	private Button btnCredit;
+	@FXML
+	private Button btnVirement;
 
 	@FXML
 	private void doCancel() {
@@ -107,6 +113,12 @@ public class OperationsManagementController {
 
 	@FXML
 	private void doAutre() {
+
+			Operation op = this.omDialogController.enregistrerVirement();
+			if (op != null) {
+				this.updateInfoCompteClient();
+				this.validateComponentState();
+			}
 	}
 
 	private void validateComponentState() {
