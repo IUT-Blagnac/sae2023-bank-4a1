@@ -54,7 +54,6 @@ public class OperationEditorPaneController {
 
 		switch (mode) {
 		case DEBIT:
-
 			String info = "Cpt. : " + this.compteEdite.idNumCompte + "  "
 					+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
 					+ String.format(Locale.ENGLISH, "%8d", this.compteEdite.debitAutorise);
@@ -71,7 +70,6 @@ public class OperationEditorPaneController {
 			break;
 
 		case CREDIT:
-			
 			String info1 = "Cpt. : " + this.compteEdite.idNumCompte + "  "
 					+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
 					+ String.format(Locale.ENGLISH, "%8d", this.compteEdite.debitAutorise);
@@ -193,6 +191,9 @@ public class OperationEditorPaneController {
 			this.primaryStage.close();
 			break;
 		case CREDIT:
+			// règles de validation d'un crédit :
+			// - le montant doit être un nombre valide
+
 			double montant1;
 
 			this.txtMontant.getStyleClass().remove("borderred");
