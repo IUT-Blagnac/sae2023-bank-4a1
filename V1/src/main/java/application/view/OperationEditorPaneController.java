@@ -14,7 +14,6 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
-import javafx.scene.control.Labeled;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
@@ -117,6 +116,8 @@ public class OperationEditorPaneController {
 			this.cbTypeOpe.getSelectionModel().select(0);
 			break;
 		}
+		return this.operationResultat;
+	}
 
 	// Gestion du stage
 	private Object closeWindow(WindowEvent e) {
@@ -191,10 +192,7 @@ public class OperationEditorPaneController {
 			this.operationResultat = new Operation(-1, montant, null, null, this.compteEdite.idNumCli, typeOp);
 			this.primaryStage.close();
 			break;
-
 		case CREDIT:
-			// règles de validation d'un crédit :
-			// - le montant doit être un nombre valide
 			double montant1;
 
 			this.txtMontant.getStyleClass().remove("borderred");
