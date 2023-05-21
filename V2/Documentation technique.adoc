@@ -64,11 +64,14 @@ _Figure 2. Diagramme des Cas d’Utilisation (V.1)_
 
 En plus de la version 0, le guichetier peut créer un compte, le clôturer, le créditer et effectuer un virement. Le chef d’agence peut gérer les employés.
 
+image::Images/uc-initialv2.svg[]
+_Figure 3. Diagramme des Cas d’Utilisation (V.2)_ 
+
 [[diagramme_de_classe]]
 === 1.2 Diagramme de classe des données global
 
 image::Images/DiagrammeClassesV0.png[]
-_Figure 3. Diagramme de Classes (V.0)_
+_Figure 4. Diagramme de Classes (V.0)_
 
 Le diagramme de classes V0 dispose de plusieurs tables :
 
@@ -85,10 +88,13 @@ Le diagramme de classes V0 dispose de plusieurs tables :
 * Employe : a un nom, un prénom, un droit d’accès, un login et un mot de passe +
 
 image::Images/DiagrammeClassesV1.png[]
-_Figure 4. Diagramme de Classes (V.1)_
+_Figure 5. Diagramme de Classes (V.1)_
 
 Le diagramme de classes V1 dispose des mêmes tables que dans la V0.
 Il n'y a presque aucun changement à part qu'un SoldeCourant peut-être cloturé ou non.
+
+image::Images/dc-initialv2.svg[]
+_Figure 6. Diagramme de Classes (V.2)_
 
 [[architecture]]
 == 2. Architecture
