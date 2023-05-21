@@ -85,7 +85,29 @@ Il y a encore des morceaux non complétés.
 |         | jar. V1 |    |   
 |         | javadoc. V1 |    |   
 |         | application. V1 |    |   
-|         | Recette V1  | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/cahier%20de%20recette.adoc                  | 
+|         | Recette V1  | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/cahier%20de%20recette.adoc      |Créer un compte - Julien 
+
+Y aura til un bouton annuler et que se passe til si j’annule ?
+
+Clôturer un compte - Manon 
+
+Il faut prévoir qu’on ne peut clôturer un compte que si son solde est à 0
+Que se passe-t-il si j’essaie de clôturer un compte dont le solde n’est pas à 0 ?
+
+Si un compte est cloturé, je ne devrait plus pouvoir effectuer d’opérations dessus… Vous avez sans doute décrit tout ça dans le cahier des charges.
+
+Créditer un compte - Prescilla 
+Attention crédité n’est pas le copié collé de débiter
+
+Virement sur un compte - Julien 
+
+Comment ça se passe. On peut faire des virement entre des comptes utilisateur du même client actif ???
+Y a de l’idée mais pas encore au point.
+
+UPDATE un employé - Prescilla 
+ Y aura til un bouton annuler et que se passe til si j’annule ?
+
+A terminer            | 
 |         | Suivi projet V1|   | commits pas commentés, issues dans le board à compléter avec milestone / labels, mais semble à jour. readme OK, arbo OK, attention aux GANTTs
 | 26/05   | Gantt V2  réalisé    |      | 
 |         | Doc. Util. V2 |         |         
