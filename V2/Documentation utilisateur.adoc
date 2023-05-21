@@ -253,10 +253,10 @@ Le chef d'agence a pour fonctionnalités : effectuer un débit exceptionnel, sim
 ==== 5.2.1 Effectuer un débit exceptionnel - Prescilla
 
 [[simuler_emprunt]]
-===== 5.2.2 Simuler un emprunt - Manon
+==== 5.2.2 Simuler un emprunt - Manon
 
 [[simuler_assurance_emprunt]]
-===== 5.2.3 Simuler une assurance d'emprunt - Prescilla
+==== 5.2.3 Simuler une assurance d'emprunt - Prescilla
 
 [[resultats]]
 == 6. Résultats produits avec jeux d'essai
