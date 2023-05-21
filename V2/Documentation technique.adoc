@@ -19,7 +19,7 @@ Projet : DailyBank - SAÉ 2.01 et 2.05
 ** <<ressources_externes>> 
 ** <<structuration>> 
 ** <<elements_essentiels>> 
-* <<presentation_des_diagrammes>>
+* <<version1_presentation_des_diagrammes>>
 ** <<guichetier>>
 *** <<crediter_compte>>
 *** <<debiter_compte>>
@@ -32,6 +32,18 @@ Projet : DailyBank - SAÉ 2.01 et 2.05
 **** <<read>>
 **** <<update>>
 **** <<delete>>
+* <<version2_presentation_des_diagrammes>>
+** <<guichetierv2>>
+*** <<releve_compte_PDF>>
+*** <<crud_prelevements_automatiques>>
+**** <<create_prelevements>>
+**** <<read_prelevements>>
+**** <<update_prelevements>>
+**** <<delete_prelevements>>
+** <<chef_agencev2>>
+*** <<debit_exceptionnel>>
+*** <<simuler_emprunt>>
+*** <<simuler_assurance_emprunt>>
 
 [[presentation_appli]]
 == 1. Presentation de l'application
@@ -111,11 +123,11 @@ Deux types d'utilisateurs se connectent à l'application : le guichetier et le c
 
 Pour utiliser l'application il est nécessaire d'avoir Java 1.8. On exécute l'application en lançant le fichier .jar. Pour la base de données on utilise Oracle SQL Developper.
 
-[[presentation_des_diagrammes]]
-== 3. Présentation et explication des diagrammes demandés
+[[version1_presentation_des_diagrammes]]
+== 3. Version 1 - Présentation et explication des diagrammes demandés
 
 [[guichetier]]
-=== 3.1 Guichetier
+=== 3.1.1 Guichetier
 Le guichetier a accès à plusieurs fonctionnalités : créditer un compte, débiter un compte, créer un compte, effectuer un virement et clôturer un compte. 
 
 [[crediter_compte]]
@@ -211,5 +223,45 @@ _Figure Diagramme de classes update employe_
 [[delete]]
 ===== 3.2.1.4 Delete - Julien
 
+[[version2_presentation_des_diagrammes]]
+== 4. Version 2 - Présentation et explication des diagrammes demandés
+
+[[guichetierv2]]
+=== 4.1 Guichetier
+
+Le guichetier a accès à plusieurs fonctionnalités : générer un relevé mensuel d'un compte en PDF et gérer les prélèvements automatiques. 
+
+[[releve_compte_PDF]]
+==== 4.1.1 Générer un relevé mensuel d'un compte en PDF - Manon
+
+[[crud_prelevements_automatiques]]
+=== 4.1.2 Gérer (faire le "CRUD") les prélèvements automatiques - Julien
+
+[[create_prelevements]]
+==== 4.1.2.1 Create
+
+[[read_prelevements]]
+==== 4.1.2.2 Read
+
+[[update_prelevements]]
+==== 4.1.2.3 Update
+
+[[delete_prelevements]]
+==== 4.1.2.4 Delete
+
+[[chef_agencev2]]
+=== 4.2 Chef d'agence
+
+Le chef d'agence a pour fonctionnalités : effectuer un débit exceptionnel, simuler un emprunt et simuler une assurance d'emprunt.
+
+[[debit_exceptionnel]]
+==== 4.2.1 Effectuer un débit exceptionnel - Prescilla
+
+[[simuler_emprunt]]
+==== 4.2.2 Simuler un emprunt - Manon
+
+[[simuler_assurance_emprunt]]
+==== 4.2.3 Simuler une assurance d'emprunt - Prescilla
+
 [[elements_code]]
-== 4. Eléments de code significatifs commentés
+== 5. Eléments de code significatifs commentés
