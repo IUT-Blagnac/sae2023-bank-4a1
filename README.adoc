@@ -107,7 +107,7 @@ Y a de l’idée mais pas encore au point.
 UPDATE un employé - Prescilla 
  Y aura til un bouton annuler et que se passe til si j’annule ?
 
-A terminer            | 
+A terminer            
 |         | Suivi projet V1|   | commits pas commentés, issues dans le board à compléter avec milestone / labels, mais semble à jour. readme OK, arbo OK, attention aux GANTTs
 | 26/05   | Gantt V2  réalisé    |      | 
 |         | Doc. Util. V2 |         |         
