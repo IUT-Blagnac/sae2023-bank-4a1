@@ -83,7 +83,7 @@ Il manque le lien vers le cahier de recette la fiche de test concernée. Quelque
 Il y a encore des morceaux non complétés.
 |         | Doc User V1    | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Documentation%20utilisateur.adoc |document complet, avec fonctionnalités commentées. Mention du developeur, procédure d'installation convenable. doc OK, à compléter
 |         | jar. V1 |    |   
-|         | javadoc. V1 |    |   
+|         | javadoc. V1 |  Jar V1 : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/Julien_V1/V1/target/DailyBank-1.0-shaded.jar  |   
 |         | application. V1 |    |   
 |         | Recette V1  | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/cahier%20de%20recette.adoc      |Créer un compte - Julien 
 
