@@ -61,7 +61,26 @@ affichage du graphe pas optimal, à reprendre.
                                   Gantt PNG : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Gestion%20et%20dvpt%20appV1%20Réalisé.png    |   remarques du GANTT V1 à la livraison du 12/05 n'ont pas été prise en compte. Donc meme remarques; GANTT pas exeploitable en l'état.  
 |         | Gantt V2 Prevu|   Gantt PDF : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Gestion%20et%20dvpt%20appV2.pdf
                                     Gantt PNG : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Gestion%20et%20dvpt%20appV2.png       |   idem ci-dessus  
-|         | Doc. Tec. V1 | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Documentation%20technique.adoc |    
+|         | Doc. Tec. V1 | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Documentation%20technique.adoc |        • Architecture 
+Pas mal pour une V1
+
+Ce document doit servir à la maintenance de l’application pour cela il faut pouvoir l’installer et comprendre les différents éléments de l’architecture.
+
+Comment fait on pour installer l’application afin de pouvoir la faire évoluer ?
+Version de java, BD, script  de la base.
+Doit-on cloner quelque chose ?
+Si je change de base comment je fais le lien avec l’application java ?
+
+
+ 
+A quoi sert le fichier DailyBankState.java ?
+Expliquer par un diagramme de séquence qui déclenche l’appel d’une fen^tre quand je clique dans une fenêtre qui exécute, qui appelle les requêtes…  
+
+Partie individuelle.
+
+Il manque le lien vers le cahier de recette la fiche de test concernée. Quelque cas ne sont pas décrits. Ne pas hésité à donner le nom des méthodes introduites ou modifiées dans chaque classe.
+
+Il y a encore des morceaux non complétés.
 |         | Doc User V1    | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Documentation%20utilisateur.adoc |document complet, avec fonctionnalités commentées. Mention du developeur, procédure d'installation convenable. doc OK, à compléter
 |         | jar. V1 |    |   
 |         | javadoc. V1 |    |   
