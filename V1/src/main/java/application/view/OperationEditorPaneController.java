@@ -69,19 +69,35 @@ public class OperationEditorPaneController {
 			this.cbTypeOpe.getSelectionModel().select(0);
 			break;
 
-		case CREDIT:
+		case DEBITEXCEPTIONNEL:
 			String info1 = "Cpt. : " + this.compteEdite.idNumCompte + "  "
 					+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
 					+ String.format(Locale.ENGLISH, "%8d", this.compteEdite.debitAutorise);
 			this.lblMessage.setText(info1);
 
+			this.btnOk.setText("Effectuer Débit exceptionnel");
+			this.btnCancel.setText("Annuler débit exceptionnel");
+
+			ObservableList<String> listTypesOpesPossibles1 = FXCollections.observableArrayList();
+			listTypesOpesPossibles1.addAll(ConstantesIHM.OPERATIONS_DEBITEXCEPTIONNEL_GUICHET);
+
+			this.cbTypeOpe.setItems(listTypesOpesPossibles1);
+			this.cbTypeOpe.getSelectionModel().select(0);
+			break;
+			
+		case CREDIT:
+			String info2 = "Cpt. : " + this.compteEdite.idNumCompte + "  "
+					+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
+					+ String.format(Locale.ENGLISH, "%8d", this.compteEdite.debitAutorise);
+			this.lblMessage.setText(info2);
+
 			this.btnOk.setText("Effectuer Crédit");
 			this.btnCancel.setText("Annuler crédit");
 
-			ObservableList<String> listTypesOpesPossibles1 = FXCollections.observableArrayList();
-			listTypesOpesPossibles1.addAll(ConstantesIHM.OPERATIONS_CREDIT_GUICHET);
+			ObservableList<String> listTypesOpesPossibles2 = FXCollections.observableArrayList();
+			listTypesOpesPossibles2.addAll(ConstantesIHM.OPERATIONS_CREDIT_GUICHET);
 
-			this.cbTypeOpe.setItems(listTypesOpesPossibles1);
+			this.cbTypeOpe.setItems(listTypesOpesPossibles2);
 			this.cbTypeOpe.getSelectionModel().select(0);
 			break;			
 
@@ -176,8 +192,8 @@ public class OperationEditorPaneController {
 				this.txtMontant.requestFocus();
 				return;
 			}
-			if (this.compteEdite.solde - montant < this.compteEdite.debitAutorise) {
-				info = "Dépassement du découvert ! - Cpt. : " + this.compteEdite.idNumCompte + "  "
+			if (this.compteEdite.solde - montant < 0) {
+				info = "Débit non autorisé, pas possible de mettre le compte à découvert ! - Cpt. : " + this.compteEdite.idNumCompte + "  "
 						+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
 						+ String.format(Locale.ENGLISH, "%8d", this.compteEdite.debitAutorise);
 				this.lblMessage.setText(info);
@@ -191,10 +207,11 @@ public class OperationEditorPaneController {
 			this.operationResultat = new Operation(-1, montant, null, null, this.compteEdite.idNumCli, typeOp);
 			this.primaryStage.close();
 			break;
-		case CREDIT:
-			// règles de validation d'un crédit :
+		case DEBITEXCEPTIONNEL:
+			// règles de validation d'un débit :
 			// - le montant doit être un nombre valide
-
+			// - et si l'utilisateur n'est pas chef d'agence,
+			// - le débit ne doit pas amener le compte en dessous de son découvert autorisé
 			double montant1;
 
 			this.txtMontant.getStyleClass().remove("borderred");
@@ -215,8 +232,47 @@ public class OperationEditorPaneController {
 				this.txtMontant.requestFocus();
 				return;
 			}
+			if (this.compteEdite.solde - montant1 < this.compteEdite.debitAutorise) {
+				info1 = "Dépassement du découvert ! - Cpt. : " + this.compteEdite.idNumCompte + "  "
+						+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
+						+ String.format(Locale.ENGLISH, "%8d", this.compteEdite.debitAutorise);
+				this.lblMessage.setText(info1);
+				this.txtMontant.getStyleClass().add("borderred");
+				this.lblMontant.getStyleClass().add("borderred");
+				this.lblMessage.getStyleClass().add("borderred");
+				this.txtMontant.requestFocus();
+				return;
+			}
 			String typeOp1 = this.cbTypeOpe.getValue();
 			this.operationResultat = new Operation(-1, montant1, null, null, this.compteEdite.idNumCli, typeOp1);
+			this.primaryStage.close();
+			break;
+		case CREDIT:
+			// règles de validation d'un crédit :
+			// - le montant doit être un nombre valide
+
+			double montant2;
+
+			this.txtMontant.getStyleClass().remove("borderred");
+			this.lblMontant.getStyleClass().remove("borderred");
+			this.lblMessage.getStyleClass().remove("borderred");
+			String info2 = "Cpt. : " + this.compteEdite.idNumCompte + "  "
+					+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
+					+ String.format(Locale.ENGLISH, "%8d", this.compteEdite.debitAutorise);
+			this.lblMessage.setText(info2);
+
+			try {
+				montant2 = Double.parseDouble(this.txtMontant.getText().trim());
+				if (montant2 <= 0)
+					throw new NumberFormatException();
+			} catch (NumberFormatException nfe) {
+				this.txtMontant.getStyleClass().add("borderred");
+				this.lblMontant.getStyleClass().add("borderred");
+				this.txtMontant.requestFocus();
+				return;
+			}
+			String typeOp2 = this.cbTypeOpe.getValue();
+			this.operationResultat = new Operation(-1, montant2, null, null, this.compteEdite.idNumCli, typeOp2);
 			this.primaryStage.close();
 			break;
 
@@ -231,8 +287,8 @@ public class OperationEditorPaneController {
 			this.lblMessage.setText(info3);
 
 			try {
-				montant = Double.parseDouble(this.txtMontant.getText().trim());
-				if (montant <= 0)
+				montant1 = Double.parseDouble(this.txtMontant.getText().trim());
+				if (montant1 <= 0)
 					throw new NumberFormatException();
 			} catch (NumberFormatException nfe) {
 				this.txtMontant.getStyleClass().add("borderred");
@@ -240,11 +296,11 @@ public class OperationEditorPaneController {
 				this.txtMontant.requestFocus();
 				return;
 			}
-			if (this.compteEdite.solde - montant < this.compteEdite.debitAutorise) {
-				info = "Dépassement du découvert ! - Cpt. : " + this.compteEdite.idNumCompte + "  "
+			if (this.compteEdite.solde - montant1 < this.compteEdite.debitAutorise) {
+				info1 = "Dépassement du découvert ! - Cpt. : " + this.compteEdite.idNumCompte + "  "
 						+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
 						+ String.format(Locale.ENGLISH, "%8d", this.compteEdite.debitAutorise);
-				this.lblMessage.setText(info);
+				this.lblMessage.setText(info1);
 				this.txtMontant.getStyleClass().add("borderred");
 				this.lblMontant.getStyleClass().add("borderred");
 				this.lblMessage.getStyleClass().add("borderred");
@@ -260,7 +316,7 @@ public class OperationEditorPaneController {
 			}
 
 			String typeOp3 = this.cbTypeOpe.getValue();
-			this.operationResultat = new Operation(-1, montant, null, null, this.compteEdite.idNumCli, typeOp3);
+			this.operationResultat = new Operation(-1, montant1, null, null, this.compteEdite.idNumCli, typeOp3);
 			this.primaryStage.close();
 			break;
 
