@@ -114,9 +114,10 @@ public class OperationEditorPaneController {
 			this.cbTypeOpe.getSelectionModel().select(0);
 			break;
 		}
+
+		this.primaryStage.showAndWait();
 		return this.operationResultat;
 	}
-
 	// Gestion du stage
 	private Object closeWindow(WindowEvent e) {
 		this.doCancel();

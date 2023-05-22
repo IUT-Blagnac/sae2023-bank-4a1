@@ -82,6 +82,8 @@ public class OperationsManagementController {
 	@FXML
 	private Button btnDebit;
 	@FXML
+	private Button btnDebitExceptionnel;
+	@FXML
 	private Button btnCredit;
 	@FXML
 	private Button btnVirement;
@@ -106,6 +108,21 @@ public class OperationsManagementController {
 		}
 	}
 
+	/**
+ 	* Effectue une opération de débit exceptionnel sur le compte
+ 	* Fonction appelée lorsqu'on clique sur le bouton enregistrer débit exceptionnel
+ 	* Si l'opération est non nulle les informations du compte sont mises à jour
+ 	*/
+	@FXML
+	private void doDebitExceptionnel() {
+
+		Operation op = this.omDialogController.enregistrerDebitExceptionnel();
+		if (op != null) {
+			this.updateInfoCompteClient();
+			this.validateComponentState();
+		}
+	}
+	
 	/**
  	* Effectue une opération de crédit sur le compte
  	* Fonction appelée lorsqu'on clique sur le bouton enregistrer crédit
@@ -135,6 +152,7 @@ public class OperationsManagementController {
 		// Non implémenté => désactivé
 		this.btnCredit.setDisable(false);
 		this.btnDebit.setDisable(false);
+		this.btnDebitExceptionnel.setDisable(false);
 	}
 
 	private void updateInfoCompteClient() {
