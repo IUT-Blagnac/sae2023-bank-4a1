@@ -34,6 +34,18 @@ Projet : DailyBank - SAÉ 2.01 et 2.05
 **** <<read>>
 **** <<update>>
 **** <<delete>>
+* <<fonctionnementv2>>
+** <<guichetierv2>>
+*** <<releve_compte_PDF>>
+*** <<crud_prelevements_automatiques>>
+**** <<create_prelevements>>
+**** <<read_prelevements>>
+**** <<update_prelevements>>
+**** <<delete_prelevements>>
+** <<chef_agencev2>>
+*** <<debit_exceptionnel>>
+*** <<simuler_emprunt>>
+*** <<simuler_assurance_emprunt>>
 * <<resultats>> 
 
 [[presentation]]
@@ -87,7 +99,7 @@ image::Images/creer_compte.png[]
 Une fois cliqué sur Ajouter, le compte client est enregistré dans la base de données est peut désormais posséder un compte bancaire en demandant à un guichetier.
 
 [[Consulter_un_compte]]
-==== 3.1.2 Consulter un compte
+==== 3.1.3 Consulter un compte
 
 Afin de consulter un compte, il faut se connecter à l'application en tant que guichetier. Puis cliquer sur Gestion et sélectionner Clients. Après, il faut cliquer sur Rechercher puis choisir un client. Par la suite, l'on sélectionne Comptes client qui ouvre une fenêtre affichant les comptes du client.
 
@@ -98,7 +110,7 @@ On sélectionne ensuite le compte voulu et en appuyant sur le bouton Voir opéra
 image::Images/consulter_compte2.png[]
 
 [[Débiter_un_compte]]
-==== 3.1.2 Débiter un compte (BD)
+==== 3.1.4 Débiter un compte (BD)
 Pour débiter un compte, il faut se connecter à l’application en tant que guichetier. Dans une nouvelle fenêtre, il faut cliquer sur Gestion puis sur Clients. On accéde ainsi aux comptes clients à l’aide du bouton Comptes client. Dans cette nouvelle fênetre, on clique sur le bouton Voir opérations qui affiche l’historique des opérations. Par la suite, l’on clique sur Enregistrer Crédit, une fenêtre s'affiche et il faut entrer le montant à déposer et choisir le type d’opération : dépôt espèces ou dépôt chèque. 
 
 Pour valider le crédit ou l’annuler, il faut choisir soit le bouton EffectuerDébit ou le bouton Annuler débit.
@@ -206,7 +218,47 @@ La possiblité de supprimer un compte bancaire d'un client en appuyant sur le bo
 
 _En cours de réalisation_
 
+[[fonctionnementv2]]
+== 5. Fonctionnement de la V2
+
+[[guichetierv2]]
+=== 5.1 Guichetier
+
+Le guichetier a accès à plusieurs fonctionnalités : générer un relevé mensuel d'un compte en PDF et gérer les prélèvements automatiques. 
+
+[[releve_compte_PDF]]
+==== 5.1.1 Générer un relevé mensuel d'un compte en PDF - Manon
+
+[[crud_prelevements_automatiques]]
+=== 5.1.2 Gérer (faire le "CRUD") les prélèvements automatiques - Julien
+
+[[create_prelevements]]
+==== 5.1.2.1 Create
+
+[[read_prelevements]]
+==== 5.1.2.2 Read
+
+[[update_prelevements]]
+==== 5.1.2.3 Update
+
+[[delete_prelevements]]
+==== 5.1.2.4 Delete
+
+[[chef_agencev2]]
+=== 5.2 Chef d'agence
+
+Le chef d'agence a pour fonctionnalités : effectuer un débit exceptionnel, simuler un emprunt et simuler une assurance d'emprunt.
+
+[[debit_exceptionnel]]
+==== 5.2.1 Effectuer un débit exceptionnel - Prescilla
+
+[[simuler_emprunt]]
+==== 5.2.2 Simuler un emprunt - Manon
+
+[[simuler_assurance_emprunt]]
+==== 5.2.3 Simuler une assurance d'emprunt - Prescilla
+
 [[resultats]]
-== 5. Résultats produits avec jeux d'essai
+== 6. Résultats produits avec jeux d'essai
 
 _En cours de réalisation_
