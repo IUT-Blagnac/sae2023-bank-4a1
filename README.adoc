@@ -17,7 +17,7 @@ Chef de projet : BERNARD Julien
 |1    |Chef d’Agence   |CRUD employé  |D| D | | 
 |1    |Guichetier     | Compte | Créer|F| | 
 |1    |Guichetier     | Compte | Créditer/Débiter|| D | 
-|1    |Guichetier     | Compte | Effectuer un virement|D| | 
+|1    |Guichetier     | Compte | Effectuer un virement|F| | 
 |1    |Guichetier     | Compte | Clôturer|| | D
 |2    |Chef d’Agence     | Compte | Débit exceptionnel|| | 
 |2    |Chef d’Agence     | Emprunt | Simuler emprunt|| | 
@@ -61,9 +61,59 @@ affichage du graphe pas optimal, à reprendre.
                                   Gantt PNG : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Gestion%20et%20dvpt%20appV1%20Réalisé.png    |   remarques du GANTT V1 à la livraison du 12/05 n'ont pas été prise en compte. Donc meme remarques; GANTT pas exeploitable en l'état.  
 |         | Gantt V2 Prevu|   Gantt PDF : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Gestion%20et%20dvpt%20appV2.pdf
                                     Gantt PNG : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Gestion%20et%20dvpt%20appV2.png       |   idem ci-dessus  
-|         | Doc. Tec. V1 | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Documentation%20technique.adoc |    
+|         | Doc. Tec. V1 | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Documentation%20technique.adoc |        • Architecture 
+Pas mal pour une V1
+
+Ce document doit servir à la maintenance de l’application pour cela il faut pouvoir l’installer et comprendre les différents éléments de l’architecture.
+
+Comment fait on pour installer l’application afin de pouvoir la faire évoluer ?
+Version de java, BD, script  de la base.
+Doit-on cloner quelque chose ?
+Si je change de base comment je fais le lien avec l’application java ?
+
+
+ 
+A quoi sert le fichier DailyBankState.java ?
+Expliquer par un diagramme de séquence qui déclenche l’appel d’une fen^tre quand je clique dans une fenêtre qui exécute, qui appelle les requêtes…  
+
+Partie individuelle.
+
+Il manque le lien vers le cahier de recette la fiche de test concernée. Quelque cas ne sont pas décrits. Ne pas hésité à donner le nom des méthodes introduites ou modifiées dans chaque classe.
+
+Il y a encore des morceaux non complétés.
 |         | Doc User V1    | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Documentation%20utilisateur.adoc |document complet, avec fonctionnalités commentées. Mention du developeur, procédure d'installation convenable. doc OK, à compléter
-|         | Recette V1  | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/cahier%20de%20recette.adoc                  | 
+|         | jar. V1 |    Jar V1 : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/Julien_V1/V1/target/DailyBank-1.0-shaded.ja[DaylyBankv1] |   Jar débiter avec dépassement de découvert j’ai un message mais plus le popup.
+Nouveau compte créer . Erreur BD quand ajouter
+OK pour annuler
+
+Ajouter crédit le bouton n’est pas actif.
+
+Ajouter nouveau employé non implémenté.
+|         | javadoc. V1 |   |   
+|         | application. V1 |    |   
+|         | Recette V1  | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/cahier%20de%20recette.adoc      |Créer un compte - Julien 
+
+Y aura til un bouton annuler et que se passe til si j’annule ?
+
+Clôturer un compte - Manon 
+
+Il faut prévoir qu’on ne peut clôturer un compte que si son solde est à 0
+Que se passe-t-il si j’essaie de clôturer un compte dont le solde n’est pas à 0 ?
+
+Si un compte est cloturé, je ne devrait plus pouvoir effectuer d’opérations dessus… Vous avez sans doute décrit tout ça dans le cahier des charges.
+
+Créditer un compte - Prescilla 
+Attention crédité n’est pas le copié collé de débiter
+
+Virement sur un compte - Julien 
+
+Comment ça se passe. On peut faire des virement entre des comptes utilisateur du même client actif ???
+Y a de l’idée mais pas encore au point.
+
+UPDATE un employé - Prescilla 
+ Y aura til un bouton annuler et que se passe til si j’annule ?
+
+A terminer            
 |         | Suivi projet V1|   | commits pas commentés, issues dans le board à compléter avec milestone / labels, mais semble à jour. readme OK, arbo OK, attention aux GANTTs
 | 26/05   | Gantt V2  réalisé    |      | 
 |         | Doc. Util. V2 |         |         

@@ -14,7 +14,6 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
-import javafx.scene.control.Labeled;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
@@ -55,7 +54,6 @@ public class OperationEditorPaneController {
 
 		switch (mode) {
 		case DEBIT:
-
 			String info = "Cpt. : " + this.compteEdite.idNumCompte + "  "
 					+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
 					+ String.format(Locale.ENGLISH, "%8d", this.compteEdite.debitAutorise);
@@ -72,7 +70,6 @@ public class OperationEditorPaneController {
 			break;
 
 		case CREDIT:
-			
 			String info1 = "Cpt. : " + this.compteEdite.idNumCompte + "  "
 					+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
 					+ String.format(Locale.ENGLISH, "%8d", this.compteEdite.debitAutorise);
@@ -117,13 +114,6 @@ public class OperationEditorPaneController {
 			this.cbTypeOpe.getSelectionModel().select(0);
 			break;
 		}
-		// Paramétrages spécifiques pour les chefs d'agences
-		if (ConstantesIHM.isAdmin(this.dailyBankState.getEmployeActuel())) {
-			// rien pour l'instant
-		}
-
-		this.operationResultat = null;
-		this.cbTypeOpe.requestFocus();
 
 		this.primaryStage.showAndWait();
 		return this.operationResultat;
@@ -202,6 +192,9 @@ public class OperationEditorPaneController {
 			this.primaryStage.close();
 			break;
 		case CREDIT:
+			// règles de validation d'un crédit :
+			// - le montant doit être un nombre valide
+
 			double montant1;
 
 			this.txtMontant.getStyleClass().remove("borderred");
