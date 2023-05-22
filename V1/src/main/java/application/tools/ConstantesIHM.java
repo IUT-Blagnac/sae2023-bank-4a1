@@ -56,6 +56,8 @@ public class ConstantesIHM {
 	 * Liste des opérations de crédit possible en agence
 	 */
 	public static final String[] OPERATIONS_CREDIT_GUICHET = { ConstantesIHM.TYPE_OP_1, ConstantesIHM.TYPE_OP_3 };
+	
+	public static final String[] OPERATIONS_DEBITEXCEPTIONNEL_GUICHET = { ConstantesIHM.TYPE_OP_2, ConstantesIHM.TYPE_OP_5 };
 
 	// Méthodes utilitaires
 
