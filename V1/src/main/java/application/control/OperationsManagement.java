@@ -120,7 +120,7 @@ public class OperationsManagement {
 	public Operation enregistrerDebitExceptionnel() {
 
 		OperationEditorPane oep = new OperationEditorPane(this.primaryStage, this.dailyBankState);
-		Operation op = oep.doOperationEditorDialog(this.compteConcerne, CategorieOperation.DEBIT);
+		Operation op = oep.doOperationEditorDialog(this.compteConcerne, CategorieOperation.DEBITEXCEPTIONNEL);
 		if (op != null) {
 			try {
 				Access_BD_Operation ao = new Access_BD_Operation();
