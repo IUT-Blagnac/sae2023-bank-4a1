@@ -150,11 +150,21 @@ public class OperationsManagementController {
 
 	private void validateComponentState() {
 		// Non implémenté => désactivé
-		this.btnCredit.setDisable(false);
-		this.btnDebit.setDisable(false);
-		this.btnDebitExceptionnel.setDisable(false);
+		if (this.compteConcerne.estCloture == null) {
+			this.btnCredit.setDisable(true);
+			this.btnDebit.setDisable(true);
+			this.btnDebitExceptionnel.setDisable(true);
+		} else if(this.dailyBankState.isChefDAgence()) {
+			this.btnCredit.setDisable(false);
+			this.btnDebit.setDisable(false);
+			this.btnDebitExceptionnel.setDisable(false);
+		} else {
+			this.btnDebitExceptionnel.setDisable(true);
+			this.btnCredit.setDisable(false);
+			this.btnDebit.setDisable(false);
+		}
 	}
-
+	
 	private void updateInfoCompteClient() {
 
 		PairsOfValue<CompteCourant, ArrayList<Operation>> opesEtCompte;

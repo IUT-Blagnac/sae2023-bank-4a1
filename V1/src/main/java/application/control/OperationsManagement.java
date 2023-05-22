@@ -120,7 +120,7 @@ public class OperationsManagement {
 	public Operation enregistrerDebitExceptionnel() {
 
 		OperationEditorPane oep = new OperationEditorPane(this.primaryStage, this.dailyBankState);
-		Operation op = oep.doOperationEditorDialog(this.compteConcerne, CategorieOperation.DEBIT);
+		Operation op = oep.doOperationEditorDialog(this.compteConcerne, CategorieOperation.DEBITEXCEPTIONNEL);
 		if (op != null) {
 			try {
 				Access_BD_Operation ao = new Access_BD_Operation();
@@ -156,7 +156,7 @@ public class OperationsManagement {
 			try {
 				Access_BD_Operation ao = new Access_BD_Operation();
 
-				ao.insertCredit(this.compteConcerne.idNumCompte, -op.montant, op.idTypeOp);
+				ao.insertCredit(this.compteConcerne.idNumCompte, op.montant, op.idTypeOp);
 
 			} catch (DatabaseConnexionException e) {
 				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
