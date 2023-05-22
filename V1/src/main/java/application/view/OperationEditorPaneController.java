@@ -192,8 +192,8 @@ public class OperationEditorPaneController {
 				this.txtMontant.requestFocus();
 				return;
 			}
-			if (this.compteEdite.solde - montant <= 0) {
-				info = "Débit non autorisé, pas possible de mettre le compte à découvert ! - Cpt. : " + this.compteEdite.idNumCompte + "  "
+			if (this.compteEdite.solde - montant < this.compteEdite.debitAutorise) {
+				info = "Dépassement du découvert ! - Cpt. : " + this.compteEdite.idNumCompte + "  "
 						+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
 						+ String.format(Locale.ENGLISH, "%8d", this.compteEdite.debitAutorise);
 				this.lblMessage.setText(info);
@@ -229,17 +229,6 @@ public class OperationEditorPaneController {
 			} catch (NumberFormatException nfe) {
 				this.txtMontant.getStyleClass().add("borderred");
 				this.lblMontant.getStyleClass().add("borderred");
-				this.txtMontant.requestFocus();
-				return;
-			}
-			if (this.compteEdite.solde - montant1 < this.compteEdite.debitAutorise) {
-				info1 = "Dépassement du découvert ! - Cpt. : " + this.compteEdite.idNumCompte + "  "
-						+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
-						+ String.format(Locale.ENGLISH, "%8d", this.compteEdite.debitAutorise);
-				this.lblMessage.setText(info1);
-				this.txtMontant.getStyleClass().add("borderred");
-				this.lblMontant.getStyleClass().add("borderred");
-				this.lblMessage.getStyleClass().add("borderred");
 				this.txtMontant.requestFocus();
 				return;
 			}
