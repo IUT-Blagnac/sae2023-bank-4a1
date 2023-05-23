@@ -197,12 +197,12 @@ Le chef d'agence a pour fonctionnalités : gérer les employés qui sont le guic
 
 [[create]]
 ===== 4.2.1.1 Create - Manon
-
+Cette fonctionnalité permet qu'un chef d'agence puisse créer des employés (guichetiers et chef d'agence).
 _En cours de réalisation_
 
 [[read]]
 ===== 4.2.1.2 Read - Manon
-
+Cette fonctionnalité permet qu'un chef d'agence puisse visualiser les employés (guichetiers et chef d'agence).
 _En cours de réalisation_
 
 [[update]]
