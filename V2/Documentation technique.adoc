@@ -14,7 +14,7 @@ Projet : DailyBank - SAÉ 2.01 et 2.05
 * <<presentation_appli>>
 ** <<use_case>>
 ** <<diagramme_de_classe>>
-** <<installation_de_l'application>>
+** <<installation>>
 * <<architecture>>
 ** <<architecture_generale>> 
 ** <<ressources_externes>> 
@@ -97,7 +97,7 @@ Il n'y a presque aucun changement à part qu'un SoldeCourant peut-être cloturé
 image::Images/dc-initialv2.svg[]
 _Figure 6. Diagramme de Classes (V.2)_
 
-[[installation_de_l'application]]
+[[installation]]
 === 1.3 Installation de l'application
 
 L'application fonctionne sous Java 17, la Base de données fonctionne sous Oracle.
