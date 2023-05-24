@@ -75,6 +75,8 @@ public class ClientsManagementController {
 	private Button btnModifClient;
 	@FXML
 	private Button btnComptesClient;
+	@FXML
+	private Button btnAssuranceEmprunt;
 
 	@FXML
 	private void doCancel() {
@@ -158,7 +160,12 @@ public class ClientsManagementController {
 			this.oListClients.add(client);
 		}
 	}
-
+	
+	@FXML
+	private void doAssuranceEmprunt() {
+		
+	};
+	
 	private void validateComponentState() {
 		// Non implémenté => désactivé
 		this.btnDesactClient.setDisable(true);
@@ -166,9 +173,13 @@ public class ClientsManagementController {
 		if (selectedIndice >= 0) {
 			this.btnModifClient.setDisable(false);
 			this.btnComptesClient.setDisable(false);
+		} else if(this.dailyBankState.isChefDAgence()) {
+			this.btnAssuranceEmprunt.setDisable(false);
 		} else {
 			this.btnModifClient.setDisable(true);
 			this.btnComptesClient.setDisable(true);
+			this.btnAssuranceEmprunt.setDisable(true);
 		}
 	}
+
 }
