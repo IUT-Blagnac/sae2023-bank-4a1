@@ -82,6 +82,8 @@ public class OperationsManagementController {
 	@FXML
 	private Button btnDebit;
 	@FXML
+	private Button btnDebitExceptionnel;
+	@FXML
 	private Button btnCredit;
 	@FXML
 	private Button btnVirement;
@@ -106,6 +108,21 @@ public class OperationsManagementController {
 		}
 	}
 
+	/**
+ 	* Effectue une opération de débit exceptionnel sur le compte
+ 	* Fonction appelée lorsqu'on clique sur le bouton enregistrer débit exceptionnel
+ 	* Si l'opération est non nulle les informations du compte sont mises à jour
+ 	*/
+	@FXML
+	private void doDebitExceptionnel() {
+
+		Operation op = this.omDialogController.enregistrerDebitExceptionnel();
+		if (op != null) {
+			this.updateInfoCompteClient();
+			this.validateComponentState();
+		}
+	}
+	
 	/**
  	* Effectue une opération de crédit sur le compte
  	* Fonction appelée lorsqu'on clique sur le bouton enregistrer crédit
@@ -133,10 +150,21 @@ public class OperationsManagementController {
 
 	private void validateComponentState() {
 		// Non implémenté => désactivé
-		this.btnCredit.setDisable(false);
-		this.btnDebit.setDisable(false);
+		if (this.compteConcerne.estCloture == null) {
+			this.btnCredit.setDisable(true);
+			this.btnDebit.setDisable(true);
+			this.btnDebitExceptionnel.setDisable(true);
+		} else if(this.dailyBankState.isChefDAgence()) {
+			this.btnCredit.setDisable(false);
+			this.btnDebit.setDisable(false);
+			this.btnDebitExceptionnel.setDisable(false);
+		} else {
+			this.btnDebitExceptionnel.setDisable(true);
+			this.btnCredit.setDisable(false);
+			this.btnDebit.setDisable(false);
+		}
 	}
-
+	
 	private void updateInfoCompteClient() {
 
 		PairsOfValue<CompteCourant, ArrayList<Operation>> opesEtCompte;

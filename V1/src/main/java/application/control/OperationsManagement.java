@@ -109,6 +109,37 @@ public class OperationsManagement {
 		}
 		return op;
 	}
+	
+	/**
+	 * Enregistre un débit exceptionnel
+	 *
+	 * @return résultat de l'opération demandée
+	 * @throws ApplicationException       Erreur d'accès aux données (requête incorrecte,...)
+	 * @throws DatabaseConnexionException Erreur de connexion
+	 */
+	public Operation enregistrerDebitExceptionnel() {
+
+		OperationEditorPane oep = new OperationEditorPane(this.primaryStage, this.dailyBankState);
+		Operation op = oep.doOperationEditorDialog(this.compteConcerne, CategorieOperation.DEBITEXCEPTIONNEL);
+		if (op != null) {
+			try {
+				Access_BD_Operation ao = new Access_BD_Operation();
+
+				ao.insertDebitExceptionnel(this.compteConcerne.idNumCompte, op.montant, op.idTypeOp);
+
+			} catch (DatabaseConnexionException e) {
+				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
+				ed.doExceptionDialog();
+				this.primaryStage.close();
+				op = null;
+			} catch (ApplicationException ae) {
+				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, ae);
+				ed.doExceptionDialog();
+				op = null;
+			}
+		}
+		return op;
+	}
 
 	/**
 	 * Enregistre un crédit
@@ -125,7 +156,7 @@ public class OperationsManagement {
 			try {
 				Access_BD_Operation ao = new Access_BD_Operation();
 
-				ao.insertCredit(this.compteConcerne.idNumCompte, -op.montant, op.idTypeOp);
+				ao.insertCredit(this.compteConcerne.idNumCompte, op.montant, op.idTypeOp);
 
 			} catch (DatabaseConnexionException e) {
 				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);

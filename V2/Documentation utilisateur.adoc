@@ -197,12 +197,12 @@ Le chef d'agence a pour fonctionnalités : gérer les employés qui sont le guic
 
 [[create]]
 ===== 4.2.1.1 Create - Manon
-
+Cette fonctionnalité permet qu'un chef d'agence puisse créer des employés (guichetiers et chef d'agence).
 _En cours de réalisation_
 
 [[read]]
 ===== 4.2.1.2 Read - Manon
-
+Cette fonctionnalité permet qu'un chef d'agence puisse visualiser les employés (guichetiers et chef d'agence).
 _En cours de réalisation_
 
 [[update]]
@@ -229,20 +229,37 @@ Le guichetier a accès à plusieurs fonctionnalités : générer un relevé mens
 [[releve_compte_PDF]]
 ==== 5.1.1 Générer un relevé mensuel d'un compte en PDF - Manon
 
+Un bouton "Générer Relevé" est disponible dans la gestion d'un compte bancaire d'un client, un pdf regroupant toutes les opérations effectués qu'ils soient crédits, débits et virements seront enregistrés dedans.
+Trois colonnes seront visibles, la première indique le nom de l'opération puis le montant sera affiché, soit dans la colonne du débit soit celle du crédit.
+Enfin, le total final du relevé sera le total crédit moins le total débit afin de démarquer si le client a gagné ou perdu de l'argent durant le mois. 
+(ou alors comparé avec le total d'argent du compte pour afficher le total d'argent en fin du mois)
+
 [[crud_prelevements_automatiques]]
 === 5.1.2 Gérer (faire le "CRUD") les prélèvements automatiques - Julien
 
+Le guichetier a la possibilité de gérer les prélèvements automatiques d'un compte bancaire, ce qui signifie qu'il peut en créée en choisissant le montant prélevé chaque mois, lire toutes les informations de ce prélèvement, le gérer en cours de route si nécessaire et bien le supprimer à tout moment.
+
+Un bouton "Effectuer prélèvement automatique" sera disponible afin d'en créer un, cela ouvrira une fenêtre qui affiche tous les prélèvements en cours.
+
 [[create_prelevements]]
 ==== 5.1.2.1 Create
+Plusieurs boutons s'offrent à nous, créer, lire, mettre à jour et supprimer, mise à part pour créer, l'utilisateur doit cliquer sur un prélèvement 
+Dans celle-ci, nous pouvons indiquer le montant du prélèvement chaque mois ainsi que le jour qu'il doit s'effectuer automatiquement.
 
 [[read_prelevements]]
 ==== 5.1.2.2 Read
 
+En cliquant sur le bouton lire, une fenêtre affichant les informations du prélèvements s'affichent, le montant ainsi que le jour dont il s'effectue.
+
 [[update_prelevements]]
 ==== 5.1.2.3 Update
 
+En cliquant sur le bouton  mettre à jour, nous pouvons modifié le montant et la date du prélèvement. 
+
 [[delete_prelevements]]
 ==== 5.1.2.4 Delete
+
+En cliquant sur le bouton supprimer, une fenêtre d'alerte s'affichera pour nous avertir de notre action afin de confirmer la suppression du prélèvement.
 
 [[chef_agencev2]]
 === 5.2 Chef d'agence
