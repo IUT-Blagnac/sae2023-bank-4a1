@@ -14,7 +14,7 @@ Projet : DailyBank - SAÉ 2.01 et 2.05
 * <<presentation_appli>>
 ** <<use_case>>
 ** <<diagramme_de_classe>>
-** <<installation de l'application>>
+** <<installation_de_l'application>>
 * <<architecture>>
 ** <<architecture_generale>> 
 ** <<ressources_externes>> 
@@ -97,7 +97,7 @@ Il n'y a presque aucun changement à part qu'un SoldeCourant peut-être cloturé
 image::Images/dc-initialv2.svg[]
 _Figure 6. Diagramme de Classes (V.2)_
 
-[[installation de l'application]]
+[[installation_de_l'application]]
 === 1.3 Installation de l'application
 
 L'application fonctionne sous Java 17, la Base de données fonctionne sous Oracle.
@@ -112,14 +112,14 @@ Une extraction du répertoire DailyBank afin d'en faire un workspace exploitable
 Le chemin du fichier qui nous intéresse est LogToDatabase.class, il se situe dans les répertoire model/orm.
 Sur les deux lignes suivantes : 
 private static final String user = "G4A1S2";
-	private static final String passwd = "aucuneidee";
+private static final String passwd = "aucuneidee";
  
- Il faut changer le login (G4A1S2) et le mot de passe (aucuneidee) à ceux d'une autre base de donnée.
+Il faut changer le login (G4A1S2) et le mot de passe (aucuneidee) à ceux d'une autre base de donnée.
  
- Une fois les changements enregistrés, il est nécessaire de générer à un nouveau un jar file.
- En haut à gauche de l'application, dans File/Export, sélectionner Jar, JAR File, sélectionner le workspace DailyBank ainsi qu'un emplacement à choisir pour son extraction.
+Une fois les changements enregistrés, il est nécessaire de générer à un nouveau un jar file.
+En haut à gauche de l'application, dans File/Export, sélectionner Jar, JAR File, sélectionner le workspace DailyBank ainsi qu'un emplacement à choisir pour son extraction.
  
- Bravo, vous trouverez votre jar file et pouvez l'exécuter sur une nouvelle base de donnée.
+Bravo, vous trouverez votre jar file et pouvez l'exécuter sur une nouvelle base de donnée.
 
 
 [[architecture]]
