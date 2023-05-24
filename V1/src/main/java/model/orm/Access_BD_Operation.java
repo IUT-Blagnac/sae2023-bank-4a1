@@ -188,7 +188,7 @@ public class Access_BD_Operation {
 			Connection con = LogToDatabase.getConnexion();
 			CallableStatement call;
 
-			String q = "{call Debiter (?, ?, ?, ?)}";
+			String q = "{call Debit_Exceptionnel (?, ?, ?, ?)}";
 			// les ? correspondent aux paramètres : cf. déf procédure (4 paramètres)
 			call = con.prepareCall(q);
 			// Paramètres in
