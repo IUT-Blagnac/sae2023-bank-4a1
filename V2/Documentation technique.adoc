@@ -149,7 +149,8 @@ Deux types d'utilisateurs se connectent à l'application : le guichetier et le c
 ** model.data : Le package model.data sert à décrire les différents objets utilisés (AgenceBancaire, Client ,ect...). 
 ** model.orm : Le package model.orm est chargé de la gestion des données dans l'application. Ce package inclut des fonctions pour récupérer des données à partir d'une base de données, les sauvegarder ou effectuer des transformations de données.
 ** model.orm.exception : Le package model.orm.exception regroupe des exceptions qui sont utilisées pour gérer les erreurs liées aux opérations de base de données ou à la manipulation des données.
-** DailyBankState.java permet de savoir si la personne connecté à l'application est un guichetier ou un chef d'agence, cela permet d'accéder à certains options selon le rôle de la personne comme par exemple seul le chef d'agence peut gérer les employés.
+
+DailyBankState.java permet de savoir si la personne connecté à l'application est un guichetier ou un chef d'agence, cela permet d'accéder à certains options selon le rôle de la personne comme par exemple seul le chef d'agence peut gérer les employés.
 
 [[elements_essentiels]]
 === 2.4 Elements essentiels
