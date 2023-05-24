@@ -229,6 +229,11 @@ Le guichetier a accès à plusieurs fonctionnalités : générer un relevé mens
 [[releve_compte_PDF]]
 ==== 5.1.1 Générer un relevé mensuel d'un compte en PDF - Manon
 
+Un bouton "Générer Relevé" est disponible dans la gestion d'un compte bancaire d'un client, un pdf regroupant toutes les opérations effectués qu'ils soient crédits, débits et virements seront enregistrés dedans.
+Trois colonnes seront visibles, la première indique le nom de l'opération puis le montant sera affiché, soit dans la colonne du débit soit celle du crédit.
+Enfin, le total final du relevé sera le total crédit moins le total débit afin de démarquer si le client a gagné ou perdu de l'argent durant le mois. 
+(ou alors comparé avec le total d'argent du compte pour afficher le total d'argent en fin du mois)
+
 [[crud_prelevements_automatiques]]
 === 5.1.2 Gérer (faire le "CRUD") les prélèvements automatiques - Julien
 
