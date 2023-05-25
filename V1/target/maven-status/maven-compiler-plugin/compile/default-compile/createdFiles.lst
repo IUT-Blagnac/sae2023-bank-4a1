@@ -1,6 +1,7 @@
 model\orm\Access_BD_AgenceBancaire.class
 application\view\ComptesManagementController.class
 model\orm\exception\ApplicationException.class
+application\view\AssuranceEmpruntController.class
 application\tools\ConstantesIHM.class
 application\control\ClientsManagement.class
 application\control\ExceptionDialog.class
@@ -12,7 +13,9 @@ application\DailyBankState.class
 application\view\LoginDialogController.class
 application\control\ClientEditorPane.class
 application\tools\CategorieOperation.class
+application\view\SimulationAssuranceEmpruntController.class
 application\DailyBankApp.class
+application\control\SimulationAssuranceEmprunt.class
 application\view\ClientEditorPaneController.class
 model\data\AgenceBancaire.class
 model\data\Employe.class
@@ -38,6 +41,7 @@ application\control\LoginDialog.class
 application\view\CompteEditorPaneController.class
 application\view\OperationsManagementController.class
 model\orm\exception\Table.class
+application\control\AssuranceEmprunt.class
 application\tools\NoSelectionModel.class
 model\orm\exception\Order.class
 application\tools\PairsOfValue.class
