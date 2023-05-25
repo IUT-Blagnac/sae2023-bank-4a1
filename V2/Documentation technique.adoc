@@ -311,14 +311,11 @@ _Figure Diagramme de classes debit exceptionnel_
 image::Images/debit_exceptionnel2.png[]
 _Figure Interface debit exceptionnel_ 
 
-[[simuler_emprunt]]
-==== 4.2.2 Simuler un emprunt - Manon
+[[simuler_emprunt_assurance]]
+==== 4.2.2 Simuler un emprunt et une assurance d'emprunt - Prescilla
 
-[[simuler_assurance_emprunt]]
-==== 4.2.3 Simuler une assurance d'emprunt - Prescilla
-
-image::Images/UseCase_simuler_assurance_emprunt.png[]
-_Figure Diagramme des Cas d’Utilisation simuler une assurance d'emprunt_ 
+image::Images/UseCase_emprunt_assurance.png[]
+_Figure Diagramme des Cas d’Utilisation simuler un emprunt et assurance d'emprunt_ 
 
 **Classes et ressources utilisées :** 
 
@@ -329,15 +326,16 @@ _Figure Diagramme des Cas d’Utilisation simuler une assurance d'emprunt_
 * SimulationAssuranceEmpruntController.java
 * simulationassuranceemprunt.fxml
 * ClientsManagementController.java
+* clientsmanagements.fxml
 
-image::Images/dc_simuler_assurance_emprunt.png[]
-_Figure Diagramme de classes simuler une assurance d'emprunt_ 
+image::Images/dc_emprunt_assurance.png[]
+_Figure Diagramme de classes simuler un emprunt et une assurance d'emprunt_ 
 
-image::Images/simuler_assurance_emprunt2.png[]
-_Figure Interface Informations simuler assurance d'emprunt_ 
+image::Images/simuler_emprunt2.png[]
+_Figure Interface Informations simuler un emprunt et une assurance d'emprunt_ 
 
-image::Images/simuler_assurance_emprunt3.png[]
-_Figure Interface Résultat simulation assurance d'emprunt_ 
+image::Images/simuler_emprunt3.png[]
+_Figure Interface Résultat simulation d'un emprunt et d'une assurance d'emprunt_ 
 
 [[elements_code]]
 == 5. Eléments de code significatifs commentés
