@@ -308,6 +308,9 @@ _Figure Diagramme des Cas d’Utilisation débit exceptionnel_
 image::Images/dc_crediter_debiter.png[]
 _Figure Diagramme de classes debit exceptionnel_ 
 
+image::Images/debit_exceptionnel2.png[]
+_Figure Interface debit exceptionnel_ 
+
 [[simuler_emprunt]]
 ==== 4.2.2 Simuler un emprunt - Manon
 
@@ -329,6 +332,12 @@ _Figure Diagramme des Cas d’Utilisation simuler une assurance d'emprunt_
 
 image::Images/dc_simuler_assurance_emprunt.png[]
 _Figure Diagramme de classes simuler une assurance d'emprunt_ 
+
+image::Images/simuler_assurance_emprunt2.png[]
+_Figure Interface Informations simuler assurance d'emprunt_ 
+
+image::Images/simuler_assurance_emprunt3.png[]
+_Figure Interface Résultat simulation assurance d'emprunt_ 
 
 [[elements_code]]
 == 5. Eléments de code significatifs commentés
