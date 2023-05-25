@@ -305,6 +305,9 @@ _Figure Diagramme des Cas d’Utilisation débit exceptionnel_
 * ConstantesIHM.java
 * scriptCreaBase.txt
 
+image::Images/dc_crediter_debiter.png[]
+_Figure Diagramme de classes debit exceptionnel_ 
+
 [[simuler_emprunt]]
 ==== 4.2.2 Simuler un emprunt - Manon
 
@@ -323,6 +326,9 @@ _Figure Diagramme des Cas d’Utilisation simuler une assurance d'emprunt_
 * SimulationAssuranceEmpruntController.java
 * simulationassuranceemprunt.fxml
 * ClientsManagementController.java
+
+image::Images/dc_simuler_assurance_emprunt.png[]
+_Figure Diagramme de classes simuler une assurance d'emprunt_ 
 
 [[elements_code]]
 == 5. Eléments de code significatifs commentés
