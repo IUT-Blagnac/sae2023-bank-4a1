@@ -44,8 +44,7 @@ Projet : DailyBank - SAÉ 2.01 et 2.05
 **** <<delete_prelevements>>
 ** <<chef_agencev2>>
 *** <<debit_exceptionnel>>
-*** <<simuler_emprunt>>
-*** <<simuler_assurance_emprunt>>
+*** <<simuler_emprunt_assurance>>
 * <<resultats>> 
 
 [[presentation]]
@@ -288,25 +287,23 @@ Pour valider le débit exceptionnel, on clique sur le bouton Effectuer Débit ex
 
 image::Images/debit_exceptionnel3.png[]
 
-[[simuler_emprunt]]
-==== 5.2.2 Simuler un emprunt - Manon
-
-[[simuler_assurance_emprunt]]
-==== 5.2.3 Simuler une assurance d'emprunt - Prescilla
-
+[[simuler_emprunt_assurance]]
+==== 5.2.2 Simuler un emprunt et une assurance d'emprunt - Prescilla
 Cette fonctionnalité consiste à pouvoir simuler une assurance d'emprunt. Pour pouvoir réaliser une simulation d'assurance d'emprunt, l'utilisateur doit se connecter en tant que chef d'agence. Puis, il doit cliquer sur Gestion puis Clients.
 
-Ensuite, il doit cliquer sur le bouton Simuler assurance emprunt.
+Ensuite, il doit cliquer sur le bouton Simuler emprunt.
 
-image::Images/simuler_assurance_emprunt1.png[]
+image::Images/simuler_emprunt1.png[]
 
-Une nouvelle s'ouvre et demande les informations nécessaires à l'emprunt. Il est possible d'annuler la simulation en cliquant sur le bouton Annuler l'assurance d'emprunt.
+Une nouvelle s'ouvre et demande les informations nécessaires à l'emprunt tels que le capital emprunté, la durée de l'emprunt et le taux d'intérêts. 
+De plus, il est possible d'effectuer une assurance d'emprunt, pour cela il faut entrer un taux d'assurance en %, sinon mettre ce taux à 0.
+Pour annuler la simulation il faut cliquer sur le bouton Annuler emprunt.
  
-image::Images/simuler_assurance_emprunt2.png[]
+image::Images/simuler_emprunt2.png[]
 
-Enfin, pour continuer l'opération, on appuie sur le bouton Simuler une assurance d'emprunt qui effectue la simulation. Une nouvelle fenêtre affiche le résultat de la simulation.
+Enfin, pour continuer l'opération, on appuie sur le bouton Simuler emprunt qui effectue la simulation. Une nouvelle fenêtre affiche le résultat de la simulation d'emprunt avec ou sans assurance d'emprunt.
 
-image::Images/simuler_assurance_emprunt3.png[]
+image::Images/simuler_emprunt3.png[]
 
 [[resultats]]
 == 6. Résultats produits avec jeux d'essai

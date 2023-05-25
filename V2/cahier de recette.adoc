@@ -145,10 +145,7 @@ autorisé est de -100 euros.
 autorisé est de -100 euros.
  ^|OK
   
- 
-
 |====
-
 
 |====
 
@@ -168,8 +165,6 @@ autorisé est de -100 euros.
 ^|All_G_COP.4  ^|Rentrer un montant 250 dans le champ "Montant". ^|Blocage ! + pop-up ^| Le compte sélectionné a un solde de +100 euros, le découvert
 autorisé est de -100 euros.
  ^|...
-  
- 
 
 |====
 
@@ -194,6 +189,88 @@ autorisé est de -100 euros.
 |====
 
 
+|====
+
+>|Cas de test 4+|Test-01-03-05
+>|Titre 4+|Générer un relevé mensuel d'un compte en PDF - Manon
+>|Objectif 4+| Vérifier qu'il est possible de générer un relevé mensuel d'un compte en PDF
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_COP.1 ^|... ^|... ^|... ^|...
+^|All_G_COP.2 ^|... ^|... ^|... ^|...
+^|All_G_COP.3 ^|... ^|... ^|... ^|...
+^|All_G_COP.4 ^|... ^|... ^|... ^|...
+
+|====
+
+==== 1.4 Gestion des prélèvements automatiques :
+
+
+|====
+
+>|Cas de test 4+|Test-01-04-01
+>|Titre 4+|CREATE un employé - Julien
+>|Objectif 4+| Vérifier qu'il est possible de créer un employé
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_COP.1 ^|... ^|... ^|... ^|...
+^|All_G_COP.2 ^|... ^|... ^|... ^|...
+^|All_G_COP.3 ^|... ^|... ^|... ^|...
+^|All_G_COP.4 ^|... ^|... ^|... ^|...
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-01-04-02
+>|Titre 4+|READ un employé - Julien
+>|Objectif 4+| Vérifier qu'il est possible de lire les informations d'un employé
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_COP.1 ^|... ^|... ^|... ^|...
+^|All_G_COP.2 ^|... ^|... ^|... ^|...
+^|All_G_COP.3 ^|... ^|... ^|... ^|...
+^|All_G_COP.4 ^|... ^|... ^|... ^|...
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-01-04-03
+>|Titre 4+|UPDATE un employé - Julien
+>|Objectif 4+| Vérifier qu'il est possible modifier les informations d'un employé
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_COP.1 ^|... ^|... ^|... ^|...
+^|All_G_COP.2 ^|... ^|... ^|... ^|...
+^|All_G_COP.3 ^|... ^|... ^|... ^|...
+^|All_G_COP.4 ^|... ^|... ^|... ^|...
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-01-04-04
+>|Titre 4+|DELETE un employé - Julien
+>|Objectif 4+| Vérifier qu'il est possible de supprimer un employé
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_COP.1 ^|... ^|... ^|... ^|...
+^|All_G_COP.2 ^|... ^|... ^|... ^|...
+^|All_G_COP.3 ^|... ^|... ^|... ^|...
+^|All_G_COP.4 ^|... ^|... ^|... ^|...
+
+|====
 
 
 === 2. Fonctionnalités des chefs d'agence :
@@ -278,5 +355,83 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 ^|C_G_C.1    ^|... ^|...   ^|...  ^| ...
 ^|C_G_C.2    ^|... ^|...   ^|...  ^| ...
 ^|C_G_C.3    ^|... ^|...   ^|...  ^| ...
+
+|====
+
+==== 2.3 Gestion des opérations :
+
+|====
+
+>|Cas de test 4+|Test-02-03-01
+>|Titre 4+|Débit exceptionnel - Prescilla
+>|Objectif 4+| Vérifier qu'il est possible d'effectuer un débit exceptionnel
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_C.1  ^|... ^|... ^|... ^|...
+^|C_G_C.2 ^|... ^|... ^|... ^|...
+^|C_G_C.3 ^|... ^|... ^|... ^|...
+^|C_G_C.4  ^|... ^|... ^|... ^|...
+  
+|====
+
+|====
+
+>|Cas de test 4+|Test-02-03-02
+>|Titre 4+|Simuler un emprunt - Manon
+>|Objectif 4+| Vérifier qu'il est possible de simuler un emprunt
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_C.1  ^|... ^|... ^|... ^|...
+^|C_G_C.2 ^|... ^|... ^|... ^|...
+^|C_G_C.3 ^|... ^|... ^|... ^|...
+^|C_G_C.4  ^|... ^|... ^|... ^|...
+  
+|====
+
+|====
+
+>|Cas de test 4+|Test-02-03-03
+>|Titre 4+|Simuler une assurance d'emprunt - Prescilla
+>|Objectif 4+| Vérifier qu'il est possible de simuler une assurance d'emprunt
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_C.1  ^|... ^|... ^|... ^|...
+^|C_G_C.2 ^|... ^|... ^|... ^|...
+^|C_G_C.3 ^|... ^|... ^|... ^|...
+^|C_G_C.4  ^|... ^|... ^|... ^|...
+  
+|====
+
+=== 3. BATCH :
+
+|====
+
+>|Cas de test 4+|Test-03-01-00
+>|Titre 4+|Générer les relevés mensuels en PDF - Prescilla
+>|Objectif 4+| Vérifier qu'il est possible de générer les relevés mensuels en PDF
+
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|B_G_C.4  ^|... ^|... ^|... ^|...
+^|B_G_C.4  ^|... ^|... ^|... ^|...
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-03-02-00
+>|Titre 4+|Exécuter les prélèvements automatiques - Manon
+>|Objectif 4+| Vérifier qu'il est possible d'exécuter les prélèvements automatiques
+
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|B_G_C.4  ^|... ^|... ^|... ^|...
+^|B_G_C.4  ^|... ^|... ^|... ^|...
 
 |====

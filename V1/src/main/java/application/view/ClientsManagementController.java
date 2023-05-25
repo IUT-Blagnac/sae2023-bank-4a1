@@ -3,7 +3,7 @@ package application.view;
 import java.util.ArrayList;
 
 import application.DailyBankState;
-import application.control.AssuranceEmprunt;
+import application.control.Emprunt;
 import application.control.ClientsManagement;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -77,7 +77,7 @@ public class ClientsManagementController {
 	@FXML
 	private Button btnComptesClient;
 	@FXML
-	private Button btnAssuranceEmprunt;
+	private Button btnEmprunt;
 
 	@FXML
 	private void doCancel() {
@@ -163,8 +163,8 @@ public class ClientsManagementController {
 	}
 	
 	@FXML
-	private void doAssuranceEmprunt() {
-		AssuranceEmprunt AssuranceEmprunt = new AssuranceEmprunt(primaryStage, dailyBankState);
+	private void doEmprunt() {
+		Emprunt Emprunt = new Emprunt(primaryStage, dailyBankState);
 	};
 	
 	private void validateComponentState() {
@@ -175,12 +175,12 @@ public class ClientsManagementController {
 			this.btnModifClient.setDisable(false);
 			this.btnComptesClient.setDisable(false);
 		} else if(this.dailyBankState.isChefDAgence()) {
-			this.btnAssuranceEmprunt.setDisable(false);
+			this.btnEmprunt.setDisable(false);
 			this.btnDesactClient.setDisable(false);
 		} else {
 			this.btnModifClient.setDisable(true);
 			this.btnComptesClient.setDisable(true);
-			this.btnAssuranceEmprunt.setDisable(true);
+			this.btnEmprunt.setDisable(true);
 			this.btnDesactClient.setDisable(true);
 		}
 	}
