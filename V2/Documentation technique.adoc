@@ -176,7 +176,7 @@ _Figure Diagramme des Cas d’Utilisation crediter compte(V.1)_
 * OperationManagementController.java
 * OperationManagement.fxml
 * OperationEditorPaneController.java
-* AccessOperation.java
+* Access_BD_Operation.java
 
 image::Images/dc_crediter_debiter.png[]
 _Figure Diagramme de classes crediter compte_ 
@@ -196,7 +196,7 @@ _Figure Diagramme des Cas d’Utilisation debiter compte_
 * OperationManagementController.java
 * OperationManagement.fxml
 * OperationEditorPaneController.java
-* AccessOperation.java
+* Access_BD_Operation.java
 
 image::Images/dc_crediter_debiter.png[]
 _Figure Diagramme de classes debiter compte_ 
@@ -215,7 +215,7 @@ image::Images/use_case_cc.png[]
 
 * ComptesManagementController.java : Controlleur de la fenêtre "Gestion des comptes". Les boutons "btnVoirOpes", "btnModifierCompte", "btnSupprCompte" sont nécessaires.
 * ComptesManagement.java : Permet de gérer les comptes d’un client. Les méthodes suivantes sont utilisés, "getComptesDunClient", "creerNouveauCompte", "gererOperationsDUnCompte", "doComptesManagementDialog".
-* AccessCompteCourant.java : Permet de gérer l’accès aux comptes d’un client. Les méthodes "creerCompteCourant" et "updateCompteCourant".
+* Access_BD_CompteCourant.java : Permet de gérer l’accès aux comptes d’un client. Les méthodes "creerCompteCourant" et "updateCompteCourant".
 * CompteEditorPane.fxml : Page FXML qui correspond à la fenêtre "Gestion des comptes".
 * ComptesManagement.fxml : Page FXML qui correspond à la fenêtre "Gestion des clients".
 
@@ -291,11 +291,38 @@ Le chef d'agence a pour fonctionnalités : effectuer un débit exceptionnel, sim
 [[debit_exceptionnel]]
 ==== 4.2.1 Effectuer un débit exceptionnel - Prescilla
 
+image::Images/UseCase_debit_exceptionnel.png[]
+_Figure Diagramme des Cas d’Utilisation débit exceptionnel_ 
+
+**Classes et ressources utilisées :** 
+
+* OperationManagement.java 
+* OperationsManagementController.java
+* operationsmanagement.fxml
+* OperationEditorPaneController.java
+* Access_BD_Operation.java
+* CategorieOperation.java
+* ConstantesIHM.java
+* scriptCreaBase.txt
+
 [[simuler_emprunt]]
 ==== 4.2.2 Simuler un emprunt - Manon
 
 [[simuler_assurance_emprunt]]
 ==== 4.2.3 Simuler une assurance d'emprunt - Prescilla
+
+image::Images/UseCase_simuler_assurance_emprunt.png[]
+_Figure Diagramme des Cas d’Utilisation simuler une assurance d'emprunt_ 
+
+**Classes et ressources utilisées :** 
+
+* AssuranceEmprunt.java
+* AssuranceEmpruntController.java
+* assuranceemprunt.fxml
+* SimulationAssuranceEmprunt.java
+* SimulationAssuranceEmpruntController.java
+* simulationassuranceemprunt.fxml
+* ClientsManagementController.java
 
 [[elements_code]]
 == 5. Eléments de code significatifs commentés
