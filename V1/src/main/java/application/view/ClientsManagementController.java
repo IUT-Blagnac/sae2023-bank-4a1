@@ -176,10 +176,12 @@ public class ClientsManagementController {
 			this.btnComptesClient.setDisable(false);
 		} else if(this.dailyBankState.isChefDAgence()) {
 			this.btnAssuranceEmprunt.setDisable(false);
+			this.btnDesactClient.setDisable(false);
 		} else {
 			this.btnModifClient.setDisable(true);
 			this.btnComptesClient.setDisable(true);
 			this.btnAssuranceEmprunt.setDisable(true);
+			this.btnDesactClient.setDisable(true);
 		}
 	}
 
