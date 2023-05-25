@@ -3,6 +3,7 @@ package application.view;
 import java.util.ArrayList;
 
 import application.DailyBankState;
+import application.control.AssuranceEmprunt;
 import application.control.ClientsManagement;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -163,7 +164,7 @@ public class ClientsManagementController {
 	
 	@FXML
 	private void doAssuranceEmprunt() {
-		
+		AssuranceEmprunt AssuranceEmprunt = new AssuranceEmprunt(primaryStage, dailyBankState);
 	};
 	
 	private void validateComponentState() {
