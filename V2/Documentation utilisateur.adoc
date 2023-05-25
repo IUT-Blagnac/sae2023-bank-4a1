@@ -269,11 +269,39 @@ Le chef d'agence a pour fonctionnalités : effectuer un débit exceptionnel, sim
 [[debit_exceptionnel]]
 ==== 5.2.1 Effectuer un débit exceptionnel - Prescilla
 
+Le débit exceptionnel consiste à pouvoir débiter un compte même si le montant dépasse le découvert autorisé.
+
+Pour effectuer ce débit exceptionnel, il faut se connecter à l’application en tant que chef d'agence. Dans une nouvelle fenêtre, il faut cliquer sur Gestion puis sur Clients. On selectionne un client puis on clique sur le bouton Comptes client. Dans cette nouvelle fênetre, cela affiche les comptes du client puis on clique sur un compte et sur le bouton Voir opérations qui affiche l’historique des opérations. 
+
+image::Images/debit_exceptionnel1.png[]
+
+Par la suite, l’on clique sur Enregistrer Débit exceptionnel, une fenêtre s'affiche et il faut entrer le montant à débiter et choisir le type d’opération : retrait espèces ou retrait chèque. 
+
+image::Images/debit_exceptionnel2.png[]
+
+Pour valider le débit exceptionnel, on clique sur le bouton Effectuer Débit exceptionnel et on voit ainsi le débit exceptionnel effectué. Sinon, pour l’annuler, il faut choisir le bouton Annuler débit exceptionnel. 
+
+image::Images/debit_exceptionnel3.png[]
+
 [[simuler_emprunt]]
 ==== 5.2.2 Simuler un emprunt - Manon
 
 [[simuler_assurance_emprunt]]
 ==== 5.2.3 Simuler une assurance d'emprunt - Prescilla
+
+Cette fonctionnalité consiste à pouvoir simuler une assurance d'emprunt. Pour pouvoir réaliser une simulation d'assurance d'emprunt, l'utilisateur doit se connecter en tant que chef d'agence. Puis, il doit cliquer sur Gestion puis Clients.
+
+Ensuite, il doit cliquer sur le bouton Simuler assurance emprunt.
+
+image::Images/simuler_assurance_emprunt1.png[]
+
+Une nouvelle s'ouvre et demande les informations nécessaires à l'emprunt. Il est possible d'annuler la simulation en cliquant sur le bouton Annuler l'assurance d'emprunt.
+ 
+image::Images/simuler_assurance_emprunt2.png[]
+
+Enfin, pour continuer l'opération, on appuie sur le bouton Simuler une assurance d'emprunt qui effectue la simulation. Une nouvelle fenêtre affiche le résultat de la simulation.
+
+image::Images/simuler_assurance_emprunt3.png[]
 
 [[resultats]]
 == 6. Résultats produits avec jeux d'essai
