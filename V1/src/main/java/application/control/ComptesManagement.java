@@ -59,6 +59,11 @@ public class ComptesManagement {
 	public void doComptesManagementDialog() {
 		this.cmcViewController.displayDialog();
 	}
+	
+	public void gererPrelevementDUnCompte(CompteCourant cpt) {
+		PrelevementManagement pm = new PrelevementManagement(this.primaryStage, this.dailyBankState, cpt);
+		pm.doPrelevementManagementDialog();
+	}
 
 	public void gererOperationsDUnCompte(CompteCourant cpt) {
 		OperationsManagement om = new OperationsManagement(this.primaryStage, this.dailyBankState,
