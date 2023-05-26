@@ -43,8 +43,12 @@ Projet : DailyBank - SAÉ 2.01 et 2.05
 **** <<delete_prelevements>>
 ** <<chef_agencev2>>
 *** <<debit_exceptionnel>>
-*** <<simuler_emprunt>>
-*** <<simuler_assurance_emprunt>>
+*** <<simuler_emprunt_assurance>>
+* <<version3_presentation_des_diagrammes>>
+** <<batch>>
+*** <<generer_releves_mensuels>>
+*** <<executer_prelevements_automatiques>>
+* <<elements_code>>
 
 [[presentation_appli]]
 == 1. Presentation de l'application
@@ -337,5 +341,17 @@ _Figure Interface Informations simuler un emprunt et une assurance d'emprunt_
 image::Images/simuler_emprunt3.png[]
 _Figure Interface Résultat simulation d'un emprunt et d'une assurance d'emprunt_ 
 
+[[version3_presentation_des_diagrammes]]
+== 5. Version 3 - Présentation et explication des diagrammes demandés
+
+[[batch]]
+=== 5.1 Batch
+
+[[generer_releves_mensuels]]
+=== 5.1.1 Générer les relevés mensuels en PDF - Prescilla
+
+[[executer_prelevements_automatiques]]
+=== 5.1.2 Exécuter les prélèvements automatiques - Manon
+
 [[elements_code]]
-== 5. Eléments de code significatifs commentés
+== 6. Eléments de code significatifs commentés
