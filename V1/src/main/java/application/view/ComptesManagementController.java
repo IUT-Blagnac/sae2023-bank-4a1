@@ -98,6 +98,17 @@ public class ComptesManagementController {
 		this.loadList();
 		this.validateComponentState();
 	}
+	
+	@FXML
+	private void doVoirPrelevement() {
+		int selectedIndice = this.lvComptes.getSelectionModel().getSelectedIndex();
+		if (selectedIndice >= 0) {
+			CompteCourant cpt = this.oListCompteCourant.get(selectedIndice);
+			this.cmDialogController.gererPrelevementDUnCompte(cpt);
+		}
+		this.loadList();
+		this.validateComponentState();
+	}
 
 	@FXML
 	private void doModifierCompte() {
