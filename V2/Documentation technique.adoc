@@ -199,6 +199,8 @@ _Figure Diagramme de classes crediter compte_
 image::Images/crediter_compte.png[]
 _Figure Interface crediter compte_ 
 
+link:https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/cahier%20de%20recette.adoc#crediter_compte[Fiche de tests créditer un compte]
+
 [[debiter_compte]]
 ==== 3.1.2 Débiter un compte - Prescilla
 
@@ -218,6 +220,8 @@ _Figure Diagramme de classes debiter compte_
 
 image::Images/debiter_compte.png[]
 _Figure Interface debiter compte_ 
+
+link:https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/cahier%20de%20recette.adoc#debiter_compte[Fiche de tests débiter un compte]
 
 [[creer_compte]]
 ==== 3.1.3 Créer un compte - Julien
@@ -268,6 +272,8 @@ _Figure Diagramme des Cas d’Utilisation update employe_
 
 image::Images/dc_update_employe.png[]
 _Figure Diagramme de classes update employe_ 
+
+link:https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/cahier%20de%20recette.adoc#update_employe[Fiche de tests update employe]
 
 [[delete]]
 ===== 3.2.1.4 Delete - Julien
@@ -326,6 +332,8 @@ _Figure Diagramme de classes debit exceptionnel_
 image::Images/debit_exceptionnel2.png[]
 _Figure Interface debit exceptionnel_ 
 
+link:https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/cahier%20de%20recette.adoc#debit_exceptionnel[Fiche de tests débit exceptionnel]
+
 [[simuler_emprunt_assurance]]
 ==== 4.2.2 Simuler un emprunt et une assurance d'emprunt - Prescilla
 
@@ -351,6 +359,8 @@ _Figure Interface Informations simuler un emprunt et une assurance d'emprunt_
 
 image::Images/simuler_emprunt3.png[]
 _Figure Interface Résultat simulation d'un emprunt et d'une assurance d'emprunt_ 
+
+link:https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/cahier%20de%20recette.adoc#simuler_emprunt_assurance[Fiche de tests simuler un emprunt et une assurance d'emprunt]
 
 [[version3_presentation_des_diagrammes]]
 == 5. Version 3 - Présentation et explication des diagrammes demandés
