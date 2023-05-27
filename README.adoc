@@ -23,10 +23,10 @@ Chef de projet : BERNARD Julien
 |2    |Chef d’Agence     | Emprunt | Simuler emprunt|| F | 
 |2    |Chef d’Agence     | Emprunt | Simuler assurance|| F | 
 |2    |Guichetier     | Compte | Relevé PDF|| | D
-|2    |Guichetier     | CRUD Prélèvement automatiques| C| D | | 
-|2    |Guichetier     | CRUD Prélèvement automatiques| R| D | | 
-|2    |Guichetier     | CRUD Prélèvement automatiques| U| D | | 
-|2    |Guichetier     | CRUD Prélèvement automatiques| D| D | | 
+|2    |Guichetier     | CRUD Prélèvement automatiques| C| F | | 
+|2    |Guichetier     | CRUD Prélèvement automatiques| R| F | | 
+|2    |Guichetier     | CRUD Prélèvement automatiques| U| F | | 
+|2    |Guichetier     | CRUD Prélèvement automatiques| D| F | | 
 |2    |Batch     | Exécuter Prélèvements automatiques | | | | D 
 |2    |Batch     | Reléves mensuels | || D | 
 
