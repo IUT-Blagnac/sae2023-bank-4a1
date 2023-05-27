@@ -214,12 +214,12 @@ autorisé est de -100 euros.
 
 ==== 1.4 Gestion des prélèvements automatiques :
 
-[[create_employe]]
+[[create_prelevements_automatiques]]
 |====
 
 >|Cas de test 4+|Test-01-04-01
->|Titre 4+|CREATE un employé - Julien
->|Objectif 4+| Vérifier qu'il est possible de créer un employé
+>|Titre 4+|CREATE un prélèvement automatique - Julien
+>|Objectif 4+| Vérifier qu'il est possible de créer un prélèvement automatique
 
 5+|
 
@@ -231,12 +231,12 @@ autorisé est de -100 euros.
 
 |====
 
-[[read_employe]]
+[[read_prelevements_automatiques]]
 |====
 
 >|Cas de test 4+|Test-01-04-02
->|Titre 4+|READ un employé - Julien
->|Objectif 4+| Vérifier qu'il est possible de lire les informations d'un employé
+>|Titre 4+|READ un prélèvement automatique - Julien
+>|Objectif 4+| Vérifier qu'il est possible de lire les informations d'un prélèvement automatique
 
 5+|
 
@@ -248,12 +248,12 @@ autorisé est de -100 euros.
 
 |====
 
-[[update_employe]]
+[[update_prelevements_automatiques]]
 |====
 
 >|Cas de test 4+|Test-01-04-03
->|Titre 4+|UPDATE un employé - Julien
->|Objectif 4+| Vérifier qu'il est possible modifier les informations d'un employé
+>|Titre 4+|UPDATE un prélèvement automatique - Julien
+>|Objectif 4+| Vérifier qu'il est possible modifier les informations d'un prélèvement automatique
 
 5+|
 
@@ -269,8 +269,8 @@ autorisé est de -100 euros.
 |====
 
 >|Cas de test 4+|Test-01-04-04
->|Titre 4+|DELETE un employé - Julien
->|Objectif 4+| Vérifier qu'il est possible de supprimer un employé
+>|Titre 4+|DELETE un prélèvement automatique - Julien
+>|Objectif 4+| Vérifier qu'il est possible de supprimer un prélèvement automatique
 
 5+|
 
