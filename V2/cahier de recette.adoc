@@ -126,6 +126,8 @@ Compléter et si on ne valide pas, ...
 
 ==== 1.3 Gestion des opérations :
 
+[[debiter_compte]]
+
 |====
 
 >|Cas de test 4+|Test-01-03-01
@@ -146,6 +148,8 @@ autorisé est de -100 euros.
  ^|OK
   
 |====
+
+[[crediter_compte]]
 
 |====
 
@@ -329,7 +333,7 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 
 |====
 
-
+[[update_employe]]
 |====
 
 >|Cas de test 4+|Test-02-01-03
@@ -360,6 +364,7 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 
 ==== 2.3 Gestion des opérations :
 
+[[debit_exceptionnel]]
 |====
 
 >|Cas de test 4+|Test-02-03-01
@@ -376,10 +381,11 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
   
 |====
 
+[[simuler_emprunt]]
 |====
 
 >|Cas de test 4+|Test-02-03-02
->|Titre 4+|Simuler un emprunt - Manon
+>|Titre 4+|Simuler un emprunt - Prescilla
 >|Objectif 4+| Vérifier qu'il est possible de simuler un emprunt
 
 5+|
@@ -392,6 +398,7 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
   
 |====
 
+[[assurance_emprunt]]
 |====
 
 >|Cas de test 4+|Test-02-03-03
@@ -410,6 +417,7 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 
 === 3. BATCH :
 
+[[releves_mensuels]]
 |====
 
 >|Cas de test 4+|Test-03-01-00
