@@ -390,29 +390,12 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
   
 |====
 
-[[simuler_emprunt]]
+[[simuler_emprunt_assurance]]
 |====
 
 >|Cas de test 4+|Test-02-03-02
->|Titre 4+|Simuler un emprunt - Prescilla
->|Objectif 4+| Vérifier qu'il est possible de simuler un emprunt
-
-5+|
-
-^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|C_G_C.1  ^|... ^|... ^|... ^|...
-^|C_G_C.2 ^|... ^|... ^|... ^|...
-^|C_G_C.3 ^|... ^|... ^|... ^|...
-^|C_G_C.4  ^|... ^|... ^|... ^|...
-  
-|====
-
-[[assurance_emprunt]]
-|====
-
->|Cas de test 4+|Test-02-03-03
->|Titre 4+|Simuler une assurance d'emprunt - Prescilla
->|Objectif 4+| Vérifier qu'il est possible de simuler une assurance d'emprunt
+>|Titre 4+|Simuler un emprunt et une assurance d'emprunt - Prescilla
+>|Objectif 4+| Vérifier qu'il est possible de simuler un emprunt et une assurance d'emprunt
 
 5+|
 
