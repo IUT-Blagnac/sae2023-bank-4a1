@@ -93,6 +93,7 @@ Compléter et si on ne valide pas, ...
 
 |====
 
+[[creer_compte]]
 |====
 
 >|Cas de test 4+|Test-01-02-04
@@ -108,6 +109,7 @@ Compléter et si on ne valide pas, ...
 
 |====
 
+[[cloturer_compte]]
 |====
 
 >|Cas de test 4+|Test-01-02-05
@@ -172,6 +174,7 @@ autorisé est de -100 euros.
 
 |====
 
+[[virement_compte]]
 |====
 
 >|Cas de test 4+|Test-01-03-04
@@ -192,7 +195,7 @@ autorisé est de -100 euros.
 
 |====
 
-
+[[releve_mensuel_compte]]
 |====
 
 >|Cas de test 4+|Test-01-03-05
@@ -211,7 +214,7 @@ autorisé est de -100 euros.
 
 ==== 1.4 Gestion des prélèvements automatiques :
 
-
+[[create_employe]]
 |====
 
 >|Cas de test 4+|Test-01-04-01
@@ -228,6 +231,7 @@ autorisé est de -100 euros.
 
 |====
 
+[[read_employe]]
 |====
 
 >|Cas de test 4+|Test-01-04-02
@@ -244,6 +248,7 @@ autorisé est de -100 euros.
 
 |====
 
+[[update_employe]]
 |====
 
 >|Cas de test 4+|Test-01-04-03
@@ -260,6 +265,7 @@ autorisé est de -100 euros.
 
 |====
 
+[[delete_employe]]
 |====
 
 >|Cas de test 4+|Test-01-04-04
@@ -303,6 +309,7 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 
 ==== 2.2 Gestion des employés :
 
+[[create_employe]]
 |====
 
 >|Cas de test 4+|Test-02-01-01
@@ -318,6 +325,7 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 
 |====
 
+[[read_employe]]
 |====
 
 >|Cas de test 4+|Test-02-01-02
@@ -347,6 +355,7 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 
 |====
 
+[[delete_employe]]
 |====
 
 >|Cas de test 4+|Test-02-01-04
@@ -431,6 +440,7 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 
 |====
 
+[[executer_prelevements_automatiques]]
 |====
 
 >|Cas de test 4+|Test-03-02-00
