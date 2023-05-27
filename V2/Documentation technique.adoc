@@ -72,6 +72,9 @@ En plus de la version 0, le guichetier peut créer un compte, le clôturer, le c
 image::Images/uc-initialv2.svg[]
 _Figure 3. Diagramme des Cas d’Utilisation (V.2)_ 
 
+Dans cette nouvelle version, le guichetier peut générer un relevé mensuel en PDF et gérer les prélévements automatiques (CRUD). 
+Le chef d'agence a de nouvelles fonctionnalités possibles : effectuer un débit exceptionnel, simuler un emprunt et simuler une assurance d'emprunt.
+
 [[diagramme_de_classe]]
 === 1.2 Diagramme de classe des données global
 
@@ -101,6 +104,14 @@ Il n'y a presque aucun changement à part qu'un SoldeCourant peut-être cloturé
 image::Images/dc-initialv2.svg[]
 _Figure 6. Diagramme de Classes (V.2)_
 
+Le diagramme de classes V2 dispose de nouvelles tables :
+
+* PrelevementAutomatique : a un montant, une date reccurente et un bénéficiaire
+
+* Emprunt : possède un taux d'emprunt, un capital d'emprunt, une durée d'emprunt et une date de début d'emprunt
+
+* AssuranceEmprunt : a un taux d'assurance et un taux de couverture
+
 [[installation]]
 === 1.3 Installation de l'application
 
@@ -111,8 +122,8 @@ Il n'est pas nécessaire d'avoir un autre logiciel ou driver pour que le Jar fon
 
 Une fois téléchargé, double cliquez dessus afin d'ouvrir l'application et de commencer à gérer la banque.
 
-Il est possible de changer de base de données en modifiant des informations, afin de procéder aux changements, il faut ouvrir une application permettant de créer un fichier jar fonctionnel une fois que l'on aura effectué les changement,s tel que Eclipse.
-Une extraction du répertoire DailyBank afin d'en faire un workspace exploitable par Eclipse est suffisant 
+Il est possible de changer de base de données en modifiant des informations, afin de procéder aux changements, il faut ouvrir une application permettant de créer un fichier jar fonctionnel une fois que l'on aura effectué les changements, tel que Eclipse.
+Une extraction du répertoire DailyBank afin d'en faire un workspace exploitable par Eclipse est suffisant. 
 Le chemin du fichier qui nous intéresse est LogToDatabase.class, il se situe dans les répertoire model/orm.
 Sur les deux lignes suivantes : 
 private static final String user = "G4A1S2";
@@ -120,10 +131,10 @@ private static final String passwd = "aucuneidee";
  
 Il faut changer le login (G4A1S2) et le mot de passe (aucuneidee) à ceux d'une autre base de donnée.
  
-Une fois les changements enregistrés, il est nécessaire de générer à un nouveau un jar file.
+Une fois les changements enregistrés, il est nécessaire de générer à nouveau un jar file.
 En haut à gauche de l'application, dans File/Export, sélectionner Jar, JAR File, sélectionner le workspace DailyBank ainsi qu'un emplacement à choisir pour son extraction.
  
-Bravo, vous trouverez votre jar file et pouvez l'exécuter sur une nouvelle base de donnée.
+Bravo, vous trouverez votre jar file et pouvez l'exécuter sur une nouvelle base de données.
 
 
 [[architecture]]
