@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 import application.DailyBankState;
+import application.control.SimulationEmprunt;
 import application.tools.AlertUtilities;
 import application.tools.CategorieOperation;
 import application.tools.ConstantesIHM;
@@ -11,6 +12,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
@@ -53,6 +55,12 @@ public class OperationEditorPaneController {
 		this.compteEdite = cpte;
 
 		switch (mode) {
+		/**
+		* @author Prescilla Estrade 
+	 	* Case Débit compte
+	 	* Affiche les informations du compte (numéro de compte, solde et débit autorisé) dans le label lblMessage
+	 	* Modifie le texte des boutons btnOk et btnCancel par "Effectuer Débit" et "Annuler débit"
+	 	*/
 		case DEBIT:
 			String info = "Cpt. : " + this.compteEdite.idNumCompte + "  "
 					+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
@@ -68,7 +76,13 @@ public class OperationEditorPaneController {
 			this.cbTypeOpe.setItems(listTypesOpesPossibles);
 			this.cbTypeOpe.getSelectionModel().select(0);
 			break;
-
+			
+		/**
+		* @author Prescilla Estrade 
+	 	* Case Débit exceptionnel compte		 	
+	 	* Affiche les informations du compte (numéro de compte, solde et débit autorisé) dans le label lblMessage
+		* Modifie le texte des boutons btnOk et btnCancel par "Effectuer Débit exceptionnel " et "Annuler débit exceptionnel"
+	 	*/	
 		case DEBITEXCEPTIONNEL:
 			String info1 = "Cpt. : " + this.compteEdite.idNumCompte + "  "
 					+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
@@ -85,6 +99,12 @@ public class OperationEditorPaneController {
 			this.cbTypeOpe.getSelectionModel().select(0);
 			break;
 			
+		/**
+		* @author Prescilla Estrade 
+	 	* Case Crédit compte		 			 	
+	 	* Affiche les informations du compte (numéro de compte, solde et débit autorisé) dans le label lblMessage
+		* Modifie le texte des boutons btnOk et btnCancel par "Effectuer Crédit " et "Annuler crédit"
+	 	*/			
 		case CREDIT:
 			String info2 = "Cpt. : " + this.compteEdite.idNumCompte + "  "
 					+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
@@ -167,9 +187,14 @@ public class OperationEditorPaneController {
 	@FXML
 	private void doAjouter() {
 		switch (this.categorieOperation) {
+		/**
+		* @author Prescilla Estrade 
+	 	* Case Débit compte		 	
+	 	* Affiche les informations du compte (numéro de compte, solde et débit autorisé) dans le label lblMessage
+	 	*/	
 		case DEBIT:
 			// règles de validation d'un débit :
-			// - le montant doit être un nombre valide
+			// - le montant doit être un nombre valide (supérieur à 0)
 			// - et si l'utilisateur n'est pas chef d'agence,
 			// - le débit ne doit pas amener le compte en dessous de son découvert autorisé
 			double montant;
@@ -209,15 +234,22 @@ public class OperationEditorPaneController {
 				
 				return;
 			}
+			
 			String typeOp = this.cbTypeOpe.getValue();
 			this.operationResultat = new Operation(-1, montant, null, null, this.compteEdite.idNumCli, typeOp);
 			this.primaryStage.close();
 			break;
+			
+		/**
+		* @author Prescilla Estrade 
+	 	* Case Débit exceptionnel compte		 	
+	 	* Affiche les informations du compte (numéro de compte, solde et débit autorisé) dans le label lblMessage
+		*/	
 		case DEBITEXCEPTIONNEL:
 			// règles de validation d'un débit :
-			// - le montant doit être un nombre valide
+			// - le montant doit être un nombre valide (supérieur à 0)
 			// - et si l'utilisateur n'est pas chef d'agence,
-			// - le débit ne doit pas amener le compte en dessous de son découvert autorisé
+			// - le débit ne doit pas amener le compte en dessous de son découvert autorisé,
 			double montant1;
 
 			this.txtMontant.getStyleClass().remove("borderred");
@@ -242,9 +274,15 @@ public class OperationEditorPaneController {
 			this.operationResultat = new Operation(-1, montant1, null, null, this.compteEdite.idNumCli, typeOp1);
 			this.primaryStage.close();
 			break;
+
+		/**
+		* @author Prescilla Estrade 
+	 	* Case Crédit compte		 	
+	 	* Affiche les informations du compte (numéro de compte, solde et débit autorisé) dans le label lblMessage
+		*/	
 		case CREDIT:
 			// règles de validation d'un crédit :
-			// - le montant doit être un nombre valide
+			// - le montant doit être un nombre valide (supérieur à 0)
 
 			double montant2;
 
