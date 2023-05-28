@@ -238,10 +238,8 @@ autorisé est de -100 euros.
 5+|
 
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|All_G_COP.1 ^|... ^|... ^|... ^|...
-^|All_G_COP.2 ^|... ^|... ^|... ^|...
-^|All_G_COP.3 ^|... ^|... ^|... ^|...
-^|All_G_COP.4 ^|... ^|... ^|... ^|...
+^|All_G_COP.1 ^|Un compte bancaire est sélectionner et on clique sur "Voir prélèvements". ^|Une fenêtre apparaît et affiche les prélèvements ^|Cliquer sur un compte ^|OK
+^|All_G_COP.2 ^|Le bouton "Voir Prélèvements" est grisé sans sélectionner de compte. ^|Impossible de voir les prélèvements ^|Ne pas cliquer sur un compte ^|OK
 
 |====
 
@@ -255,10 +253,10 @@ autorisé est de -100 euros.
 5+|
 
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|All_G_COP.1 ^|... ^|... ^|... ^|...
-^|All_G_COP.2 ^|... ^|... ^|... ^|...
-^|All_G_COP.3 ^|... ^|... ^|... ^|...
-^|All_G_COP.4 ^|... ^|... ^|... ^|...
+^|All_G_COP.1 ^|Sélectionner un prélèvement et cliquer sur le bouton "Modifier prél. auto" ^|Ouvre la fenêtre pour modifier ^|Avoir sélectionner un prélèvement ^|OK
+^|All_G_COP.2 ^|Le bouton "Modifier prél. auto" est grisé ^|Impossible de modifier le prélèvement ^|Ne pas sélectionner de prélèvement ^|OK
+^|All_G_COP.3 ^|Rentrer une date supérieur à 28 ^|La date est refusé ^|La date doit être entre 1 et 28  ^|OK
+^|All_G_COP.4 ^|Rentrer un montant supérieur au solde ^|Alerte d'avertissement ^|Avoir un solde inférieur au montant inscrit ^|OK
 
 |====
 
@@ -272,10 +270,8 @@ autorisé est de -100 euros.
 5+|
 
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|All_G_COP.1 ^|... ^|... ^|... ^|...
-^|All_G_COP.2 ^|... ^|... ^|... ^|...
-^|All_G_COP.3 ^|... ^|... ^|... ^|...
-^|All_G_COP.4 ^|... ^|... ^|... ^|...
+^|All_G_COP.1 ^|Cliquer sur le bouton "Supprimer prél. auto." en sélectionnant un prélèvement ^|Supprime le prélèvement de la BD ^|Sélectionner un prélèvement ^|OK
+^|All_G_COP.2 ^|Cliquer sur le bouton "Supprimer prél. auto." sans sélectionné un prélèvement ^|Impossible de cliquer sur le bouton ^|aucune ^|OK
 
 |====
 
