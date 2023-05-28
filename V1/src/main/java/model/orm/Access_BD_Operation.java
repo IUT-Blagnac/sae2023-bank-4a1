@@ -120,6 +120,7 @@ public class Access_BD_Operation {
 	}
 
 	/**
+	 * @author Prescilla Estrade
 	 * Enregistrement d'un débit.
 	 *
 	 * Se fait par procédure stockée : - Vérifie que le débitAutorisé n'est pas
@@ -167,10 +168,10 @@ public class Access_BD_Operation {
 	}
 	
 	/**
+	 * @author Prescilla Estrade
 	 * Enregistrement d'un débit exceptionnel.
 	 *
-	 * Se fait par procédure stockée : - Vérifie que le débitAutorisé n'est pas
-	 * dépassé <BR />
+	 * Se fait par procédure stockée :
 	 * - Enregistre l'opération <BR />
 	 * - Met à jour le solde du compte. <BR />
 	 *
@@ -180,7 +181,6 @@ public class Access_BD_Operation {
 	 * @throws DataAccessException        Erreur d'accès aux données (requête mal
 	 *                                    formée ou autre)
 	 * @throws DatabaseConnexionException Erreur de connexion
-	 * @throws ManagementRuleViolation    Si dépassement découvert autorisé
 	 */
 	public void insertDebitExceptionnel(int idNumCompte, double montant, String typeOp)
 			throws DatabaseConnexionException, ManagementRuleViolation, DataAccessException {
@@ -206,12 +206,12 @@ public class Access_BD_Operation {
 			throw new DataAccessException(Table.Operation, Order.INSERT, "Erreur accès", e);
 		}
 	}
-
+	
 	/**
+	 * @author Prescilla Estrade
 	 * Enregistrement d'un crédit.
 	 *
-	 * Se fait par procédure stockée : - Vérifie que le créditAutorisé n'est pas
-	 * dépassé <BR />
+	 * Se fait par procédure stockée : 
 	 * - Enregistre l'opération <BR />
 	 * - Met à jour le solde du compte. <BR />
 	 *
@@ -221,7 +221,6 @@ public class Access_BD_Operation {
 	 * @throws DataAccessException        Erreur d'accès aux données (requête mal
 	 *                                    formée ou autre)
 	 * @throws DatabaseConnexionException Erreur de connexion
-	 * @throws ManagementRuleViolation    Si dépassement découvert autorisé
 	 */
 	public void insertCredit(int idNumCompte, double montant, String typeOp)
 			throws DatabaseConnexionException, ManagementRuleViolation, DataAccessException {
