@@ -172,6 +172,14 @@ public class OperationsManagement {
 		return op;
 	}
 	
+	/**
+	 * @author Julien Bernard
+	 * Enregistre un virement
+	 *
+	 * @return résultat de l'opération demandée
+	 * @throws ApplicationException       Erreur d'accès aux données (requête incorrecte,...)
+	 * @throws DatabaseConnexionException Erreur de connexion
+	 */
 	public Operation enregistrerVirement() {
 
 		OperationEditorPane oep = new OperationEditorPane(this.primaryStage, this.dailyBankState);
