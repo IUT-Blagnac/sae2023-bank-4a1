@@ -264,6 +264,12 @@ public class OperationEditorPaneController {
 				this.txtMontant.getStyleClass().add("borderred");
 				this.lblMontant.getStyleClass().add("borderred");
 				this.txtMontant.requestFocus();
+				
+				Alert alert = new Alert (AlertType.INFORMATION);
+				alert.setTitle("Erreur crédit");
+				alert.setContentText("Impossible d'effectuer le crédit, le montant est inférieur à 0 !");
+				alert.showAndWait();
+				
 				return;
 			}
 			String typeOp2 = this.cbTypeOpe.getValue();
