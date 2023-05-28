@@ -423,14 +423,14 @@ _Figure Diagramme des Cas d’Utilisation simuler un emprunt et assurance d'empr
 
 **Classes et ressources utilisées :** 
 
-* AssuranceEmprunt.java
-* AssuranceEmpruntController.java
-* assuranceemprunt.fxml
-* SimulationAssuranceEmprunt.java
-* SimulationAssuranceEmpruntController.java
-* simulationassuranceemprunt.fxml
-* ClientsManagementController.java
-* clientsmanagements.fxml
+* Emprunt.java : Classant gérant l'affichage de la fenêtre d'informations d'un emprunt
+* EmpruntController.java : Contrôleur de la fenêtre d'emprunt permettant la gestion des actions liées à la fenêtre d'emprunt
+* emprunt.fxml : Page FXML correspondant à la fenêtre "Informations emprunt"
+* SimulationEmprunt.java : Classe gérant l'affichage de la fenêtre de simulation d'emprunt
+* SimulationEmpruntController.java :  Classe permettant la gestion de la fenêtre de simulation d'emprunt
+* simulationemprunt.fxml : Page FXML correspondant à la fenêtre "Simulation emprunt"
+* ClientsManagementController.java : ajout bouton btnEmprunt et méthode doEmprunt
+* clientsmanagements.fxml : ajout du bouton SimulerEmprunt
 
 image::Images/dc_emprunt_assurance.png[]
 _Figure Diagramme de classes simuler un emprunt et une assurance d'emprunt_ 
