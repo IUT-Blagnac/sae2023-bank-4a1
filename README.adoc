@@ -118,7 +118,7 @@ A terminer
 | 26/05   | Gantt V2  réalisé    |   Gantt V2 : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Gestion%20et%20dvpt%20app%20V2.pdf   | 
 |         | Doc. Util. V2 |    https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Documentation%20utilisateur.adoc     |         
 |         | Doc. Tec. V2 |        https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Documentation%20technique.adoc        |     
-|         | Code V2    |                     | 
+|         | Code V2    |  https://github.com/IUT-Blagnac/sae2023-bank-4a1/tree/main/V1                   | 
 |         | Javadoc V2    |   https://github.com/IUT-Blagnac/sae2023-bank-4a1/tree/main/V2/JavadocV2/Javadoc             | 
 |         | Recette V2 |      https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/cahier%20de%20recette.adoc                | 
 |         | `jar` projet | Jar V1 : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/Julien_V1/V1/target/DailyBank-1.0-shaded.jar Jar V2 : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/DailyBank-1.0-shaded.jar | 
