@@ -1,3 +1,8 @@
+/*
+ * Cette classe permet d'appeler le fichier FXML afin d'afficher la fenêtre.
+ * Elle gère l'affichage de la fenêtre et appelle une méthode pour gérer les textes
+ * @author Julien Bernard
+ */
 package application.control;
 
 import application.DailyBankApp;
@@ -43,7 +48,10 @@ public class PrelevementEditorPane {
 			e.printStackTrace();
 		}
 	}
-
+	
+	/*
+	 * Appelle la méthode displayDialog pour gérer l'affichage de la fenêtre
+	 */
 	public Prelevement doPrelevementEditorDialog(Prelevement p, EditionMode em) {
 		return this.pepcViewController.displayDialog(p, em);
 	}
