@@ -162,6 +162,7 @@ public class ClientsManagementController {
 		}
 	}
 	
+	// @author Prescilla Estrade
 	@FXML
 	private void doEmprunt() {
 		Emprunt Emprunt = new Emprunt(primaryStage, dailyBankState);
