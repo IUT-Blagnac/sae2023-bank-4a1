@@ -1,3 +1,7 @@
+/**
+ * Modifie l'affichage de la fenêtre du prélèvement acutel selon l'opération choisis
+ * @author Julien Bernard 
+ */
 package application.view;
 
 import application.DailyBankState;
@@ -36,7 +40,14 @@ public class PrelevementEditorPaneController {
 	private void configure() {
 		this.primaryStage.setOnCloseRequest(e -> this.closeWindow(e));
 	}
-
+	
+	/**
+	 * Affiche les informations de la fenêtre selon le cas.
+	 * @author Julien Bernard
+	 * @param prelevement
+	 * @param mode
+	 * @return Le resultat
+	 */
 	public Prelevement displayDialog(Prelevement prelevement, EditionMode mode) {
 
 		this.editionMode = mode;
