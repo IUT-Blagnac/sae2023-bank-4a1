@@ -60,7 +60,7 @@ public class ComptesManagement {
 		this.cmcViewController.displayDialog();
 	}
 	
-	/*
+	/**
 	 * @author Julien Bernard
 	 * Appelle la méthode doOperationsManagementDialog pour l'affichage de la fenêtre <BR>
 	 * 
