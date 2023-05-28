@@ -1,3 +1,7 @@
+/**
+ * Modifie directement la BD en relation avec les prélèvements.
+ * @author Julien Bernard
+ */
 package model.orm;
 
 import java.sql.Connection;
@@ -17,8 +21,19 @@ public class Access_BD_Prelevement {
 	public Access_BD_Prelevement() {
 	}
 
-
-
+	/**
+	 * @author Julien Bernard
+	 * Créer et ajoute prélèvement dans la BD
+	 * 
+	 * prel.montant doit être positif obligatoirement, prel.dateRecurrente doit être en 1 et 28
+	 * prel.beneficiaire doit être référencé, prel.idNumCompte est automatiquement ajouté.
+	 * 
+	 * @param prel 									Informations du prélèvements									
+	 * @throws RowNotFoundOrTooManyRowsException	Le prélèvement existe déjà 
+	 * @throws DataAccessException					Erreur d'accès aux données (requête
+	 *                                     			mal formée ou autre)
+	 * @throws DatabaseConnexionException			Erreur de connexion
+	 */
 	public void insertPrelevement(Prelevement prel)
 			throws RowNotFoundOrTooManyRowsException, DataAccessException, DatabaseConnexionException {
 		try {
@@ -63,7 +78,20 @@ public class Access_BD_Prelevement {
 			throw new DataAccessException(Table.PrelevementAutomatique, Order.INSERT, "Erreur accès", e);
 		}
 	}
-
+	
+	/**
+	 * @author Julien Bernard
+	 * Supprime le prélèvement de la BD
+	 * 
+	 * prel.montant doit être positif obligatoirement, prel.dateRecurrente doit être en 1 et 28
+	 * prel.beneficiaire doit être référencé, prel.idNumCompte est automatiquement ajouté.
+	 * 
+	 * @param idPrelev								(clé primaire) doit exister seul
+	 * @throws RowNotFoundOrTooManyRowsException	Le prélèvement n'existe pas
+	 * @throws DataAccessException					Erreur d'accès aux données (requête
+	 *                                     			mal formée ou autre)
+	 * @throws DatabaseConnexionException			Erreur de connexion
+	 */
 	public void supprimerPrelevement(int idPrelev)
 			throws RowNotFoundOrTooManyRowsException, DataAccessException, DatabaseConnexionException {
 		try {
@@ -90,7 +118,20 @@ public class Access_BD_Prelevement {
 		}
 
 	}
-
+	
+	/**
+	 * @author Julien Bernard
+	 * Met à jour le prélèvement dans la BD
+	 * 
+	 * prel.montant doit être positif obligatoirement, prel.dateRecurrente doit être en 1 et 28
+	 * prel.beneficiaire doit être référencé, prel.idNumCompte est automatiquement ajouté.
+	 * 
+	 * @param prel 									Informations du prélèvements									
+	 * @throws RowNotFoundOrTooManyRowsException	Le prélèvement existe déjà 
+	 * @throws DataAccessException					Erreur d'accès aux données (requête
+	 *                                     			mal formée ou autre)
+	 * @throws DatabaseConnexionException			Erreur de connexion
+	 */
 	public void updatePrelevement(Prelevement prel)
 			throws RowNotFoundOrTooManyRowsException, DataAccessException, DatabaseConnexionException {
 
