@@ -4,8 +4,6 @@ import application.DailyBankApp;
 import application.DailyBankState;
 import application.tools.EditionMode;
 import application.tools.StageManagement;
-import application.view.ClientEditorPaneController;
-import application.view.ClientsManagementController;
 import application.view.EmployeEditorPaneController;
 import application.view.EmployesManagementController;
 import javafx.fxml.FXMLLoader;
@@ -13,11 +11,10 @@ import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import model.data.Client;
 import model.data.Employe;
 
 /**
- * Classe qui gère le contrôleur de la page de gestion des clients(ajout et modification)
+ * Classe qui gère le contrôleur de la page de gestion des Employes(ajout et modification)
 */
 public class EmployeEditorPane {
 
@@ -51,12 +48,12 @@ public class EmployeEditorPane {
 	}
 
 	/** 
-	 * Démarre la fonction de contrôleur de la page ajoutée ou modifiée des clients
-	 * @param client : Client qui est modifié
+	 * Démarre la fonction de contrôleur de la page ajoutée ou modifiée des employes
+	 * @param employe : Employe qui est modifié
 	 * @param em : Indique le mode d'édition (ajouter, modifier, supprimer) 
-	 * @return Si le client a changé 
+	 * @return Si le employe a changé 
 	 */
-	public Employe doClientEditorDialog(Employe employe, EditionMode em) {
+	public Employe doEmployeEditorDialog(Employe employe, EditionMode em) {
 		return this.eepcViewController.displayDialog(employe, em);
 	}
 }

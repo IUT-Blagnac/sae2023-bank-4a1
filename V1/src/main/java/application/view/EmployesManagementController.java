@@ -3,7 +3,7 @@ package application.view;
 import java.util.ArrayList;
 
 import application.DailyBankState;
-import application.control.ComptesManagement;
+import application.control.EmployesManagement;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -13,8 +13,6 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
-import model.data.Client;
-import model.data.CompteCourant;
 import model.data.Employe;
 
 public class EmployesManagementController {
@@ -22,19 +20,19 @@ public class EmployesManagementController {
 	// Etat courant de l'application
 	private DailyBankState dailyBankState;
 
-	// Contrôleur de Dialogue associé à ComptesManagementController
-	private ComptesManagement cmDialogController;
+	// Contrôleur de Dialogue associé à EmployesManagementController
+	private EmployesManagement emDialogController;
 
 	// Fenêtre physique ou est la scène contenant le fichier xml contrôlé par this
 	private Stage primaryStage;
 
 	// Données de la fenêtre
 	private Employe employe;
-	private ObservableList<CompteCourant> oListCompteCourant;
+	private ObservableList<Employe> oListEmploye;
 
 	// Manipulation de la fenêtre
-	public void initContext(Stage _containingStage, ComptesManagement _cm, DailyBankState _dbstate, Employe employe) {
-		this.cmDialogController = _cm;
+	public void initContext(Stage _containingStage, EmployesManagement _em, DailyBankState _dbstate, Employe employe) {
+		this.emDialogController = _em;
 		this.primaryStage = _containingStage;
 		this.dailyBankState = _dbstate;
 		this.employe = employe;
@@ -46,15 +44,15 @@ public class EmployesManagementController {
 
 		this.primaryStage.setOnCloseRequest(e -> this.closeWindow(e));
 
-		this.oListCompteCourant = FXCollections.observableArrayList();
-		this.lvComptes.setItems(this.oListCompteCourant);
-		this.lvComptes.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
-		this.lvComptes.getFocusModel().focus(-1);
-		this.lvComptes.getSelectionModel().selectedItemProperty().addListener(e -> this.validateComponentState());
+		this.oListEmploye = FXCollections.observableArrayList();
+		this.lvEmployes.setItems(this.oListEmploye);
+		this.lvEmployes.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+		this.lvEmployes.getFocusModel().focus(-1);
+		this.lvEmployes.getSelectionModel().selectedItemProperty().addListener(e -> this.validateComponentState());
 
 		info = this.employe.nom + "  " + this.employe.prenom + "  (id : "
 				+ this.employe.idEmploye + ")";
-		this.lblInfosClient.setText(info);
+		this.lblInfosEmploye.setText(info);
 
 		this.loadList();
 		this.validateComponentState();
@@ -74,15 +72,15 @@ public class EmployesManagementController {
 	// Attributs de la scene + actions
 
 	@FXML
-	private Label lblInfosClient;
+	private Label lblInfosEmploye;
 	@FXML
-	private ListView<CompteCourant> lvComptes;
+	private ListView<Employe> lvEmployes;
 	@FXML
 	private Button btnVoirOpes;
 	@FXML
-	private Button btnModifierCompte;
+	private Button btnModifierEmploye;
 	@FXML
-	private Button btnSupprCompte;
+	private Button btnSupprEmploye;
 
 	@FXML
 	private void doCancel() {
@@ -90,50 +88,38 @@ public class EmployesManagementController {
 	}
 
 	@FXML
-	private void doVoirOperations() {
-		int selectedIndice = this.lvComptes.getSelectionModel().getSelectedIndex();
-		if (selectedIndice >= 0) {
-			CompteCourant cpt = this.oListCompteCourant.get(selectedIndice);
-			this.cmDialogController.gererOperationsDUnCompte(cpt);
-		}
+	private void doVoirEmployes() {
 		this.loadList();
 		this.validateComponentState();
 	}
 
 	@FXML
-	private void doModifierCompte() {
+	private void doModifierEmploye() {
 	}
 
 	@FXML
-	private void doSupprimerCompte() {
+	private void doSupprimerEmploye() {
 	}
 
 	@FXML
-	private void doNouveauCompte() {
-		CompteCourant compte;
-		compte = this.cmDialogController.creerNouveauCompte();
-		if (compte != null) {
-			this.oListCompteCourant.add(compte);
+	private void doNouveauEmploye() {
+		Employe employe;
+		employe = this.emDialogController.nouveauEmploye();
+		if (employe != null) {
+			this.oListEmploye.add(employe);
 		}
 	}
 
 	private void loadList() {
-		ArrayList<CompteCourant> listeCpt;
-		listeCpt = this.cmDialogController.getComptesDunClient();
-		this.oListCompteCourant.clear();
-		this.oListCompteCourant.addAll(listeCpt);
+		ArrayList<Employe> listeEmp;
+		listeEmp = this.emDialogController.getlisteEmployes();
+		this.oListEmploye.clear();
+		this.oListEmploye.addAll(listeEmp);
 	}
 
 	private void validateComponentState() {
 		// Non implémenté => désactivé
-		this.btnModifierCompte.setDisable(true);
-		this.btnSupprCompte.setDisable(true);
-
-		int selectedIndice = this.lvComptes.getSelectionModel().getSelectedIndex();
-		if (selectedIndice >= 0) {
-			this.btnVoirOpes.setDisable(false);
-		} else {
-			this.btnVoirOpes.setDisable(true);
-		}
+		this.btnModifierEmploye.setDisable(true);
+		this.btnSupprEmploye.setDisable(true);
 	}
 }
