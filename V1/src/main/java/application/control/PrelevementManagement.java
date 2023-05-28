@@ -1,3 +1,7 @@
+/*
+ * Cette classe permet d'utiliser les méthodes nécessaires selon l'action sur les prélèvements.
+ * @author Julien Bernard
+ */
 package application.control;
 
 import java.io.FileNotFoundException;
@@ -79,7 +83,12 @@ public class PrelevementManagement {
 	public void doPrelevementManagementDialog() {
 		this.pmcViewController.displayDialog();
 	}
-
+	
+	/*
+	 * Affiche le texte pour la création d'un prélèvement
+	 * Appelle la méthode insertPrelevement afin de l'ajouter à la BD
+	 * @author Julien Bernard
+	 */
 	public Prelevement nouveauPrelevement() {
 		Prelevement prelevement;
 		prelevement = new Prelevement(0, 0.0, 0, "", this.compteCourant.idNumCompte);
@@ -103,6 +112,11 @@ public class PrelevementManagement {
 		return prelevement;
 	}
 	
+	/*
+	 * Affiche le texte pour modifier un prélèvement
+	 * Appelle la méthode updatePrelevement afin d'ajouter les modifications à la BD
+	 * @author Julien Bernard
+	 */
 	public Prelevement modifierPrelevement(Prelevement prelevementModif) {
 		PrelevementEditorPane cep = new PrelevementEditorPane(this.primaryStage, this.dailyBankState);
 		Prelevement result = cep.doPrelevementEditorDialog(prelevementModif, EditionMode.MODIFICATION);
@@ -124,6 +138,10 @@ public class PrelevementManagement {
 		return result;
 	}
 	
+	/*
+	 * Supprime en un clique le prélèvement de la BD en appelant la méthode supprimerPrelevement
+	 * @author Julien Bernard
+	 */
 	public void supprimerPrelevement(int idPrelevement) {
 			try {
 				Access_BD_Prelevement acp = new Access_BD_Prelevement();
@@ -138,7 +156,7 @@ public class PrelevementManagement {
 				ed.doExceptionDialog();
 			}
 	}
-
+	
 	public ArrayList<Prelevement> getlistePrelevements(int idPrelevement) {
 		ArrayList<Prelevement> listePrels = new ArrayList<>();
 		try {
