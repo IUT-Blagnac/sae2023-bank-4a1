@@ -169,6 +169,18 @@ public class Access_BD_CompteCourant {
 			throw new DataAccessException(Table.CompteCourant, Order.UPDATE, "Erreur accès", e);
 		}
 	}
+	
+	/**
+	 * @author Julien Bernard
+	 * 
+	 *  cc.idNumCompte (clé primaire) doit exister seul cc.debitAutorise et cc.solde doivent être positif
+	 *  cc.idNumCli est automatiquement ajouté.
+	 * 
+	 * @param cc IN cc.idNumCompte (clé primaire) doit exister seul
+	 * @throws DataAccessException 			Erreur d'accès aux données (requête
+	 *                                      mal formée ou autre)
+	 * @throws DatabaseConnexionException   Erreur de connexion
+	 */
 	public void creerCompteCourant(CompteCourant cc) throws DataAccessException, DatabaseConnexionException {
 		try {
 			Connection con = LogToDatabase.getConnexion();
