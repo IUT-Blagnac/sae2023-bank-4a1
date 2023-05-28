@@ -346,6 +346,8 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
 ^|C_G_C.1    ^|Sélectionner le bouton "Modifier" et confirmer. ^|Une fenêtre s'ouvre affichant les informations de l'employé que l'on modifie et les modifications sont effectuées   ^|Un employé est sélectionné  ^| ...
 
+5+|Commentaire : Fonctionnalité non réalisé.|
+ 
 |====
 
 [[delete_employe]]
@@ -415,8 +417,9 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 5+|
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
 ^|B_G_C.4  ^|... ^|... ^|... ^|...
-^|B_G_C.4  ^|... ^|... ^|... ^|...
 
+5+|Commentaire : Fonctionnalité non réalisé |
+ 
 |====
 
 [[executer_prelevements_automatiques]]
