@@ -82,6 +82,8 @@ public class ComptesManagementController {
 	private Button btnModifierCompte;
 	@FXML
 	private Button btnSupprCompte;
+	@FXML
+	private Button btnPrel;
 
 	@FXML
 	private void doCancel() {
@@ -117,7 +119,11 @@ public class ComptesManagementController {
 	@FXML
 	private void doSupprimerCompte() {
 	}
-
+	
+	/*
+	 * Affiche le prélèvement sléectionner et modifie la fenêtre en conséquence.
+	 * @author Julien Bernard
+	 */
 	@FXML
 	private void doNouveauCompte() {
 		CompteCourant compte;
