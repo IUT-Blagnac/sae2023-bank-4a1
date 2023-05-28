@@ -2,7 +2,7 @@
 
 Version 2 +
 
-Date : 26 mai 2023 +
+Date : 28 mai 2023 +
 
 Equipe : BERNARD Julien, ESTRADE Prescilla, MALIQUE Manon +
 
@@ -45,7 +45,6 @@ Projet : DailyBank - SAÉ 2.01 et 2.05
 ** <<chef_agencev2>>
 *** <<debit_exceptionnel>>
 *** <<simuler_emprunt_assurance>>
-* <<resultats>> 
 
 [[presentation]]
 == 1. Presentation générale, rôle de l'application
@@ -317,8 +316,3 @@ image::Images/simuler_emprunt2.png[]
 Enfin, pour continuer l'opération, on appuie sur le bouton Simuler emprunt qui effectue la simulation. Une nouvelle fenêtre affiche le résultat de la simulation d'emprunt avec ou sans assurance d'emprunt.
 
 image::Images/simuler_emprunt3.png[]
-
-[[resultats]]
-== 6. Résultats produits avec jeux d'essai
-
-_En cours de réalisation_
