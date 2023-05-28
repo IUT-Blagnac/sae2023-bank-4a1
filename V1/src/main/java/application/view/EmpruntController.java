@@ -10,6 +10,10 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
+/**
+ * @author Prescilla Estrade
+ * Contrôleur de la fenêtre d'emprunt permettant la gestion des actions liées à la fenêtre d'emprunt
+ */
 public class EmpruntController { 
 
 	private Stage primaryStage;
