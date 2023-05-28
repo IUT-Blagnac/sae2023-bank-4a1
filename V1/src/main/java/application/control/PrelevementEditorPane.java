@@ -1,4 +1,4 @@
-/*
+/**
  * Cette classe permet d'appeler le fichier FXML afin d'afficher la fenêtre.
  * Elle gère l'affichage de la fenêtre et appelle une méthode pour gérer les textes
  * @author Julien Bernard
@@ -49,7 +49,7 @@ public class PrelevementEditorPane {
 		}
 	}
 	
-	/*
+	/**
 	 * Appelle la méthode displayDialog pour gérer l'affichage de la fenêtre
 	 */
 	public Prelevement doPrelevementEditorDialog(Prelevement p, EditionMode em) {
