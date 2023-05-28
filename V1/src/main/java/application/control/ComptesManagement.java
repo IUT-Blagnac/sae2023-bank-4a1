@@ -60,6 +60,11 @@ public class ComptesManagement {
 		this.cmcViewController.displayDialog();
 	}
 	
+	/*
+	 * @author Julien Bernard
+	 * Appelle la méthode doOperationsManagementDialog pour l'affichage de la fenêtre <BR>
+	 * 
+	 */
 	public void gererPrelevementDUnCompte(CompteCourant cpt) {
 		PrelevementManagement pm = new PrelevementManagement(this.primaryStage, this.dailyBankState, cpt);
 		pm.doPrelevementManagementDialog();
