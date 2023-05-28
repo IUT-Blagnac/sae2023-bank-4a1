@@ -48,7 +48,6 @@ Projet : DailyBank - SAÉ 2.01 et 2.05
 ** <<batch>>
 *** <<generer_releves_mensuels>>
 *** <<executer_prelevements_automatiques>>
-* <<elements_code>>
 
 [[presentation_appli]]
 == 1. Presentation de l'application
@@ -454,6 +453,3 @@ link:https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/cahier%20de%20
 
 [[executer_prelevements_automatiques]]
 === 5.1.2 Exécuter les prélèvements automatiques - Manon
-
-[[elements_code]]
-== 6. Eléments de code significatifs commentés
