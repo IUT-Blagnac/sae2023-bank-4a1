@@ -190,8 +190,10 @@ _Figure Diagramme des Cas d’Utilisation crediter compte(V.1)_
 * OperationsManagement.java : ajout méthode enregistrerCredit
 * OperationManagementController.java : bouton btnCredit, méthode doCredit
 * OperationManagement.fxml : Page FXML correspondant à la fenêtre "Gestion des opérations". Bouton pour enregistrer le crédit
-* OperationEditorPaneController.java : 
-* Access_BD_Operation.java : 
+* OperationEditorPaneController.java : +
+- méthode displayDialog : case CREDIT affiche les informations du compte et modifie le texte des boutons btnOk et btnCancel par "Effectuer Crédit" et "Annuler crédit" +
+- méthode doAjouter : case CREDIT vérifie les conditions lors d'un crédit +
+* Access_BD_Operation.java : méthode insertCredit
 
 image::Images/dc_crediter_debiter.png[]
 _Figure Diagramme de classes crediter compte_ 
@@ -212,8 +214,11 @@ _Figure Diagramme des Cas d’Utilisation debiter compte_
 * OperationsManagement.java : méthode enregistrerDebit
 * OperationManagementController.java : bouton btnDebit, méthode doDebit
 * OperationManagement.fxml : Page FXML correspondant à la fenêtre "Gestion des opérations". Bouton pour enregistrer le débit
-* OperationEditorPaneController.java :
-* Access_BD_Operation.java :
+* OperationEditorPaneController.java : +
+- méthode displayDialog : case DEBIT affiche les informations du compte et modifie le texte des boutons btnOk et btnCancel par "Effectuer Débit" et "Annuler débit" +
+- méthode doAjouter : case DEBIT vérifie
+ les conditions lors d'un débit +
+* Access_BD_Operation.java : méthode insertDebit
 
 image::Images/dc_crediter_debiter.png[]
 _Figure Diagramme de classes debiter compte_ 
@@ -394,11 +399,13 @@ _Figure Diagramme des Cas d’Utilisation débit exceptionnel_
 * OperationsManagement.java  : ajout méthode enregistrerDebitExceptionnel
 * OperationsManagementController.java : bouton btnDebitExceptionnel, méthode doDebitExceptionnel
 * operationsmanagement.fxml : Page FXML correspondant à la fenêtre "Gestion des opérations". Ajout du bouton pour enregistrer un débit exceptionnel
-* OperationEditorPaneController.java :
-* Access_BD_Operation.java :
-* CategorieOperation.java :
-* ConstantesIHM.java :
-* scriptCreaBase.txt :
+* OperationEditorPaneController.java : +
+- méthode displayDialog : ajout case DEBITEXCEPTIONNEL affiche les informations du compte et modifie le texte des boutons btnOk et btnCancel par "Effectuer Débit exceptionnel" et "Annuler débit exceptionnel" +
+- méthode doAjouter : ajout case DEBITEXCEPTIONNEL vérifie les conditions lors d'un débit exceptionnel +
+* Access_BD_Operation.java : ajout méthode insertDebitexceptionnel
+* CategorieOperation.java : ajout opération Debit Exceptionnel
+* ConstantesIHM.java : ajout operation Debit Exceptionnel
+* scriptCreaBase.txt : procédure Debit_Exceptionnel
 
 image::Images/dc_crediter_debiter.png[]
 _Figure Diagramme de classes debit exceptionnel_ 
