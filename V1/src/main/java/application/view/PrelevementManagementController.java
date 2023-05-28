@@ -1,3 +1,7 @@
+/**
+ * Permet de gérer les prélèvements selon les boutons cliquer.
+ * @author Julien Bernard
+ */
 package application.view;
 
 import java.util.ArrayList;
@@ -77,7 +81,11 @@ public class PrelevementManagementController {
 	private void doCancel() {
 		this.primaryStage.close();
 	}
-
+	
+	/**
+	 * Recherche les prélèvements avec ou sans un id précisé
+	 * @author Julien Bernard
+	 */
 	@FXML
 	private void doRechercher() {
 		int idPrel;
@@ -101,7 +109,11 @@ public class PrelevementManagementController {
 		this.loadList();
 		this.validateComponentState();
 	}
-
+	
+	/**
+	 * Modifie le prélèvement actuel en appelant la méthode et fenêtre nécessaire
+	 * @author Julien Bernard
+	 */
 	@FXML
 	private void doModifierPrelevement() {
 
@@ -116,7 +128,11 @@ public class PrelevementManagementController {
 		this.loadList();
 		this.validateComponentState();
 	}
-
+	
+	/**
+	 * Supprime le prélèvement en cliquant sur le bouton
+	 * @author Julien Bernard
+	 */
 	@FXML
 	private void doSupprPrelevement() {
 		int selectedIndice = this.lvPrelevements.getSelectionModel().getSelectedIndex();
@@ -127,7 +143,11 @@ public class PrelevementManagementController {
 		this.loadList();
 		this.validateComponentState();
 	}
-
+	
+	/**
+	 * Créer un nouveau prélèvement en appelant la méthode et fenêtre nécessaire
+	 * @author Julien Bernard
+	 */
 	@FXML
 	private void doNouveauPrelevement() {
 		Prelevement prel = new Prelevement(0,0,0,"",this.compte.idNumCompte);
