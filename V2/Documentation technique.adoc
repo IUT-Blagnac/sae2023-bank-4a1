@@ -187,11 +187,11 @@ _Figure Diagramme des Cas d’Utilisation crediter compte(V.1)_
 
 **Classes et ressources utilisées :** 
 
-* OperationManagement.java 
-* OperationManagementController.java
-* OperationManagement.fxml
-* OperationEditorPaneController.java
-* Access_BD_Operation.java
+* OperationsManagement.java : ajout méthode enregistrerCredit
+* OperationManagementController.java : bouton btnCredit, méthode doCredit
+* OperationManagement.fxml : Page FXML correspondant à la fenêtre "Gestion des opérations". Bouton pour enregistrer le crédit
+* OperationEditorPaneController.java : 
+* Access_BD_Operation.java : 
 
 image::Images/dc_crediter_debiter.png[]
 _Figure Diagramme de classes crediter compte_ 
@@ -209,11 +209,11 @@ _Figure Diagramme des Cas d’Utilisation debiter compte_
 
 **Classes et ressources utilisées :** 
 
-* OperationManagement.java
-* OperationManagementController.java
-* OperationManagement.fxml
-* OperationEditorPaneController.java
-* Access_BD_Operation.java
+* OperationsManagement.java : méthode enregistrerDebit
+* OperationManagementController.java : bouton btnDebit, méthode doDebit
+* OperationManagement.fxml : Page FXML correspondant à la fenêtre "Gestion des opérations". Bouton pour enregistrer le débit
+* OperationEditorPaneController.java :
+* Access_BD_Operation.java :
 
 image::Images/dc_crediter_debiter.png[]
 _Figure Diagramme de classes debiter compte_ 
@@ -334,14 +334,14 @@ _Figure Diagramme des Cas d’Utilisation débit exceptionnel_
 
 **Classes et ressources utilisées :** 
 
-* OperationManagement.java 
-* OperationsManagementController.java
-* operationsmanagement.fxml
-* OperationEditorPaneController.java
-* Access_BD_Operation.java
-* CategorieOperation.java
-* ConstantesIHM.java
-* scriptCreaBase.txt
+* OperationsManagement.java  : ajout méthode enregistrerDebitExceptionnel
+* OperationsManagementController.java : bouton btnDebitExceptionnel, méthode doDebitExceptionnel
+* operationsmanagement.fxml : Page FXML correspondant à la fenêtre "Gestion des opérations". Ajout du bouton pour enregistrer un débit exceptionnel
+* OperationEditorPaneController.java :
+* Access_BD_Operation.java :
+* CategorieOperation.java :
+* ConstantesIHM.java :
+* scriptCreaBase.txt :
 
 image::Images/dc_crediter_debiter.png[]
 _Figure Diagramme de classes debit exceptionnel_ 
