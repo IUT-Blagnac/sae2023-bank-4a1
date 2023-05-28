@@ -10,6 +10,10 @@ import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
+/**
+ * @author Prescilla Estrade
+ * Classe gérant l'affichage de la fenêtre d'informations d'un emprunt
+ */
 public class Emprunt {
 
 	
