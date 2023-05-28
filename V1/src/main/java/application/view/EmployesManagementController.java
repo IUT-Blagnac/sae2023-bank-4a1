@@ -3,6 +3,7 @@ package application.view;
 import java.util.ArrayList;
 
 import application.DailyBankState;
+import application.control.ClientsManagement;
 import application.control.EmployesManagement;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -11,6 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import model.data.Employe;
@@ -31,6 +33,7 @@ public class EmployesManagementController {
 	private ObservableList<Employe> oListEmploye;
 
 	// Manipulation de la fenêtre
+
 	public void initContext(Stage _containingStage, EmployesManagement _em, DailyBankState _dbstate, Employe employe) {
 		this.emDialogController = _em;
 		this.primaryStage = _containingStage;
@@ -72,6 +75,8 @@ public class EmployesManagementController {
 	// Attributs de la scene + actions
 
 	@FXML
+	private TextField txtNum;
+	@FXML
 	private Label lblInfosEmploye;
 	@FXML
 	private ListView<Employe> lvEmployes;
@@ -95,10 +100,12 @@ public class EmployesManagementController {
 
 	@FXML
 	private void doModifierEmploye() {
+		this.emDialogController.modifierEmploye(employe);
 	}
 
 	@FXML
 	private void doSupprimerEmploye() {
+		//this.emDialogController.supprimerEmploye(employe);
 	}
 
 	@FXML
@@ -112,7 +119,7 @@ public class EmployesManagementController {
 
 	private void loadList() {
 		ArrayList<Employe> listeEmp;
-		listeEmp = this.emDialogController.getlisteEmployes();
+		listeEmp = this.emDialogController.getlisteEmployes(Integer.parseInt(txtNum.getText())); //-1 ou "" si pas spécifié
 		this.oListEmploye.clear();
 		this.oListEmploye.addAll(listeEmp);
 	}

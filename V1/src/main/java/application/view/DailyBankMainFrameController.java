@@ -206,7 +206,7 @@ public class DailyBankMainFrameController {
 	 */
 	@FXML
 	private void doEmployeOption() {
-		this.dbmfDialogController.gestionClients();
+		this.dbmfDialogController.gestionEmployes();
 	}
 
 	/*

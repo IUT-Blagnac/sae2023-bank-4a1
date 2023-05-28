@@ -118,18 +118,16 @@ public class EmployesManagement {
 	/**
 	 * Affiche la fenêtre de gestion des employes
 	 * 
-	 * @param _numCompte   IN : numéro d'employé
-	 * @param _debutNom    IN : prénom de l'employé
-	 * @param _debutPrenom IN : nom de l'employé     
+	 * @param _numEmp   IN : numéro d'employé 
 	 * 
 	 * @return une liste d'employes
 	 */
-	public ArrayList<Employe> getlisteEmployes() {
+	public ArrayList<Employe> getlisteEmployes(int _numEmp) {
 		ArrayList<Employe> listeEmp = new ArrayList<>();
 		try {
 
 			Access_BD_Employe ac = new Access_BD_Employe();
-			listeEmp = ac.getEmployes(this.dailyBankState.getEmployeActuel().idAg);
+			listeEmp = ac.getEmployes(this.dailyBankState.getEmployeActuel().idAg,_numEmp);
 
 		} catch (DatabaseConnexionException e) {
 			ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);

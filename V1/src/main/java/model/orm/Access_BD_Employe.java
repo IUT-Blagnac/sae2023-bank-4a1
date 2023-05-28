@@ -32,13 +32,11 @@ public class Access_BD_Employe {
 	 *
 	 * @param idAg        : id de l'agence dont on cherche les employes
 	 * @param idNumEmp    : vaut -1 si il n'est pas spécifié sinon numéro recherché
-	 * @param debutNom    : vaut "" si il n'est pas spécifié sinon sera le nom/prenom recherchés
-	 * @param debutPrenom cf. @param debutNom
 	 * @return Le ou les employes recherchés, liste vide si non trouvé
 	 * @throws DataAccessException        Erreur d'accès aux données (requête malformée ou autre)
 	 * @throws DatabaseConnexionException Erreur de connexion
 	 */
-	public ArrayList<Employe> getEmployes(int idAg)
+	public ArrayList<Employe> getEmployes(int idAg, int idEmploye)
 			throws DataAccessException, DatabaseConnexionException {
 
 		ArrayList<Employe> alResult = new ArrayList<>();
@@ -49,11 +47,20 @@ public class Access_BD_Employe {
 			PreparedStatement pst;
 
 			String query;
-			
-			query = "SELECT * FROM Employe where idAg = ?";
-			query += " ORDER BY nom";
-			pst = con.prepareStatement(query);
-			pst.setInt(1, idAg);
+			if (idEmploye != -1 ) {
+				query = "SELECT * FROM Client where idAg = ?";
+				query += " AND idEmploye = ?";
+				query += " ORDER BY nom";
+				pst = con.prepareStatement(query);
+				pst.setInt(1, idAg);
+				pst.setInt(2, idEmploye);
+
+			} else {
+				query = "SELECT * FROM Client where idAg = ?";
+				query += " ORDER BY nom";
+				pst = con.prepareStatement(query);
+				pst.setInt(1, idAg);
+			}
 
 			ResultSet rs = pst.executeQuery();
 			while (rs.next()) {
