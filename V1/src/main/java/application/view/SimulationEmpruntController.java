@@ -3,6 +3,10 @@ import application.DailyBankState;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+/**
+ * @author Prescilla Estrade
+ * Classe permettant la gestion de la fenêtre de simulation d'emprunt
+ */
 public class SimulationEmpruntController {
 
 	private Stage primaryStage;
