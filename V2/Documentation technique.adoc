@@ -312,14 +312,71 @@ _Figure Diagramme des Cas d’Utilisation CRUD Prélèvements_
 image::Images/dc_prel.png[]
 _Figure Diagramme de classes debiter compte_
 
+**Classes et ressources utilisés :**
+
+* ComptesManagement.java : Affiche les comptes du client. Nouvelle méthode "gererPrelevementDUnCompte" appelant la méthode "doPrelevementManagementDialog" afin d'afficher les informations nécessaires dans la fenêtre.
+* PrelevementEditorPane.java : Nouvelle classe appelant la fenêtre nécessaire à l'ajout des informations du prélèvement.
+* PrelevementManagement.java : Nouvelle classe apelant la fenêtre nécessaire pour voir les prélèvements sur le compte. +
+Ici le bouton Nouveau est cliquer pour afficher une nouvelle fenêtre afin de remplir les informations souhaités, une fois confirmé, une méthode dans Access_BD_Prelevement est appelé pour ajouter le prélèvement à la base de donnée.
+* ComptesManagementController.java : Affiche les comptes du client. +
+Nouvelle méthode "doVoirPrelevement" pour afficher la fenêtre du prélèvement et nouveau bouton "btnPrel" pour accéder à la gestion des prélèvements.
+* PrelevementEditorPaneController.java : Nouvelle classe modifiant le contenu de la fenêtre selon le cas dans "displayDialog", "isSaisieValide" regard quand on cliquer sur confirmer si les conditions sont remplis dans les trois zones de textes, le montant doit être positif (supérieur à 0), la date doit être un nombre entre 1 et 28, le bénéficiaire doit être inscrit même si il n'est pas nécessairement utile.
+* Prelevement.data : Nouvelle classe, Toutes les informations nécessaires à propos d'un prélèvement, si les paramètres sont une chaîne de charactère ou un décimal.
+* Access_BD_Prelevation.java : Nouvelle classe, Ajout le prélèvement dans la BD avec la méthode "insertPrelevement".
+* prelevementeditorpane.fxml : Nouveau FXML de la fenêtre où on ajoute les informations du prélèvement.
+* prelevementmanagement.fmxl : Nouveau FXML de la fenêtre montrant les prélèvements d'un compte.
+
 [[read_prelevements]]
 ==== 4.1.2.2 Read
+
+Simplement l'accès à la fenêtre de gestion des prélèvements du compte bancaire du client.
+
+**Classes et ressources utilisés :**
+
+* PrelevementEditorPane.java : Nouvelle classe appelant la fenêtre nécessaire à l'ajout des informations du prélèvement.
+* PrelevementManagement.java : Nouvelle classe apelant la fenêtre nécessaire pour voir les prélèvements sur le compte. +
+Ici le bouton Modifier est cliquer pour afficher une nouvelle fenêtre afin de remplir les informations souhaités, une fois confirmé, une méthode dans Access_BD_Prelevement est appelé pour modifier le prélèvement à la base de donnée.
+* ComptesManagementController.java : Affiche les comptes du client. +
+Nouvelle méthode "doVoirPrelevement" pour afficher la fenêtre du prélèvement et nouveau bouton "btnPrel" pour accéder à la gestion des prélèvements.
+* PrelevementEditorPaneController.java : Nouvelle classe modifiant le contenu de la fenêtre selon le cas dans "displayDialog", "isSaisieValide" regard quand on cliquer sur confirmer si les conditions sont remplis dans les trois zones de textes, le montant doit être positif (supérieur à 0), la date doit être un nombre entre 1 et 28, le bénéficiaire doit être inscrit même si il n'est pas nécessairement utile.
+* Prelevement.data : Nouvelle classe, Toutes les informations nécessaires à propos d'un prélèvement, si les paramètres sont une chaîne de charactère ou un décimal.
+* prelevementeditorpane.fxml : Nouveau FXML de la fenêtre où on ajoute les informations du prélèvement.
+* prelevementmanagement.fmxl : Nouveau FXML de la fenêtre montrant les prélèvements d'un compte.
 
 [[update_prelevements]]
 ==== 4.1.2.3 Update
 
+Modification du prélèvement en utilisant la même fenêtre que pour en créer une.
+
+**Classes et ressources utilisés :**
+
+* PrelevementEditorPane.java : Nouvelle classe appelant la fenêtre nécessaire à l'ajout des informations du prélèvement.
+* PrelevementManagement.java : Nouvelle classe apelant la fenêtre nécessaire pour voir les prélèvements sur le compte. +
+Ici le bouton Modifier est cliquer pour afficher une nouvelle fenêtre afin de remplir les informations souhaités, une fois confirmé, une méthode dans Access_BD_Prelevement est appelé pour modifier le prélèvement à la base de donnée.
+* ComptesManagementController.java : Affiche les comptes du client. +
+Nouvelle méthode "doVoirPrelevement" pour afficher la fenêtre du prélèvement et nouveau bouton "btnPrel" pour accéder à la gestion des prélèvements.
+* PrelevementEditorPaneController.java : Nouvelle classe modifiant le contenu de la fenêtre selon le cas dans "displayDialog", "isSaisieValide" regard quand on cliquer sur confirmer si les conditions sont remplis dans les trois zones de textes, le montant doit être positif (supérieur à 0), la date doit être un nombre entre 1 et 28, le bénéficiaire doit être inscrit même si il n'est pas nécessairement utile.
+* Prelevement.data : Nouvelle classe, Toutes les informations nécessaires à propos d'un prélèvement, si les paramètres sont une chaîne de charactère ou un décimal.
+* Access_BD_Prelevation.java : Nouvelle classe, Modifie le prélèvement dans la BD avec la méthode "updatePrelevement".
+* prelevementeditorpane.fxml : Nouveau FXML de la fenêtre où on ajoute les informations du prélèvement.
+* prelevementmanagement.fmxl : Nouveau FXML de la fenêtre montrant les prélèvements d'un compte.
+
 [[delete_prelevements]]
 ==== 4.1.2.4 Delete
+Supprime le prélèvement d'un seul clique sur le bouton de la BD.
+
+**Classes et ressources utilisés :**
+
+* PrelevementEditorPane.java : Nouvelle classe appelant la fenêtre nécessaire à l'ajout des informations du prélèvement.
+* PrelevementManagement.java : Nouvelle classe apelant la fenêtre nécessaire pour voir les prélèvements sur le compte. +
+Ici le bouton Supprimer est cliquer pour qu'une méthode dans Access_BD_Prelevement est appelé pour modifier le prélèvement à la base de donnée.
+* ComptesManagementController.java : Affiche les comptes du client. +
+Nouvelle méthode "doVoirPrelevement" pour afficher la fenêtre du prélèvement et nouveau bouton "btnPrel" pour accéder à la gestion des prélèvements.
+* PrelevementEditorPaneController.java : Nouvelle classe modifiant le contenu de la fenêtre selon le cas dans "displayDialog", "isSaisieValide" regard quand on cliquer sur confirmer si les conditions sont remplis dans les trois zones de textes, le montant doit être positif (supérieur à 0), la date doit être un nombre entre 1 et 28, le bénéficiaire doit être inscrit même si il n'est pas nécessairement utile.
+* Prelevement.data : Nouvelle classe, Toutes les informations nécessaires à propos d'un prélèvement, si les paramètres sont une chaîne de charactère ou un décimal.
+* Access_BD_Prelevation.java : Nouvelle classe, Supprime le prélèvement de la BD avec la méthode "supprimerPrelevement".
+* prelevementeditorpane.fxml : Nouveau FXML de la fenêtre où on ajoute les informations du prélèvement.
+* prelevementmanagement.fmxl : Nouveau FXML de la fenêtre montrant les prélèvements d'un compte.
 
 [[chef_agencev2]]
 === 4.2 Chef d'agence
