@@ -12,6 +12,10 @@ import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
+/**
+ * @author Prescilla Estrade
+ * Classe gérant l'affichage de la fenêtre de simulation d'emprunt
+ */
 public class SimulationEmprunt {
 
 	private Stage primaryStage;
