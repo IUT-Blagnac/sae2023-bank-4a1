@@ -280,15 +280,7 @@ Le chef d'agence a pour fonctionnalités : gérer les employés qui sont le guic
 [[update]]
 ===== 3.2.1.3 Update - Prescilla
 
-image::Images/UseCase_update_employe.png[]
-_Figure Diagramme des Cas d’Utilisation update employe_ 
-
-**Classes et ressources utilisés :**
-
-image::Images/dc_update_employe.png[]
-_Figure Diagramme de classes update employe_ 
-
-link:https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/cahier%20de%20recette.adoc#update_employe[Fiche de tests update employe]
+_Fonctionnalité non réalisée_
 
 [[delete]]
 ===== 3.2.1.4 Delete - Julien
@@ -450,6 +442,8 @@ link:https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/cahier%20de%20
 
 [[generer_releves_mensuels]]
 === 5.1.1 Générer les relevés mensuels en PDF - Prescilla
+
+_Fonctionnalité non réalisée_
 
 [[executer_prelevements_automatiques]]
 === 5.1.2 Exécuter les prélèvements automatiques - Manon
