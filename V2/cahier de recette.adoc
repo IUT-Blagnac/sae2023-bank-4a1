@@ -202,10 +202,10 @@ autorisé est de -100 euros.
 5+|
 
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|All_G_COP.1 ^|Cliquer sur le bouton "Nouveau prél. auto. ^|La fenêtre de gestion d'un prélèvement s'affiche. ^|Un compte actif est sélectionné ^|OK
-^|All_G_COP.2 ^|Rentrer un montant 50 dans le champ "Montant" ^|Le compte sera retiré de 50 à la date venu ^|Le compte doit avoir plus de 50 euros ^|OK
-^|All_G_COP.3 ^|Rentrer une date entre 1 et 28 ^|La date est accepté ^|Le compte doit avoir plus de 50 euros  ^|OK
-^|All_G_COP.4 ^|Un bénéficiaire à été entré mais le montant est négatif ^|Message d'avertissement ^|Le montant doit être positif ^|OK
+^|All_G_COP.1 ^|... ^|... ^|... ^|...
+^|All_G_COP.2 ^|... ^|... ^|... ^|...
+^|All_G_COP.3 ^|... ^|... ^|... ^|...
+^|All_G_COP.4 ^|... ^|... ^|... ^|...
 
 |====
 
@@ -221,10 +221,10 @@ autorisé est de -100 euros.
 5+|
 
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|All_G_COP.1 ^|... ^|... ^|... ^|...
-^|All_G_COP.2 ^|... ^|... ^|... ^|...
-^|All_G_COP.3 ^|... ^|... ^|... ^|...
-^|All_G_COP.4 ^|... ^|... ^|... ^|...
+^|All_G_COP.1 ^|Cliquer sur le bouton "Nouveau prél. auto. ^|La fenêtre de gestion d'un prélèvement s'affiche. ^|Un compte actif est sélectionné ^|OK
+^|All_G_COP.2 ^|Rentrer un montant 50 dans le champ "Montant" ^|Le compte sera retiré de 50 à la date venu ^|Le compte doit avoir plus de 50 euros ^|OK
+^|All_G_COP.3 ^|Rentrer une date entre 1 et 28 ^|La date est accepté ^|Le compte doit avoir plus de 50 euros  ^|OK
+^|All_G_COP.4 ^|Un bénéficiaire à été entré mais le montant est négatif ^|Message d'avertissement ^|Le montant doit être positif ^|OK
 
 |====
 
