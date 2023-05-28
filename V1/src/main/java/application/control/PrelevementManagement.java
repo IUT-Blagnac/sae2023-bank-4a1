@@ -1,4 +1,4 @@
-/*
+/**
  * Cette classe permet d'utiliser les méthodes nécessaires selon l'action sur les prélèvements.
  * @author Julien Bernard
  */
@@ -84,7 +84,7 @@ public class PrelevementManagement {
 		this.pmcViewController.displayDialog();
 	}
 	
-	/*
+	/**
 	 * Affiche le texte pour la création d'un prélèvement
 	 * Appelle la méthode insertPrelevement afin de l'ajouter à la BD
 	 * @author Julien Bernard
@@ -112,7 +112,7 @@ public class PrelevementManagement {
 		return prelevement;
 	}
 	
-	/*
+	/**
 	 * Affiche le texte pour modifier un prélèvement
 	 * Appelle la méthode updatePrelevement afin d'ajouter les modifications à la BD
 	 * @author Julien Bernard
@@ -138,7 +138,7 @@ public class PrelevementManagement {
 		return result;
 	}
 	
-	/*
+	/**
 	 * Supprime en un clique le prélèvement de la BD en appelant la méthode supprimerPrelevement
 	 * @author Julien Bernard
 	 */
