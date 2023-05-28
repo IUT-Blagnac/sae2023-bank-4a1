@@ -61,7 +61,7 @@ Le chef d’agence a les mêmes fonctionnalités que le guichetier et peut égal
 
 Il est nécessaire d'avoir Java 1.8 installé.
 
-Afin d’utiliser le programme de la banque, il est téléchargable et exécutable pour les employés de la banques ainsi que les chefs d’agence afin de gérer toutes les données, comptes et informations de la banque.
+Afin d’utiliser le programme de la banque, il est téléchargable et exécutable pour les employés de la banque ainsi que les chefs d’agence afin de gérer toutes les données, comptes et informations de la banque.
 
 Un jar file sera trouvable pour les utilisateurs et l’exécuter ouvrira une fenêtre d’accueil dont une connexion est demandée systématiquement avant de continuer.
 
@@ -90,7 +90,7 @@ Pour créer un compte client, il est nécessaire de se connecter en tant que Gui
 
 image::Images/Connexion.png[]
 
-Après s'être connecté, nous devons cliquer sur Gestion/Clients, cela ouvre une nouvelle fenêtre dont recherche de clients, en bas à droite se trouve le bouton nous permettant de créer un compte client, on renseigne toutes  les informations nécessaires.
+Après s'être connecté, nous devons cliquer sur Gestion/Clients, cela ouvre une nouvelle fenêtre dont recherche de clients, en bas à droite se trouve le bouton nous permettant de créer un compte client, on renseigne toutes les informations nécessaires.
 
 image::Images/creer_compte.png[]
 
@@ -111,7 +111,7 @@ image::Images/consulter_compte2.png[]
 ==== 3.1.4 Débiter un compte (BD)
 Pour débiter un compte, il faut se connecter à l’application en tant que guichetier. Dans une nouvelle fenêtre, il faut cliquer sur Gestion puis sur Clients. On accéde ainsi aux comptes clients à l’aide du bouton Comptes client. Dans cette nouvelle fênetre, on clique sur le bouton Voir opérations qui affiche l’historique des opérations. Par la suite, l’on clique sur Enregistrer Crédit, une fenêtre s'affiche et il faut entrer le montant à déposer et choisir le type d’opération : dépôt espèces ou dépôt chèque. 
 
-Pour valider le crédit ou l’annuler, il faut choisir soit le bouton EffectuerDébit ou le bouton Annuler débit.
+Pour valider le crédit ou l’annuler, il faut choisir soit le bouton Effectuer débit ou le bouton Annuler débit.
 
 image::Images/debiter_compte.png[]
 
@@ -122,11 +122,11 @@ Le chef d'agence a la possibilité de rendre inactif un client.
 
 [[Rendre_inactif_un_client]]
 ==== 3.2.1 Rendre inactif un client
-Afin de désactiver un compte client, il est nécessaire de se connecter en tant que Chef d’Agence, une fois fait, il faut se rendre sur la gestion des clients et de cliquer sur le bouton « modifier client »
+Afin de désactiver un compte client, il est nécessaire de se connecter en tant que Chef d’Agence, une fois fait, il faut se rendre sur la gestion des clients et de cliquer sur le bouton « modifier client ».
 
 image::Images/desactiver_client.png[]
 
-On coche « inactif », ce qui permet de désactiver toute opération sur le compte par un Guichetier, un chef d’agence pour retourner à tout moment sur son choix pour remettre le compte client actif
+On coche « inactif », ce qui permet de désactiver toute opération sur le compte par un Guichetier, un chef d’agence pour retourner à tout moment sur son choix pour remettre le compte client actif.
 
 [[fonctionnementv1]]
 == 4. Fonctionnement de la V1
@@ -143,7 +143,7 @@ Pour créditer un compte, il faut se connecter en tant que guichetier. Ensuite, 
 
 En cliquant sur le bouton Enregistrer Crédit il faut entrer le montant à déposer et choisir le type d’opération : dépôt espèces ou dépôt chèque. 
 
-Enfin, à l’aide du bouton EffectuerDébit l’on peut valider le crédit et en cliquant sur Annuler débit cela annule le débit.
+Enfin, à l’aide du bouton Effectuer débit l’on peut valider le crédit et en cliquant sur Annuler débit cela annule le débit.
 
 image::Images/crediter_compte.png[]
 
@@ -158,7 +158,7 @@ image::Images/debiter_compte.png[]
 
 [[creer_compte]]
 ==== 4.1.3 Créer un compte - Julien
-Pour créer un compte, il est nécessaire de se connecté en tant que Guichetier, il est aussi possible de le faire en étant chef d'agence.
+Pour créer un compte, il est nécessaire de se connecter en tant que Guichetier, il est aussi possible de le faire en étant chef d'agence.
 Après s'être connecté, nous devons cliquer sur Gestion/Clients afin de rechercher le client que nous voulons créer de compte.
 
 image::Images/recherche_client.png[]
@@ -167,7 +167,7 @@ Une nouvelle fenêtre affiche les comptes bancaires du client.
 
 image::Images/voir_compte_bancaires.png[]
 
-En cliquant sur nouveau compte, cela fait apparaître une nouvelle fenêtre où nous pouvons renseigner toutes les informations nécessaires à la création du compte, le montant maximum du découvert (argent négatif sur le compte), si nous voulons ajouté un montant d'argent dès la création du compte, l'ID du Client, de l'agence et son numéro de compte est ajouté automatiquement.
+En cliquant sur nouveau compte, cela fait apparaître une nouvelle fenêtre où nous pouvons renseigner toutes les informations nécessaires à la création du compte, le montant maximum du découvert (argent négatif sur le compte), si nous voulons ajouter un montant d'argent dès la création du compte, l'ID du Client, de l'agence et son numéro de compte est ajouté automatiquement.
 
 image::Images/creer_compte_bancaire.png[]
 
@@ -183,7 +183,7 @@ Le montant choisi sera versé sur son second compte et retiré de son premier, b
 
 image::Images/Info_Virement.png[]
 
-L'opération est affiché dans l'historique des opérations du compte.
+L'opération est affichée dans l'historique des opérations du compte.
 
 [[cloturer_compte]]
 ==== 4.1.5 Clôturer compte - Manon
@@ -232,17 +232,17 @@ Le guichetier a accès à plusieurs fonctionnalités : générer un relevé mens
 [[releve_compte_PDF]]
 ==== 5.1.1 Générer un relevé mensuel d'un compte en PDF - Manon
 
-Un bouton "Générer Relevé" est disponible dans la gestion d'un compte bancaire d'un client, un pdf regroupant toutes les opérations effectués qu'ils soient crédits, débits et virements seront enregistrés dedans.
+Un bouton "Générer Relevé" est disponible dans la gestion d'un compte bancaire d'un client, un pdf regroupant toutes les opérations effectuées qu'ils soient crédits, débits et virements seront enregistrées dedans.
 Trois colonnes seront visibles, la première indique le nom de l'opération puis le montant sera affiché, soit dans la colonne du débit soit celle du crédit.
 Enfin, le total final du relevé sera le total crédit moins le total débit afin de démarquer si le client a gagné ou perdu de l'argent durant le mois. 
-(ou alors comparé avec le total d'argent du compte pour afficher le total d'argent en fin du mois)
+(ou alors comparer avec le total d'argent du compte pour afficher le total d'argent en fin du mois)
 
 [[crud_prelevements_automatiques]]
 === 5.1.2 Gérer (faire le "CRUD") les prélèvements automatiques - Julien
 
-Le guichetier a la possibilité de gérer les prélèvements automatiques d'un compte bancaire, ce qui signifie qu'il peut en créée en choisissant le montant prélevé chaque mois, savooir quel jour du mois il s'effectue, ainsi à qui cet argent est prélevé, en l'occurence ici c'est la banque.
+Le guichetier a la possibilité de gérer les prélèvements automatiques d'un compte bancaire, ce qui signifie qu'il peut en créer en choisissant le montant prélevé chaque mois, savoir quel jour du mois il s'effectue, ainsi à qui cet argent est prélevé, en l'occurence ici c'est la banque.
 
-Dans la gestion des comptes d'un client, nous pouvons voir un nouveau bouton nommé "Voir Prélèvements", c'est à partir d'ici que nous pourrons gérer tous les prélèvements du compte bancaire du client choisis.
+Dans la gestion des comptes d'un client, nous pouvons voir un nouveau bouton nommé "Voir Prélèvements", c'est à partir d'ici que nous pourrons gérer tous les prélèvements du compte bancaire du client choisi.
 
 image::Images/bouton_prelevement.png[]
 
@@ -268,14 +268,14 @@ Rejoindre la fenêtre de gestion des prélèvements suffit pour lire et savoir l
 [[update_prelevements]]
 ==== 5.1.2.3 Update
 
-En cliquant sur le bouton modifier "Modifier pél.auto", la même fenêtre que pour en créer un s'affiche, il est possible de modifier les mêmes informations, c'est-à-dire le montant, le jour et le bénéficiaire, une fois les modifications effectuer, il ne manque plus qu'à les confirmer en cliquant sur "Modifier", les changements sont visibles immédiatement dans la gestion des prélèvements.
+En cliquant sur le bouton modifier "Modifier pél.auto", la même fenêtre que pour en créer un s'affiche, il est possible de modifier les mêmes informations, c'est-à-dire le montant, le jour et le bénéficiaire, une fois les modifications effectuées, il ne manque plus qu'à les confirmer en cliquant sur "Modifier", les changements sont visibles immédiatement dans la gestion des prélèvements.
 
 image::Images/modifier_prel.png[]
 
 [[delete_prelevements]]
 ==== 5.1.2.4 Delete
 
-En cliquant sur le bouton "Supprimer prél.auto" après avoir sélectionner un prélèvement, il sera effacer de la base de donnée immédiatement.
+En cliquant sur le bouton "Supprimer prél.auto" après avoir sélectionner un prélèvement, il sera effacer de la base de données immédiatement.
 
 [[chef_agencev2]]
 === 5.2 Chef d'agence
