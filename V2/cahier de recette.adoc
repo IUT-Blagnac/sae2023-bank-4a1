@@ -6,14 +6,14 @@
 :Equipe:  BERNARD Julien, ESTRADE Prescilla, MALIQUE Manon
 
 Créé par : BERNARD Julien, ESTRADE Prescilla, MALIQUE Manon - Groupe 4A1 +
-Créé pour :  
+Créé pour : Tester les fonctionnalités de l'application DailyBank
 
 Date : 26 mai 2023
 
 == I. Introduction
 === 1. Objet :
 [.text-justify]
-Ce document a été produit dans le cadre d'un projet d'élaboration d'une application bancaire pour la banque DailyBanck. L’application permet de gérer des comptes bancaires de dépôt pour des clients préalablement créés. Elle dispose de plusieurs fonctionnalités : débiter, créditer un compte, effectuer des virements, consulter un compte, le clôturer, simuler un emprunt ou encore générer un relevé mensuel.
+Ce document a été produit dans le cadre d'un projet d'élaboration d'une application bancaire pour la banque DailyBank. L’application permet de gérer des comptes bancaires de dépôt pour des clients préalablement créés. Elle dispose de plusieurs fonctionnalités : débiter, créditer un compte, effectuer des virements, consulter un compte, le clôturer, simuler un emprunt ou encore générer un relevé mensuel.
 
 
 == II. Pre-Requis :
