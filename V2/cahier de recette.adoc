@@ -145,9 +145,9 @@ Compléter et si on ne valide pas, ...
 ^|All_G_COP.3  ^|Rentrer un montant 150 dans le champ "Montant". ^|Le nouveau solde est -50 euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^| Le compte sélectionné a un solde de +100 euros, le découvert
 autorisé est de -100 euros.
  ^|OK
-^|All_G_COP.4  ^|Rentrer un montant 250 dans le champ "Montant". ^|Blocage ! + pop-up ^| Le compte sélectionné a un solde de +100 euros, le découvert
-autorisé est de -100 euros.
+^|All_G_COP.4  ^|Rentrer un montant 250 dans le champ "Montant". ^|Blocage ! + pop-up ^| Le compte sélectionné a un solde de +100 euros, le découvert autorisé est de -100 euros.
  ^|OK
+ ^|All_G_COP.5 ^|Cliquer sur le bouton "Annuler débit". ^|Cela renvoie vers la fenêtre de la liste des opérations du compte. ^| Un compte actif est sélectionné ^|OK
   
 |====
 
@@ -167,6 +167,7 @@ autorisé est de -100 euros.
  ^|OK
 ^|All_G_COP.3  ^|Rentrer un montant -10 dans le champ "Montant". ^|Blocage ! + pop-up (montant inférieur à 0) ^| Le compte sélectionné a un solde de +100 euros.
  ^|OK
+^|All_G_COP.4 ^|Cliquer sur le bouton "Annuler crédit". ^|Cela renvoie vers la fenêtre de la liste des opérations du compte. ^| Un compte actif est sélectionné ^|OK
 
 |====
 
@@ -379,11 +380,13 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 5+|
 
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|C_G_C.1  ^|... ^|... ^|... ^|...
-^|C_G_C.2 ^|... ^|... ^|... ^|...
-^|C_G_C.3 ^|... ^|... ^|... ^|...
-^|C_G_C.4  ^|... ^|... ^|... ^|...
-  
+^|C_G_C.1 ^|Cliquer sur le bouton "Enregistrer Débit". ^|La page des débit exceptionnel du compte s’affiche. ^| Un compte actif est sélectionné ^|OK
+^|C_G_C.2 ^|Rentrer un montant 350 dans le champ "Montant". ^|Le nouveau solde est -150euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^| Le compte sélectionné a un solde de +200 euros et un découvert autorisé de 100 euros
+ ^|OK
+^|C_G_C.3 ^|Rentrer un montant 120 dans le champ "Montant". ^| Le nouveau solde est -20euros. On a créé une nouvelle oprération dans la liste des opérations avec le bon montant et la bonne date ^| Le compte sélectionné a un solde de +100 euros, le découvert autorisé est de -100 euros.
+ ^|OK
+^|C_G_C.4 ^|Cliquer sur le bouton "Annuler débit exceptionnel". ^|Cela renvoie vers la fenêtre de la liste des opérations du compte. ^| Un compte actif est sélectionné ^|OK
+
 |====
 
 [[simuler_emprunt_assurance]]
