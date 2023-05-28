@@ -307,8 +307,10 @@ Le guichetier a accès à plusieurs fonctionnalités : générer un relevé mens
 ==== 4.1.2.1 Create
 
 image::Images/crud_uc.png[]
+_Figure Diagramme des Cas d’Utilisation CRUD Prélèvements_ 
 
 image::Images/dc_prel.png[]
+_Figure Diagramme de classes debiter compte_
 
 [[read_prelevements]]
 ==== 4.1.2.2 Read
