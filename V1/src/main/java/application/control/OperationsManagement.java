@@ -80,6 +80,7 @@ public class OperationsManagement {
 	}
 	
 	/**
+	 * @author Prescilla Estrade
 	 * Enregistre un débit
 	 *
 	 * @return résultat de l'opération demandée
@@ -111,6 +112,7 @@ public class OperationsManagement {
 	}
 	
 	/**
+	 * @author Prescilla Estrade
 	 * Enregistre un débit exceptionnel
 	 *
 	 * @return résultat de l'opération demandée
@@ -142,6 +144,7 @@ public class OperationsManagement {
 	}
 
 	/**
+	 * @author Prescilla Estrade
 	 * Enregistre un crédit
 	 *
 	 * @return résultat de l'opération demandée
