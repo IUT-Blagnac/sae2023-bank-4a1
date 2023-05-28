@@ -201,6 +201,12 @@ public class OperationEditorPaneController {
 				this.lblMontant.getStyleClass().add("borderred");
 				this.lblMessage.getStyleClass().add("borderred");
 				this.txtMontant.requestFocus();
+				
+				Alert alert = new Alert (AlertType.INFORMATION);
+				alert.setTitle("Erreur débit");
+				alert.setContentText("Impossible d'effectuer le débit, le montant est supérieur au découvert autorisé !");
+				alert.showAndWait();
+				
 				return;
 			}
 			String typeOp = this.cbTypeOpe.getValue();
