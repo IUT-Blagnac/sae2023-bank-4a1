@@ -107,7 +107,11 @@ public class EmployesManagementController {
 	@FXML
 	private void doSupprimerCompte() {
 	}
-
+	
+	/**
+	 * Appelle la méthode afin d'afficher la fenêtre de création d'un compte.
+	 * @author Julien Bernard
+	 */
 	@FXML
 	private void doNouveauCompte() {
 		CompteCourant compte;
