@@ -137,7 +137,13 @@ public class OperationsManagementController {
 			this.validateComponentState();
 		}
 	}
-
+	
+	/**
+	* @author Julien Bernard 
+ 	* Effectue une opération de débit exceptionnel sur le compte
+ 	* Fonction appelée lorsqu'on clique sur le bouton enregistrer débit exceptionnel
+ 	* Si l'opération est non nulle les informations du compte sont mises à jour
+ 	*/
 	@FXML
 	private void doAutre() {
 
