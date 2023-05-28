@@ -121,6 +121,6 @@ A terminer
 |         | Code V2    |                     | 
 |         | Javadoc V2    |                     | 
 |         | Recette V2 |      https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/cahier%20de%20recette.adoc                | 
-|         | `jar` projet | Jar V1 : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/Julien_V1/V1/target/DailyBank-1.0-shaded.jar   + Jar V2 : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/DailyBank-1.0-shaded.jar | 
+|         | `jar` projet | Jar V1 : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/Julien_V1/V1/target/DailyBank-1.0-shaded.jar Jar V2 : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/DailyBank-1.0-shaded.jar | 
 
 |===
