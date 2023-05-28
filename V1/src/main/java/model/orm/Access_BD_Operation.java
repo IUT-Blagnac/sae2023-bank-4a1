@@ -254,6 +254,22 @@ public class Access_BD_Operation {
 		}
 	}
 	
+	/**
+	 * @author Julien Bernard
+	 * Enregistrement d'un virement.
+	 * 
+	 * Se fait par procédure stockée : - Vérifie que le débitAutorisé n'est pas
+	 * dépassé <BR />
+	 * - Enregistre l'opération <BR />
+	 * - Met à jour le solde du compte. <BR />
+	 * 
+	 * @param idNumCompteDeb    compte débité
+	 * @param idNumCompteCred   compté crédité
+	 * @param montantOp 		montant débité
+	 * @throws DatabaseConnexionException		Erreur de connexion
+	 * @throws ManagementRuleViolation			Si dépassement découvert autorisé
+	 * @throws DataAccessException				Erreur d'accès aux données (requête mal formée ou autre)
+	 */
 	public void insertVirement(int idNumCompteDeb, int idNumCompteCred, double montantOp)
 			throws DatabaseConnexionException, ManagementRuleViolation, DataAccessException {
 		try {
