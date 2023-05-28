@@ -246,6 +246,17 @@ image::Images/use_case_vc.png[]
 
 **Classes et ressources utilisés :**
 
+* OperationEditorPane.java : Controlleur de la fenêtre "Gestion des comptes". Nous utilisons la même fenêtre que pour créditer et débiter.
+* OperationManagement.java : Une nouvelle méthode "enregistrerVirement" est créer afin d'effectuer cette opération.
+* Access_BD_Operation.java : Permet de gérer les différentes opérations des comptes. La méthode "insertVirement" a été créer.
+* OperationEditorPaneController.java : Cette classe gère l'affichage des fenêtres selon l'opération qu'on choisit. +
+Le switch case dans la méthode displayDialog permet de changer les textes selon l'opération, pour le cas d'un virement on affichage tous les comptes du client pour choisir le compte que l'on veut faire un virement. +
+Le switch case dans la méthode doAjouter permet de vérifier les conditions lors de l'ajout des informations du virement lorsqu'on clique sur le bouton Ajouter.
+* OperationManagementController.java : Cette classe effectue les opération sur le compte. La méthode "doAutre" étant vide, je l'ai complété pour le cas d'un virement.
+* CategorieOperation.java : On ajoute l'opération possible d'un Virement. 
+* OperationEditorPane.fxml : Page FXML qui correspond à la fenêtre "Enregistrement d'un virement". La fenêtre change dans le cas d'un virement.
+* OperationManagement.fxml : Page FXML qui correspond à la fenêtre "Gestion des opérations". Ajout du bouton pour enregistrer un virement. 
+
 [[cloturer_compte]]
 ==== 3.1.5 Clôturer compte - Manon
 
