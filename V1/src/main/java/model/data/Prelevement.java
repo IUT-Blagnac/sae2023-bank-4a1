@@ -1,3 +1,7 @@
+/**
+ * Toutes les informations sur un prélèvement
+ * @author Julien Bernard
+ */
 package model.data;
 
 public class Prelevement {
