@@ -115,8 +115,8 @@ UPDATE un employé - Prescilla
 
 A terminer            
 |         | Suivi projet V1|   | commits pas commentés, issues dans le board à compléter avec milestone / labels, mais semble à jour. readme OK, arbo OK, attention aux GANTTs
-| 26/05   | Gantt V2  réalisé    |   Gantt V2 : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Gestion%20et%20dvpt%20app%20V2.pdf   | 
-|         | Doc. Util. V2 |    https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Documentation%20utilisateur.adoc     |         
+| 26/05   | Gantt V2  réalisé    |   Gantt V2 : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Gestion%20et%20dvpt%20app%20V2.pdf   | Gestion de projet: Arbo GIT claire, GANTT  semble bien strcuturé mais toujours pas exploitable (mise en page), board pas à jour (issues toujours ouvertes pour la V1 !!), commits réguliers mais pas assez commentés. 11,5/20
+|         | Doc. Util. V2 |    https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Documentation%20utilisateur.adoc     |   Presentation du contexte un peu légère, pas des credentials pour se connecter, gros doutes sur la contribution de certains developpeurs (Manon ==> 0/20), (Priscilla / Julien ==> 11,5/20      
 |         | Doc. Tec. V2 |        https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Documentation%20technique.adoc        |     
 |         | Code V2    |  https://github.com/IUT-Blagnac/sae2023-bank-4a1/tree/main/V1                   | 
 |         | Javadoc V2    |   https://github.com/IUT-Blagnac/sae2023-bank-4a1/tree/main/V2/JavadocV2/Javadoc             | 
