@@ -47,8 +47,8 @@ public class DailyBankMainFrame extends Application {
 			Scene scene = new Scene(root, root.getPrefWidth() + 20, root.getPrefHeight() + 10);
 			scene.getStylesheets().add(DailyBankApp.class.getResource("application.css").toExternalForm());
 
-			primaryStage.setScene(scene);
-			primaryStage.setTitle("Fenêtre Principale");
+			this.primaryStage.setScene(scene);
+			this.primaryStage.setTitle("Fenêtre Principale");
 
 			/*
 			 * // En mise au point : // Forcer une connexion existante pour rentrer dans
@@ -76,7 +76,8 @@ public class DailyBankMainFrame extends Application {
 			// Récupération du contrôleur et initialisation (stage, contrôleur de dialogue,
 			// état courant)
 			DailyBankMainFrameController dbmfcViewController = loader.getController();
-			dbmfcViewController.initContext(primaryStage, this, this.dailyBankState);
+			System.out.println(this.primaryStage);
+			dbmfcViewController.initContext(this.primaryStage, this, this.dailyBankState);
 
 			dbmfcViewController.displayDialog();
 
@@ -101,8 +102,8 @@ public class DailyBankMainFrame extends Application {
 		try {
 			LogToDatabase.closeConnexion();
 		} catch (DatabaseConnexionException e) {
-			ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
-			ed.doExceptionDialog();
+			//ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
+			//ed.doExceptionDialog();
 		}
 	}
 
@@ -120,5 +121,13 @@ public class DailyBankMainFrame extends Application {
 	public void gestionClients() {
 		ClientsManagement cm = new ClientsManagement(this.primaryStage, this.dailyBankState);
 		cm.doClientManagementDialog();
+	}
+	
+	/**
+	 * Lancer la gestion des employes (liste des employes).
+	 */
+	public void gestionEmployes() {
+		EmployesManagement em = new EmployesManagement(this.primaryStage, this.dailyBankState);
+		em.doEmployeManagementDialog();
 	}
 }

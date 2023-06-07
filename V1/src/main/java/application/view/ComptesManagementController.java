@@ -15,6 +15,7 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import model.data.Client;
 import model.data.CompteCourant;
+import model.orm.exception.RowNotFoundOrTooManyRowsException;
 
 public class ComptesManagementController {
 
@@ -84,6 +85,11 @@ public class ComptesManagementController {
 	private Button btnSupprCompte;
 	@FXML
 	private Button btnPrel;
+	//ajoutés
+	@FXML
+	private Button btnClôtureCompte;
+	@FXML
+	private Button btnNouveauCompte;
 
 	@FXML
 	private void doCancel() {
@@ -113,11 +119,19 @@ public class ComptesManagementController {
 	}
 
 	@FXML
-	private void doModifierCompte() {
-	}
-
-	@FXML
-	private void doSupprimerCompte() {
+	/**
+	 * Permet de cloturer un compte 
+	 * 
+	 * @author Manon
+	 */
+	private void doClotureCompte() throws RowNotFoundOrTooManyRowsException {
+		int selectedIndice = this.lvComptes.getSelectionModel().getSelectedIndex();
+		CompteCourant cpt = this.oListCompteCourant.get(selectedIndice);
+		if (selectedIndice >= 0) {
+				this.cmDialogController.cloture(cpt);
+			}
+		this.loadList();
+		this.validateComponentState();
 	}
 	
 	/*
