@@ -1,0 +1,126 @@
+=== README du groupe 4A1
+
+==== Présentation de l'équipe et rôles respectifs
+Chef de projet : BERNARD Julien
+
+* BERNARD Julien    :  Réalisation du Gantt
+* ESTRADE Prescilla :  Réalisation du cahier des charges
+* MALIQUE Manon     :  Réalisation du README, aide au cahier des charges
+
+==== Répartition des tâches et état d'avancement
+[options="header,footer"]
+|=======================
+|version|rôle     |use case   |cas...                 |   BERNARD Julien | ESTRADE Prescilla  |   MALIQUE Manon
+|1    |Chef d’Agence    |CRUD employé  |C| | | D 
+|1    |Chef d’Agence    |CRUD employé  |R| | | D
+|1    |Chef d’Agence |CRUD employé  |U| | D| 
+|1    |Chef d’Agence   |CRUD employé  |D| D | | 
+|1    |Guichetier     | Compte | Créer|F| | 
+|1    |Guichetier     | Compte | Créditer/Débiter|| F | 
+|1    |Guichetier     | Compte | Effectuer un virement|F| | 
+|1    |Guichetier     | Compte | Clôturer|| | D
+|2    |Chef d’Agence     | Compte | Débit exceptionnel|| F | 
+|2    |Chef d’Agence     | Emprunt | Simuler emprunt|| F | 
+|2    |Chef d’Agence     | Emprunt | Simuler assurance|| F | 
+|2    |Guichetier     | Compte | Relevé PDF|| | D
+|2    |Guichetier     | CRUD Prélèvement automatiques| C| F | | 
+|2    |Guichetier     | CRUD Prélèvement automatiques| R| F | | 
+|2    |Guichetier     | CRUD Prélèvement automatiques| U| F | | 
+|2    |Guichetier     | CRUD Prélèvement automatiques| D| F | | 
+|2    |Batch     | Exécuter Prélèvements automatiques | | | | D 
+|2    |Batch     | Reléves mensuels | || D | 
+
+|=======================
+
+
+Chaque étudiant doit mettre son nom sur une des colonnes étudiant.
+Dans sa colonne il doit remplir la ligne correspondant à chaque partie qu'il a développé en indiquant
+
+*	*F* pour fonctionnel ou
+*	*D* pour encore en Développement
+
+==== Livrables
+
+[cols="1,2,2,5",options=header]
+|===
+| Date    | Nom         |  Lien                             | Retour
+| Sem.19  | CDC V1      |         https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/CDC.adoc                          |affinez les objectifs (communication inter agences).
+affinez l'analyse de l'existant par rapport à ce qui vous a été fourni en entrant (documentation, executable ...).
+analyse du besoin: détaillez les UC V0, utilisateurs logiques, idem pour la V1, en priorisant les devs planifiés.
+les delais doivent partir dans la partie contraintes orga.
+Affinez les contraintes orga (qui doit faire quoi, mode de fonctionnement de l'équipe).      
+| 12/05   |Gantt V1 Prévu|   Gantt sur 1 page :     https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Gantt_Gestion_et_dvpt_app.pdf  Dossier complet : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Gestion_et_dvpt_app.pdf |pas de ressource assignée(s) aux taches.
+les jalons de livraison ne sont pas indiqués.
+la charge de travail (temps/homme) n’est pas indiqué.
+prédeceseurs à ajouter.
+affinez le GANTT V1 pour l'instant, pas besoin du reste.
+reprendre le découpage des taches pour V1.
+affichage du graphe pas optimal, à reprendre.
+| 16/05  | CdC V2final| https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/CDC.adoc                                 |  16/20. manque problématique, description des fichiers V0. Très bonne analyse du besoin avec priorisation, et UCs complet. attention, dans les contraintes, la DB a utiliser est Oracle, et non SQL developer. Contraintes globalement complètes. bon travail.
+|         | Gantt V1 Réalisé |    Gantt PDF : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Gestion%20et%20dvpt%20appV1%20Réalisé.pdf
+                                  Gantt PNG : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Gestion%20et%20dvpt%20appV1%20Réalisé.png    |   remarques du GANTT V1 à la livraison du 12/05 n'ont pas été prise en compte. Donc meme remarques; GANTT pas exeploitable en l'état.  
+|         | Gantt V2 Prevu|   Gantt PDF : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Gestion%20et%20dvpt%20appV2.pdf
+                                    Gantt PNG : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Gestion%20et%20dvpt%20appV2.png       |   idem ci-dessus  
+|         | Doc. Tec. V1 | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Documentation%20technique.adoc |        • Architecture 
+Pas mal pour une V1
+
+Ce document doit servir à la maintenance de l’application pour cela il faut pouvoir l’installer et comprendre les différents éléments de l’architecture.
+
+Comment fait on pour installer l’application afin de pouvoir la faire évoluer ?
+Version de java, BD, script  de la base.
+Doit-on cloner quelque chose ?
+Si je change de base comment je fais le lien avec l’application java ?
+
+
+ 
+A quoi sert le fichier DailyBankState.java ?
+Expliquer par un diagramme de séquence qui déclenche l’appel d’une fen^tre quand je clique dans une fenêtre qui exécute, qui appelle les requêtes…  
+
+Partie individuelle.
+
+Il manque le lien vers le cahier de recette la fiche de test concernée. Quelque cas ne sont pas décrits. Ne pas hésité à donner le nom des méthodes introduites ou modifiées dans chaque classe.
+
+Il y a encore des morceaux non complétés.
+|         | Doc User V1    | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/Documentation%20utilisateur.adoc |document complet, avec fonctionnalités commentées. Mention du developeur, procédure d'installation convenable. doc OK, à compléter
+|         | jar. V1 |    Jar V1 : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/Julien_V1/V1/target/DailyBank-1.0-shaded.ja[DaylyBankv1] |   Jar débiter avec dépassement de découvert j’ai un message mais plus le popup.
+Nouveau compte créer . Erreur BD quand ajouter
+OK pour annuler
+
+Ajouter crédit le bouton n’est pas actif.
+
+Ajouter nouveau employé non implémenté.
+|         | javadoc. V1 |   |   
+|         | application. V1 |    |   
+|         | Recette V1  | https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V1/cahier%20de%20recette.adoc      |Créer un compte - Julien 
+
+Y aura til un bouton annuler et que se passe til si j’annule ?
+
+Clôturer un compte - Manon 
+
+Il faut prévoir qu’on ne peut clôturer un compte que si son solde est à 0
+Que se passe-t-il si j’essaie de clôturer un compte dont le solde n’est pas à 0 ?
+
+Si un compte est cloturé, je ne devrait plus pouvoir effectuer d’opérations dessus… Vous avez sans doute décrit tout ça dans le cahier des charges.
+
+Créditer un compte - Prescilla 
+Attention crédité n’est pas le copié collé de débiter
+
+Virement sur un compte - Julien 
+
+Comment ça se passe. On peut faire des virement entre des comptes utilisateur du même client actif ???
+Y a de l’idée mais pas encore au point.
+
+UPDATE un employé - Prescilla 
+ Y aura til un bouton annuler et que se passe til si j’annule ?
+
+A terminer            
+|         | Suivi projet V1|   | commits pas commentés, issues dans le board à compléter avec milestone / labels, mais semble à jour. readme OK, arbo OK, attention aux GANTTs
+| 26/05   | Gantt V2  réalisé    |   Gantt V2 : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Gestion%20et%20dvpt%20app%20V2.pdf   | Gestion de projet: Arbo GIT claire, GANTT  semble bien strcuturé mais toujours pas exploitable (mise en page), board pas à jour (issues toujours ouvertes pour la V1 !!), commits réguliers mais pas assez commentés. 11,5/20
+|         | Doc. Util. V2 |    https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Documentation%20utilisateur.adoc     |   Presentation du contexte un peu légère, pas des credentials pour se connecter, gros doutes sur la contribution de certains developpeurs (Manon ==> 0/20), (Priscilla / Julien ==> 11,5/20      
+|         | Doc. Tec. V2 |        https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/Documentation%20technique.adoc        |     
+|         | Code V2    |  https://github.com/IUT-Blagnac/sae2023-bank-4a1/tree/main/V1                   | 
+|         | Javadoc V2    |   https://github.com/IUT-Blagnac/sae2023-bank-4a1/tree/main/V2/JavadocV2/Javadoc             | 
+|         | Recette V2 |      https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/cahier%20de%20recette.adoc                | 
+|         | `jar` projet | Jar V1 : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/Julien_V1/V1/target/DailyBank-1.0-shaded.jar Jar V2 : https://github.com/IUT-Blagnac/sae2023-bank-4a1/blob/main/V2/DailyBank-1.0-shaded.jar | 
+
+|===
