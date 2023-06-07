@@ -3,7 +3,7 @@ package application.view;
 import java.util.ArrayList;
 
 import application.DailyBankState;
-import application.control.ClientsManagement;
+import application.control.EmployesManagement;
 import application.control.EmployesManagement;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -15,6 +15,7 @@ import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
+import model.data.Employe;
 import model.data.Employe;
 
 public class EmployesManagementController {
@@ -34,11 +35,11 @@ public class EmployesManagementController {
 
 	// Manipulation de la fenêtre
 
-	public void initContext(Stage _containingStage, EmployesManagement _em, DailyBankState _dbstate, Employe employe) {
+	public void initContext(Stage _containingStage, EmployesManagement _em, DailyBankState _dbstate) {
 		this.emDialogController = _em;
 		this.primaryStage = _containingStage;
 		this.dailyBankState = _dbstate;
-		this.employe = employe;
+		System.out.println(_dbstate.getEmployeActuel().motPasse);
 		this.configure();
 	}
 
@@ -52,12 +53,7 @@ public class EmployesManagementController {
 		this.lvEmployes.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
 		this.lvEmployes.getFocusModel().focus(-1);
 		this.lvEmployes.getSelectionModel().selectedItemProperty().addListener(e -> this.validateComponentState());
-
-		info = this.employe.nom + "  " + this.employe.prenom + "  (id : "
-				+ this.employe.idEmploye + ")";
-		this.lblInfosEmploye.setText(info);
-
-		this.loadList();
+		this.doRechercher();
 		this.validateComponentState();
 	}
 
@@ -74,6 +70,108 @@ public class EmployesManagementController {
 
 	// Attributs de la scene + actions
 
+	@FXML
+	private TextField txtNum;
+	@FXML
+	private TextField txtNom;
+	@FXML
+	private TextField txtPrenom;
+	@FXML
+	private ListView<Employe> lvEmployes;
+	@FXML
+	private Button btnDesactEmploye;
+	@FXML
+	private Button btnModifEmploye;
+
+	@FXML
+	private void doCancel() {
+		this.primaryStage.close();
+	}
+
+	@FXML
+	private void doRechercher() {
+		int numCompte;
+		try {
+			String nc = this.txtNum.getText();
+			if (nc.equals("")) {
+				numCompte = -1;
+			} else {
+				numCompte = Integer.parseInt(nc);
+				if (numCompte < 0) {
+					this.txtNum.setText("");
+					numCompte = -1;
+				}
+			}
+		} catch (NumberFormatException nfe) {
+			this.txtNum.setText("");
+			numCompte = -1;
+		}
+
+		String debutNom = this.txtNom.getText();
+		String debutPrenom = this.txtPrenom.getText();
+
+		if (numCompte != -1) {
+			this.txtNom.setText("");
+			this.txtPrenom.setText("");
+		} else {
+			if (debutNom.equals("") && !debutPrenom.equals("")) {
+				this.txtPrenom.setText("");
+			}
+		}
+
+		// Recherche des Employes en BD. cf. AccessEmploye > getEmployes(.)
+		// numCompte != -1 => recherche sur numCompte
+		// numCompte != -1 et debutNom non vide => recherche nom/prenom
+		// numCompte != -1 et debutNom vide => recherche tous les Employes
+		ArrayList<Employe> listeCli;
+		listeCli = this.emDialogController.getlisteEmployes(numCompte, debutNom, debutPrenom);
+
+		this.oListEmploye.clear();
+		this.oListEmploye.addAll(listeCli);
+		this.validateComponentState();
+	}
+
+	@FXML
+	private void doModifierEmploye() {
+
+		int selectedIndice = this.lvEmployes.getSelectionModel().getSelectedIndex();
+		if (selectedIndice >= 0) {
+			Employe empMod = this.oListEmploye.get(selectedIndice);
+			Employe result = this.emDialogController.modifierEmploye(empMod);
+			if (result != null) {
+				this.oListEmploye.set(selectedIndice, result);
+			}
+		}
+	}
+
+	@FXML
+	private void doDesactiverEmploye() {
+	}
+
+	@FXML
+	private void doNouveauEmploye() {
+		Employe Employe;
+		Employe = this.emDialogController.nouveauEmploye();
+		if (Employe != null) {
+			this.oListEmploye.add(Employe);
+		}
+	}
+
+	private void validateComponentState() {
+		// Non implémenté => désactivé
+		this.btnDesactEmploye.setDisable(true);
+		int selectedIndice = this.lvEmployes.getSelectionModel().getSelectedIndex();
+		if (selectedIndice >= 0) {
+			this.btnModifEmploye.setDisable(false);
+		} else {
+			this.btnModifEmploye.setDisable(true);
+		}
+	}
+	
+	
+	//______________________________________________________________________________________________________________________
+	
+	/*
 	@FXML
 	private TextField txtNum;
 	@FXML
@@ -129,4 +227,5 @@ public class EmployesManagementController {
 		this.btnModifierEmploye.setDisable(true);
 		this.btnSupprEmploye.setDisable(true);
 	}
+	*/
 }

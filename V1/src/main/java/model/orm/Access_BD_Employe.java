@@ -36,7 +36,7 @@ public class Access_BD_Employe {
 	 * @throws DataAccessException        Erreur d'accès aux données (requête malformée ou autre)
 	 * @throws DatabaseConnexionException Erreur de connexion
 	 */
-	public ArrayList<Employe> getEmployes(int idAg, int idEmploye)
+	public ArrayList<Employe> getEmployes(int idAg, int idEmploye,String debutNom, String debutPrenom)
 			throws DataAccessException, DatabaseConnexionException {
 
 		ArrayList<Employe> alResult = new ArrayList<>();
@@ -48,32 +48,68 @@ public class Access_BD_Employe {
 
 			String query;
 			if (idEmploye != -1 ) {
-				query = "SELECT * FROM Client where idAg = ?";
+				query = "SELECT * FROM Employe where idAg = ?";
 				query += " AND idEmploye = ?";
 				query += " ORDER BY nom";
 				pst = con.prepareStatement(query);
 				pst.setInt(1, idAg);
 				pst.setInt(2, idEmploye);
 
-			} else {
-				query = "SELECT * FROM Client where idAg = ?";
+			} else if (!debutNom.equals("")) {
+				debutNom = debutNom.toUpperCase() + "%";
+				debutPrenom = debutPrenom.toUpperCase() + "%";
+				query = "SELECT * FROM Employe where idAg = ?";
+				query += " AND UPPER(nom) like ?" + " AND UPPER(prenom) like ?";
 				query += " ORDER BY nom";
 				pst = con.prepareStatement(query);
 				pst.setInt(1, idAg);
+				pst.setString(2, debutNom);
+				pst.setString(3, debutPrenom);
+			} else {
+				query = "SELECT * FROM Employe where idAg = ?";
+				query += " ORDER BY nom";
+				System.out.println(idAg);
+				pst = con.prepareStatement(query);
+				pst.setInt(1, idAg);
 			}
-
+			System.err.println(query + " nom : " + debutNom + " prenom : " + debutPrenom + "#");
+			
+			int i = 0;
 			ResultSet rs = pst.executeQuery();
+			System.out.println();
 			while (rs.next()) {
-				int idNumEmpTR = rs.getInt("idEmploye");
+				i++;
+				System.out.println(i);
+				int idNumEmpTR = rs.getInt("IDEMPLOYE");
+				i++;
+				System.out.println(i);
 				String nom = rs.getString("nom");
+				i++;
+				System.out.println(i);
 				String prenom = rs.getString("prenom");
-				String droitAcces = rs.getString("droitAcces");
+				i++;
+				System.out.println(i);
+				String droitAcces = rs.getString("droitsAccess");
+				i++;
+				System.out.println(i);
 				droitAcces = (droitAcces == null ? "" : droitAcces);
+				i++;
+				System.out.println(i);
 				String login = rs.getString("login");
+				i++;
+				System.out.println(i);
 				login = (login == null ? "" : login);
+				i++;
+				System.out.println(i);
 				String motPasse = rs.getString("motPasse");
+				i++;
+				System.out.println(i);
 				motPasse = (motPasse == null ? "" : motPasse);
+				i++;
+				System.out.println(i);
 				int idAgCli = rs.getInt("idAg");
+				i++;
+				System.out.println(i);
 
 				alResult.add(
 						new Employe(idNumEmpTR, nom, prenom, droitAcces, login, motPasse, idAgCli));

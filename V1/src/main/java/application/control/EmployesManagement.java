@@ -49,7 +49,7 @@ public class EmployesManagement {
 			this.primaryStage.setResizable(false);
 
 			this.emcViewController = loader.getController();
-		//	this.emcViewController.initContext(this.primaryStage, this, _dbstate);
+			this.emcViewController.initContext(this.primaryStage, this, _dbstate);
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -122,12 +122,12 @@ public class EmployesManagement {
 	 * 
 	 * @return une liste d'employes
 	 */
-	public ArrayList<Employe> getlisteEmployes(int _numEmp) {
+	public ArrayList<Employe> getlisteEmployes(int _numEmp,String debutNom, String debutPrenom) {
 		ArrayList<Employe> listeEmp = new ArrayList<>();
 		try {
 
 			Access_BD_Employe ac = new Access_BD_Employe();
-			listeEmp = ac.getEmployes(this.dailyBankState.getEmployeActuel().idAg,_numEmp);
+			listeEmp = ac.getEmployes(this.dailyBankState.getEmployeActuel().idAg,_numEmp , debutNom, debutPrenom);
 
 		} catch (DatabaseConnexionException e) {
 			ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);

@@ -76,6 +76,7 @@ public class DailyBankState {
 				this.isChefDAgence = false;
 				ExceptionDialog ed = new ExceptionDialog(null, null, e);
 				ed.doExceptionDialog();
+
 			}
 		}
 	}
