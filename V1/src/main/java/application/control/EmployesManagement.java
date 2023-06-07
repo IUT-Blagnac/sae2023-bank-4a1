@@ -61,7 +61,8 @@ public class EmployesManagement {
 	public void doEmployeManagementDialog() {
 		this.emcViewController.displayDialog();
 	}
-        /**
+
+	/**
 	 * Affiche la fenêtre de gestion des employes
 	 * 
 	 * @param e : IN L'employé à modifier
@@ -87,6 +88,36 @@ public class EmployesManagement {
 		}
 		return result;
 	}
+	
+	/**
+	 * Affiche la fenêtre de gestion des employes
+	 * 
+	 * @param e : IN L'employé à supprimer
+	 * @return 
+	 */
+	public boolean supprimerEmploye(Employe emp) {
+		//EmployeEditorPane eep = new EmployeEditorPane(this.primaryStage, this.dailyBankState);
+		//eep.doEmployeEditorDialog(emp, EditionMode.SUPPRESSION);
+		try {
+			Access_BD_Employe ac = new Access_BD_Employe();
+			ac.deleteEmploye(emp);
+			return true;
+		} catch (DatabaseConnexionException e) {
+			ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
+			ed.doExceptionDialog();
+			emp = null;
+			this.primaryStage.close();
+			return false;
+		} catch (ApplicationException ae) {
+			ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, ae);
+			ed.doExceptionDialog();
+			emp = null;
+			return false;
+		}
+		
+		
+	}
+	
 	/**
 	 * Affiche la fenêtre de gestion des employes
 	 * 
@@ -94,8 +125,8 @@ public class EmployesManagement {
 	 */
 	public Employe nouveauEmploye() {
 		Employe employe;
-		EmployeEditorPane cep = new EmployeEditorPane(this.primaryStage, this.dailyBankState);
-		employe = cep.doEmployeEditorDialog(null, EditionMode.CREATION);
+		EmployeEditorPane eep = new EmployeEditorPane(this.primaryStage, this.dailyBankState);
+		employe = eep.doEmployeEditorDialog(null, EditionMode.CREATION);
 		if (employe != null) {
 			try {
 				Access_BD_Employe ac = new Access_BD_Employe();

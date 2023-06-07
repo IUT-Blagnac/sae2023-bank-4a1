@@ -51,7 +51,7 @@ public class EmployeEditorPane {
 	 * Démarre la fonction de contrôleur de la page ajoutée ou modifiée des employes
 	 * @param employe : Employe qui est modifié
 	 * @param em : Indique le mode d'édition (ajouter, modifier, supprimer) 
-	 * @return Si le employe a changé 
+	 * @return Si l' employe a changé 
 	 */
 	public Employe doEmployeEditorDialog(Employe employe, EditionMode em) {
 		return this.eepcViewController.displayDialog(employe, em);

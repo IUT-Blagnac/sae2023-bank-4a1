@@ -146,6 +146,14 @@ public class EmployesManagementController {
 
 	@FXML
 	private void doDesactiverEmploye() {
+		int selectedIndice = this.lvEmployes.getSelectionModel().getSelectedIndex();
+		if (selectedIndice >= 0) {
+			Employe empSup = this.oListEmploye.get(selectedIndice);
+			boolean vrai= this.emDialogController.supprimerEmploye(empSup);
+			if (vrai) {
+				this.oListEmploye.remove(selectedIndice);
+			}
+		}
 	}
 
 	@FXML
@@ -158,8 +166,6 @@ public class EmployesManagementController {
 	}
 
 	private void validateComponentState() {
-		// Non implémenté => désactivé
-		this.btnDesactEmploye.setDisable(true);
 		int selectedIndice = this.lvEmployes.getSelectionModel().getSelectedIndex();
 		if (selectedIndice >= 0) {
 			this.btnModifEmploye.setDisable(false);

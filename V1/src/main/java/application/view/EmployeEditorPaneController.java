@@ -82,6 +82,7 @@ public class EmployeEditorPaneController {
 			this.txtMotDePasse.setDisable(false);
 			this.rbChef.setSelected(true);
 			this.rbPasChef.setSelected(false);
+			
 			if (ConstantesIHM.isAdmin(this.dailyBankState.getEmployeActuel())) {
 				this.rbChef.setDisable(false);
 				this.rbPasChef.setDisable(false);
@@ -94,8 +95,7 @@ public class EmployeEditorPaneController {
 			this.butCancel.setText("Annuler");
 			break;
 		case SUPPRESSION:
-			// ce mode n'est pas encore AU POINT
-			ApplicationException ae = new ApplicationException(Table.NONE, Order.OTHER, "SUPPRESSION CLIENT NON PREVUE", null);
+			ApplicationException ae = new ApplicationException(Table.NONE, Order.OTHER, "SUPPRESSION EMPLOYE NON PREVUE", null);
 			ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, ae);
 			ed.doExceptionDialog();
 
@@ -114,8 +114,10 @@ public class EmployeEditorPaneController {
 
 		if (ConstantesIHM.isAdmin(this.employeEdite)) {
 			this.rbPasChef.setSelected(true);
+			this.rbChef.setSelected(false);
 		} else {
 			this.rbPasChef.setSelected(false);
+			this.rbChef.setSelected(true);
 		}
 
 		this.employeResultat = null;
@@ -191,9 +193,9 @@ public class EmployeEditorPaneController {
 		this.employeEdite.login = this.txtLogin.getText().trim();
 		this.employeEdite.motPasse = this.txtMotDePasse.getText().trim();
 		if (this.rbChef.isSelected()) {
-			this.employeEdite.droitsAccess = ConstantesIHM.CLIENT_ACTIF;
+			this.employeEdite.droitsAccess = ConstantesIHM.AGENCE_CHEF;
 		} else {
-			this.employeEdite.droitsAccess = ConstantesIHM.CLIENT_INACTIF;
+			this.employeEdite.droitsAccess = ConstantesIHM.AGENCE_GUICHETIER;
 		}
 
 		if (this.employeEdite.nom.isEmpty()) {

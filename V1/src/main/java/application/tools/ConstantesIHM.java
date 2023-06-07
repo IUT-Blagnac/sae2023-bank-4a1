@@ -31,6 +31,7 @@ public class ConstantesIHM {
 	 */
 	public static final String AGENCE_GUICHETIER = "guichetier";
 
+
 	// Types opérations
 
 	/*

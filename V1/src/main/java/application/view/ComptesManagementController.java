@@ -103,18 +103,6 @@ public class ComptesManagementController {
 		}
 		this.loadList();
 		this.validateComponentState();
-	}	/**
-	 * Permet de changer le text du bouton cloturer et reouvrir 
-	 * 
-	 * @author Manon 
-	 */
-	private void afficheText(CompteCourant cc) {
-		
-//		if(cc.estCloture.equals("O")) {
-//			btnClôtureCompte.setText("ReOuvrir");
-//		}else {
-			btnClôtureCompte.setText("Cloturer");
-//		}
 	}
 	
 	@FXML
@@ -123,7 +111,7 @@ public class ComptesManagementController {
 	 * 
 	 * @author Manon
 	 */
-	private void doClôtureCompte() throws RowNotFoundOrTooManyRowsException {
+	private void doClotureCompte() throws RowNotFoundOrTooManyRowsException {
 		int selectedIndice = this.lvComptes.getSelectionModel().getSelectedIndex();
 		CompteCourant cpt = this.oListCompteCourant.get(selectedIndice);
 		if (selectedIndice >= 0) {
@@ -131,15 +119,6 @@ public class ComptesManagementController {
 			}
 		this.loadList();
 		this.validateComponentState();
-	}
-
-	
-	@FXML
-	private void doModifierCompte() {
-	}
-
-	@FXML
-	private void doSupprimerCompte() {
 	}
 
 	@FXML

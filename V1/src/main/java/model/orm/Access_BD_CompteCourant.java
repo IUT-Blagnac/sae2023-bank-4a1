@@ -201,7 +201,7 @@ public class Access_BD_CompteCourant {
 		try {
 			Connection con = LogToDatabase.getConnexion();
 
-			String query = "DELETE FROM CompteCourant WHERE idNumCompte=?";
+			String query = "UPDATE CompteCourant SET " + "estCloture = 'O' " + "WHERE idNumCompte = ?";
 
 			PreparedStatement pst = con.prepareStatement(query);
 			pst.setInt(1, idNumCompte);
