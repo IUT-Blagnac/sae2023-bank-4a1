@@ -156,14 +156,6 @@ public class EmployesManagementController {
 		}
 	}
 
-	@FXML
-	private void doNouveauEmploye() {
-		Employe Employe;
-		Employe = this.emDialogController.nouveauEmploye();
-		if (Employe != null) {
-			this.oListEmploye.add(Employe);
-		}
-	}
 
 	private void validateComponentState() {
 		int selectedIndice = this.lvEmployes.getSelectionModel().getSelectedIndex();
@@ -174,43 +166,6 @@ public class EmployesManagementController {
 		}
 	}
 	
-	
-	//______________________________________________________________________________________________________________________
-	
-	/*
-	@FXML
-	private TextField txtNum;
-	@FXML
-	private Label lblInfosEmploye;
-	@FXML
-	private ListView<Employe> lvEmployes;
-	@FXML
-	private Button btnVoirOpes;
-	@FXML
-	private Button btnModifierEmploye;
-	@FXML
-	private Button btnSupprEmploye;
-
-	@FXML
-	private void doCancel() {
-		this.primaryStage.close();
-	}
-
-	@FXML
-	private void doVoirEmployes() {
-		this.loadList();
-		this.validateComponentState();
-	}
-
-	@FXML
-	private void doModifierEmploye() {
-		this.emDialogController.modifierEmploye(employe);
-	}
-
-	@FXML
-	private void doSupprimerEmploye() {
-		//this.emDialogController.supprimerEmploye(employe);
-	}
 	
 	/**
 	 * Appelle la méthode afin d'afficher la fenêtre de création d'un compte.
@@ -225,17 +180,4 @@ public class EmployesManagementController {
 		}
 	}
 
-	private void loadList() {
-		ArrayList<Employe> listeEmp;
-		listeEmp = this.emDialogController.getlisteEmployes(Integer.parseInt(txtNum.getText())); //-1 ou "" si pas spécifié
-		this.oListEmploye.clear();
-		this.oListEmploye.addAll(listeEmp);
-	}
-
-	private void validateComponentState() {
-		// Non implémenté => désactivé
-		this.btnModifierEmploye.setDisable(true);
-		this.btnSupprEmploye.setDisable(true);
-	}
-	*/
 }
